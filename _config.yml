@@ -1,0 +1,14 @@
+name: "Centre de danse Moioli"
+description: ""
+
+
+url: "www.dansemoioli.com"
+
+
+
+paginate: 10
+
+
+
+markdown: rdiscount
+permalink: pretty

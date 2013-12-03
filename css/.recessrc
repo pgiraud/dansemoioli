@@ -1,0 +1,6 @@
+{
+  "includePath": ["../bootstrap-3.0.2/less"]
+  , "noIDs": false
+  , "noJSPrefix": false
+  , "noUniversalSelectors": false
+}
