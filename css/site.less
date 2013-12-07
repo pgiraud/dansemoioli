@@ -91,6 +91,7 @@ h1, h2, h3, .h1, .h2, .h3 {
 .navbar {
     padding-top: 5px;
     padding-bottom: 5px;
+    margin-bottom: 0;
     li > a {
         text-shadow: 1px 1px 0 #FFCC00;
     }
@@ -127,4 +128,26 @@ h1, h2, h3, .h1, .h2, .h3 {
         line-height: 115px;
         font-size: 18px;
     }
+}
+
+/* caroussel */
+@import "responsive-slider.css";
+
+.responsive-slider .slider-control {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.responsive-slider:hover .slider-control {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.responsive-slider .slider-control:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.responsive-slider .slider-control {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }

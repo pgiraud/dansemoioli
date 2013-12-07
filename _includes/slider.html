@@ -1,0 +1,46 @@
+
+<!-- Responsive slider - START -->
+<div class="responsive-slider" data-spy="responsive-slider" data-autoplay="true">
+  <div class="slides" data-group="slides">
+    <ul>
+      <li>
+      <div class="slide-body" data-group="slide">
+        <img src="/images/slide-1.jpg">
+        <div class="caption header" data-animate="slideAppearRightToLeft" data-delay="500" data-length="300">
+          <h2>École de danse</h2>
+          <div class="caption sub" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300">Chambéry - Savoie</div>
+        </div>
+      </div>
+      </li>
+      <li>
+      <div class="slide-body" data-group="slide">
+        <img src="/images/slide-2.jpg">
+        <div class="caption header" data-animate="slideAppearRightToLeft" data-delay="500" data-length="300">
+          <div class="caption sub" data-animate="slideAppearRightToLeft" data-delay="600" data-length="300">Cours de </div>
+        </div>
+        <div class="caption header" data-animate="slideAppearRightToLeft" data-delay="800" data-length="300">
+          <h2>Rock, Salsa, Valse, Tango argentin</h2>
+        </div>
+      </div>
+      </li>
+    </ul>
+  </div>
+  <a class="slider-control left" href="#" data-jump="prev"><</a>
+  <a class="slider-control right" href="#" data-jump="next">></a>
+  <div class="pages">
+    <a class="page" href="#" data-jump-to="1">1</a>
+    <a class="page" href="#" data-jump-to="2">2</a>
+  </div>
+</div>
+<script src="js/jquery.event.move.js"></script>
+<script src="js/responsive-slider.min.js"></script>
+<script>
+  $( document ).ready( function() {
+    $('.responsive-slider').responsiveSlider({
+      autoplay: true,
+      interval: 5000,
+      transitionTime: 300
+    });
+  });
+</script>
+
