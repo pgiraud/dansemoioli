@@ -4064,7 +4064,8 @@ h3,
 .navbar {
   padding-top: 5px;
   padding-bottom: 5px;
-  margin-bottom: 0;
+  margin-bottom: 4px;
+  border: 0;
 }
 
 .navbar li > a {
@@ -4072,7 +4073,7 @@ h3,
 }
 
 .navbar-header {
-  height: 80px;
+  height: 60px;
 }
 
 .navbar-header img {
@@ -4084,25 +4085,31 @@ h3,
 }
 
 @media (min-width: 768px) {
+  .navbar {
+    margin-bottom: 6px;
+  }
   .navbar-header {
-    height: 120px;
+    height: 100px;
   }
   .navbar-header img {
     width: 300px;
   }
   .navbar-nav > li > a {
     font-size: 16px;
-    line-height: 80px;
+    line-height: 70px;
   }
 }
 
 @media (min-width: 992px) {
+  .navbar {
+    margin-bottom: 8px;
+  }
   .navbar-header img {
     width: 100%;
   }
   .navbar-nav > li > a {
     font-size: 18px;
-    line-height: 115px;
+    line-height: 100px;
   }
 }
 
@@ -4128,4 +4135,20 @@ h3,
      -moz-transition: all 0.2s ease-out;
        -o-transition: all 0.2s ease-out;
           transition: all 0.2s ease-out;
+}
+
+.responsive-slider .slides ul li .slide-body h2 {
+  color: orange;
+  text-shadow: 1px 1px 0 white;
+}
+
+.responsive-slider .slides ul li .slide-body .caption.img-danses {
+  right: 5%;
+  bottom: 5%;
+  width: 20%;
+  max-width: 190px;
+}
+
+.responsive-slider .slides ul li .slide-body .caption.img-danses img {
+  max-width: 100%;
 }

@@ -110,46 +110,6 @@
     right: 0;
   }
 }
-.responsive-slider .slides ul li .slide-body .caption.img-html5 {
-  top: 13%;
-  right: 8%;
-  width: 30%;
-}
-.responsive-slider .slides ul li .slide-body .caption.img-html5 img {
-  max-width: 100%;
-}
-.responsive-slider .slides ul li .slide-body .caption.img-css3 {
-  top: 57%;
-  right: 12%;
-  width: 10%;
-}
-.responsive-slider .slides ul li .slide-body .caption.img-css3 img {
-  max-width: 100%;
-}
-.responsive-slider .slides ul li .slide-body .caption.img-bootstrap {
-  top: 48%;
-  right: 12%;
-  width: 11%;
-}
-.responsive-slider .slides ul li .slide-body .caption.img-bootstrap img {
-  max-width: 100%;
-}
-.responsive-slider .slides ul li .slide-body .caption.img-twitter {
-  top: 19%;
-  right: 12%;
-  width: 11%;
-}
-.responsive-slider .slides ul li .slide-body .caption.img-twitter img {
-  max-width: 100%;
-}
-.responsive-slider .slides ul li .slide-body .caption.img-jquery {
-  top: 66%;
-  right: 12%;
-  width: 33%;
-}
-.responsive-slider .slides ul li .slide-body .caption.img-jquery img {
-  max-width: 100%;
-}
 .responsive-slider .slider-control {
   position: absolute;
   font-size: 40px;

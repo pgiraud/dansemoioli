@@ -77,8 +77,8 @@ footer {
 }
 
 h1, h2, h3, .h1, .h2, .h3 {
-    text-shadow: 1px 1px 0 white;
     color: darkgrey;
+    text-shadow: 1px 1px 0 white;
 }
 
 .navbar-header {
@@ -91,13 +91,14 @@ h1, h2, h3, .h1, .h2, .h3 {
 .navbar {
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-bottom: 0;
+    margin-bottom: 4px;
+    border: 0;
     li > a {
         text-shadow: 1px 1px 0 #FFCC00;
     }
 }
 .navbar-header {
-    height: 80px;
+    height: 60px;
     img {
         width: 150px;
     }
@@ -107,25 +108,31 @@ h1, h2, h3, .h1, .h2, .h3 {
 }
 
 @media (min-width: 768px) {
+    .navbar {
+        margin-bottom: 6px;
+    }
     .navbar-header {
-        height: 120px;
+        height: 100px;
         img {
             width: 300px;
         }
     }
     .navbar-nav > li > a {
-        line-height: 80px;
+        line-height: 70px;
         font-size: 16px;
     }
 }
 @media (min-width: 992px) {
+    .navbar {
+        margin-bottom: 8px;
+    }
     .navbar-header {
         img {
             width: 100%;
         }
     }
     .navbar-nav > li > a {
-        line-height: 115px;
+        line-height: 100px;
         font-size: 18px;
     }
 }
@@ -150,4 +157,20 @@ h1, h2, h3, .h1, .h2, .h3 {
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
+}
+
+.responsive-slider .slides ul li .slide-body {
+    h2 {
+        color: orange;
+        text-shadow: 1px 1px 0 white;
+    }
+}
+.responsive-slider .slides ul li .slide-body .caption.img-danses {
+  bottom: 5%;
+  right: 5%;
+  max-width: 190px;
+  width: 20%;
+}
+.responsive-slider .slides ul li .slide-body .caption.img-danses img {
+  max-width: 100%;
 }
