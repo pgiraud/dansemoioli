@@ -2,8 +2,9 @@
 title: Les cours
 layout: default
 ---
+<h2>Le centre</h2>
 
-<h2>Les professeurs</h2>
+<h3>Les professeurs</h3>
 
 <div class="row">
   <div class="col-xs-6 col-sm-5">
@@ -32,28 +33,105 @@ layout: default
   </div>
 </div>
 
-<h2>Visite de l'école</h2>
+<h3>Visite de l'école</h3>
 
 <div class="row">
-  <div class="col-md-6">
-    Venez découvrir votre futur espace de loisirs ...
+  <div class="col-md-12">
+    <p>
+    Venez découvrir votre futur espace de loisirs.
+    </p>
   </div>
 </div>
-<br />
 
 <div class="row">
   <div class="col-xs-12 col-sm-4">
     <img src="/images/accueil.jpg" class="img-responsive center-block" >
-    Solange et Serge vous accueillent dans un cadre exceptionnel, dans lequel vous vous sentirez tout de suite bien.
+    <h4>Le cadre</h4>
+    <p>
+      Solange et Serge vous accueillent dans un cadre exceptionnel, dans lequel vous vous sentirez tout de suite bien.
+    </p>
   </div>
 
   <div class="col-xs-12 col-sm-4">
     <img src="/images/salle1.jpg" class="img-responsive center-block" >
-    Vous serez séduits par deux salles à la "déco" chaleureuse, un hall d'accueil fait pour l'avant et l'après cours et des abords verdoyants.
+    <h4>Les salles</h4>
+    <p>
+      Vous serez séduits par deux salles à la "déco" chaleureuse, un hall d'accueil fait pour l'avant et l'après cours et des abords verdoyants.
+    </p>
   </div>
 
   <div class="col-xs-12 col-sm-4">
     <img src="/images/parking.jpg" class="img-responsive center-block" >
-    Un parking gratuit est aussi à votre disposition.
+    <h4>Parking</h4>
+    <p>
+      Un parking gratuit est aussi à votre disposition.
+    </p>
   </div>
 </div>
+
+<!-- Responsive slider - START -->
+<div class="responsive-slider" data-spy="responsive-slider" data-autoplay="true">
+  <div class="slides" data-group="slides">
+    <ul>
+      <li>
+      <div class="slide-body" data-group="slide">
+        <img src="/images/visite1.jpg">
+      </div>
+      </li>
+      <li>
+      <div class="slide-body" data-group="slide">
+        <img src="/images/visite2.jpg">
+      </div>
+      </li>
+      <li>
+      <div class="slide-body" data-group="slide">
+        <img src="/images/visite3.jpg">
+      </div>
+      </li>
+      <li>
+      <div class="slide-body" data-group="slide">
+        <img src="/images/visite4.jpg">
+      </div>
+      </li>
+      <li>
+      <div class="slide-body" data-group="slide">
+        <img src="/images/visite5.jpg">
+      </div>
+      </li>
+      <li>
+      <div class="slide-body" data-group="slide">
+        <img src="/images/visite6.jpg">
+      </div>
+      </li>
+      <li>
+      <div class="slide-body" data-group="slide">
+        <img src="/images/visite7.jpg">
+      </div>
+      </li>
+    </ul>
+  </div>
+  <a class="slider-control left" href="#" data-jump="prev"><</a>
+  <a class="slider-control right" href="#" data-jump="next">></a>
+  <div class="pages">
+    <a class="page" href="#" data-jump-to="1">1</a>
+    <a class="page" href="#" data-jump-to="2">2</a>
+    <a class="page" href="#" data-jump-to="3">3</a>
+    <a class="page" href="#" data-jump-to="4">4</a>
+    <a class="page" href="#" data-jump-to="5">5</a>
+    <a class="page" href="#" data-jump-to="6">6</a>
+    <a class="page" href="#" data-jump-to="7">7</a>
+  </div>
+</div>
+<br/>
+<br/>
+<script src="/js/jquery.event.move.js"></script>
+<script src="/js/responsive-slider.min.js"></script>
+<script>
+  $( document ).ready( function() {
+    $('.responsive-slider').responsiveSlider({
+      autoplay: true,
+      interval: 5000,
+      transitionTime: 300
+    });
+  });
+</script>
