@@ -302,7 +302,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #333333;
+  color: #535353;
   background-color: #f5f5f5;
 }
 
@@ -353,7 +353,7 @@ img {
   padding: 4px;
   line-height: 1.428571429;
   background-color: #f5f5f5;
-  border: 1px solid #dddddd;
+  border: 1px solid #ffcc00;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out;
@@ -478,7 +478,7 @@ h6,
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
+  color: #fc9303;
 }
 
 h1 small,
@@ -1810,7 +1810,7 @@ legend {
   margin-bottom: 20px;
   font-size: 21px;
   line-height: inherit;
-  color: #333333;
+  color: #535353;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -2115,7 +2115,7 @@ textarea.input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #737373;
+  color: #939393;
 }
 
 @media (min-width: 768px) {
@@ -4932,16 +4932,11 @@ td.visible-print {
 /*@navbar-default-bg: #FC9303;*/
 
 .navbar {
-  background-image: -webkit-gradient(linear, left 0%, left 90%, from(#ed6802), to(#e04b00));
-  background-image: -webkit-linear-gradient(top, #ed6802 0%, #e04b00 90%);
-  background-image: -moz-linear-gradient(top, #ed6802 0%, #e04b00 90%);
-  background-image: linear-gradient(to bottom, #ed6802 0%, #e04b00 90%);
   background-image: -webkit-gradient(linear, left 0%, left 90%, from(#ffcc00), to(#fc9303));
   background-image: -webkit-linear-gradient(top, #ffcc00 0%, #fc9303 90%);
   background-image: -moz-linear-gradient(top, #ffcc00 0%, #fc9303 90%);
   background-image: linear-gradient(to bottom, #ffcc00 0%, #fc9303 90%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffed6802', endColorstr='#ffe04b00', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffcc00', endColorstr='#fffc9303', GradientType=0);
 }
 
@@ -4959,8 +4954,7 @@ h3,
 .h1,
 .h2,
 .h3 {
-  color: darkgrey;
-  text-shadow: 1px 1px 0 white;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 .navbar-brand {
