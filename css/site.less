@@ -17,7 +17,7 @@
 
 // Components
 @import "component-animations.less";
-/*@import "glyphicons.less";*/
+@import "glyphicons.less";
 /*@import "dropdowns.less";*/
 /*@import "button-groups.less";*/
 /*@import "input-groups.less";*/
@@ -30,7 +30,7 @@
 /*@import "badges.less";*/
 /*@import "jumbotron.less";*/
 /*@import "thumbnails.less";*/
-/*@import "alerts.less";*/
+@import "alerts.less";
 /*@import "progress-bars.less";*/
 /*@import "media.less";*/
 /*@import "list-group.less";*/
@@ -47,6 +47,9 @@
 // Utility classes
 @import "utilities.less";
 @import "responsive-utilities.less";
+
+@fa-font-path: "../bootstrap-3.0.2/fonts";
+@icon-font-path: "../bootstrap-3.0.2/fonts/";
 
 @link-color: #DA5102;
 @link-hover-color: #9A3800;
@@ -173,4 +176,9 @@ h1, h2, h3, .h1, .h2, .h3 {
 }
 .responsive-slider .slides ul li .slide-body .caption.img-danses img {
   max-width: 100%;
+}
+
+.table.middle th,
+.table.middle td {
+    vertical-align: middle;
 }
