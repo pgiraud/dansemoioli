@@ -5,7 +5,7 @@
     <ul>
       <li>
       <div class="slide-body" data-group="slide">
-        <img src="/images/slide-1.jpg">
+        <img src="{{ site.baseurl }}/images/slide-1.jpg">
         <div class="caption header" data-animate="slideAppearRightToLeft" data-delay="500" data-length="300">
           <h2>École de danse</h2>
           <div class="caption sub" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300">Chambéry - Savoie</div>
@@ -14,12 +14,12 @@
       </li>
       <li>
       <div class="slide-body" data-group="slide">
-        <img src="/images/slide-2.jpg">
+        <img src="{{ site.baseurl }}/images/slide-2.jpg">
         <div class="caption header" data-animate="slideAppearRightToLeft" data-delay="800" data-length="300">
           <h2>Rock, Salsa, Valse, Tango argentin</h2>
         </div>
         <div class="caption img-danses" data-animate="slideAppearDownToUp" data-delay="200">
-          <img src="/images/danses_shadow.png">
+          <img src="{{ site.baseurl }}/images/danses_shadow.png">
         </div>
       </div>
       </li>
@@ -32,8 +32,8 @@
     <a class="page" href="#" data-jump-to="2">2</a>
   </div>
 </div>
-<script src="js/jquery.event.move.js"></script>
-<script src="js/responsive-slider.min.js"></script>
+<script src="{{ site.baseurl }}/js/jquery.event.move.js"></script>
+<script src="{{ site.baseurl }}/js/responsive-slider.min.js"></script>
 <script>
   $( document ).ready( function() {
     $('.responsive-slider').responsiveSlider({

@@ -2,7 +2,7 @@ name: "Centre de danse Moioli"
 description: ""
 
 
-url: "www.dansemoioli.com"
+baseurl: "http://pgiraud.github.io/dansemoioli"
 
 
 
