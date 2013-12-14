@@ -5097,3 +5097,28 @@ h3,
 .table.middle td {
   vertical-align: middle;
 }
+
+.links .btn-default:hover {
+  /*border-color: @color3;*/
+
+  /*background-color: @color2;*/
+
+}
+
+.links a .glyphicon {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.links a:hover .glyphicon {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.links a,
+.links .glyphicon {
+  -webkit-transition: all 0.2s ease-out;
+     -moz-transition: all 0.2s ease-out;
+       -o-transition: all 0.2s ease-out;
+          transition: all 0.2s ease-out;
+}
