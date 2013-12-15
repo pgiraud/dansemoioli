@@ -18,7 +18,7 @@
 // Components
 @import "component-animations.less";
 @import "glyphicons.less";
-/*@import "dropdowns.less";*/
+@import "dropdowns.less";
 /*@import "button-groups.less";*/
 /*@import "input-groups.less";*/
 @import "navs.less";
@@ -64,9 +64,8 @@
 @navbar-default-color: @link-color;
 @navbar-default-link-color: @link-color;
 @navbar-default-link-hover-color: @link-hover-color;
-@navbar-default-toggle-hover-bg: @link-hover-color;
-@navbar-default-toggle-icon-bar-bg: @link-color;
-@navbar-default-toggle-border-color: @link-color;
+@navbar-default-toggle-hover-bg: transparent;
+@navbar-default-toggle-border-color: transparent;
 
 @body-bg: #f5f5f5;
 
@@ -109,8 +108,18 @@ h1, h2, h3, .h1, .h2, .h3 {
     padding-bottom: 5px;
     margin-bottom: 4px;
     border: 0;
+    .navbar-toggle,
     li > a {
         text-shadow: 1px 1px 0 #FFCC00;
+    }
+    .navbar-toggle {
+        color: @link-color;
+    }
+    .navbar-toggle:hover {
+        color: @link-hover-color;
+    }
+    .caret {
+        border-top-color: @link-color;
     }
 }
 
