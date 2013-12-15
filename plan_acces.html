@@ -1,0 +1,61 @@
+---
+title: Plan d'accès
+layout: default
+---
+
+<h2>Comment venir à l'école ?</h2>
+<div class="row">
+<div id="map" style="height: 450px" class="col-xs-12"></div>
+</div>
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAAmXDe9AzWFk5yjTdTt7mVeBTiR6Wmdp276RPjkFO6BNTHTv9p8RRODSFIWyxlJ_fiINLgSpMcJhiT8g"
+      type="text/javascript"></script>
+    <script type="text/javascript">
+
+    //<![CDATA[
+    function createMarker(point,html) {
+        var marker = new GMarker(point);
+        GEvent.addListener(marker, "click", function() {
+          marker.openInfoWindowHtml(html);
+        });
+        return marker;
+      }
+
+
+    if (GBrowserIsCompatible()) {
+        var map = new GMap2(document.getElementById("map"));
+
+        map.setCenter(new GLatLng(45.591623, 5.882835), 12);
+
+        map.addControl(new GSmallMapControl());
+//        map.addControl(new GMapTypeControl());
+
+
+        var point = new GLatLng(45.591623,5.882835);
+        var marker = createMarker(point,'<div style="width:160px;height:100px;"><img src="{{ site.baseurl }}/images/logo.png" alt="logo danseurs de swing qui dansent en Savoie 73" width="130" /><br />Solange et Serge MOIOLI<br />201 rue Charles Cabaud<br />73290 La Motte Servolex </div>')
+        map.addOverlay(marker);
+        GEvent.trigger(marker, "click");
+    }
+
+    document.body.onunload = GUnload;
+
+    //]]>
+</script>
+<h4>Vous arrivez de Chambéry par la VRU ou de Aix-les-Bains par la VRU :</h4>
+<ul>
+  <li> Prendre sortie La Motte Servolex n°14,</li>
+  <li> Passer devant les hôtels FORMULE 1 et CAMPANILE,</li>
+  <li> Au 1er rond point, aller tout droit,</li>
+  <li> Au 2ème rond point, prendre à gauche direction Chambéry-Cognin,</li>
+  <li> Puis prendre 1ère route à gauche.</li>
+</ul>
+
+<h4>Vous arrivez de Bissy ou Cognin par la nationale :</h4>
+<ul><li>Après le panneau d'entrée d'agglomération La Motte Servolex, prendre la 2ème route à droite.</li></ul>
+
+
+<h4>Vous souhaitez venir en bus :</h4>
+<ul><li>Prendre la ligne n°3 : Arrêt PINGON.</li></ul>
+
+<em>* L'Ecole de Danse se trouve à côté du restaurant "La Queue de Cochon".</em>
+
+
