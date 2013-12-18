@@ -211,26 +211,27 @@ h1, h2, h3, .h1, .h2, .h3 {
     vertical-align: middle;
 }
 
-.links {
-    .btn-default:hover {
-        /*border-color: @color3;*/
-        /*background-color: @color2;*/
-    }
-    a .glyphicon {
-        opacity: 0.5;
-        filter: alpha(opacity=50);
-    }
-    a:hover .glyphicon {
-        opacity: 1;
-        filter: alpha(opacity=100);
-    }
-
-    a,
-    .glyphicon {
-        -webkit-transition: all 0.2s ease-out;
-        -moz-transition: all 0.2s ease-out;
-        -o-transition: all 0.2s ease-out;
-        transition: all 0.2s ease-out;
-    }
+.btn:hover {
+    /*border-color: @color3;*/
+    /*background-color: @color2;*/
+}
+a.btn .glyphicon,
+a.btn .fa {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+a.btn:hover .glyphicon,
+a.btn:hover .fa {
+    opacity: 1;
+    filter: alpha(opacity=100);
 }
 
+a,
+.btn,
+.glyphicon,
+.fa {
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}

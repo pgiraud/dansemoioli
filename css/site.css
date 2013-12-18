@@ -5258,25 +5258,29 @@ h3,
   vertical-align: middle;
 }
 
-.links .btn-default:hover {
+.btn:hover {
   /*border-color: @color3;*/
 
   /*background-color: @color2;*/
 
 }
 
-.links a .glyphicon {
+a.btn .glyphicon,
+a.btn .fa {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
 
-.links a:hover .glyphicon {
+a.btn:hover .glyphicon,
+a.btn:hover .fa {
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
-.links a,
-.links .glyphicon {
+a,
+.btn,
+.glyphicon,
+.fa {
   -webkit-transition: all 0.2s ease-out;
      -moz-transition: all 0.2s ease-out;
        -o-transition: all 0.2s ease-out;
