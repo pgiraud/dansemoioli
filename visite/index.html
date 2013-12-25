@@ -72,68 +72,63 @@ layout: default
 <h3>Quelques photos</h3>
 
 <!-- Responsive slider - START -->
-<div class="responsive-slider" data-spy="responsive-slider" data-autoplay="true">
-  <div class="slides" data-group="slides">
-    <ul>
-      <li>
-      <div class="slide-body" data-group="slide">
+<div class="iosSliderContainer">
+  <div class = 'iosSlider'>
+    <div class = 'slider'>
+      <div class = 'page'>
         <img src="{{ site.baseurl }}/images/visite1.jpg">
       </div>
-      </li>
-      <li>
-      <div class="slide-body" data-group="slide">
+      <div class = 'page'>
         <img src="{{ site.baseurl }}/images/visite2.jpg">
       </div>
-      </li>
-      <li>
-      <div class="slide-body" data-group="slide">
+      <div class = 'page'>
         <img src="{{ site.baseurl }}/images/visite3.jpg">
       </div>
-      </li>
-      <li>
-      <div class="slide-body" data-group="slide">
+      <div class = 'page'>
         <img src="{{ site.baseurl }}/images/visite4.jpg">
       </div>
-      </li>
-      <li>
-      <div class="slide-body" data-group="slide">
+      <div class = 'page'>
         <img src="{{ site.baseurl }}/images/visite5.jpg">
       </div>
-      </li>
-      <li>
-      <div class="slide-body" data-group="slide">
+      <div class = 'page'>
         <img src="{{ site.baseurl }}/images/visite6.jpg">
       </div>
-      </li>
-      <li>
-      <div class="slide-body" data-group="slide">
+      <div class = 'page'>
         <img src="{{ site.baseurl }}/images/visite7.jpg">
       </div>
-      </li>
-    </ul>
+    </div>
   </div>
-  <a class="slider-control left" href="#" data-jump="prev"><</a>
-  <a class="slider-control right" href="#" data-jump="next">></a>
+  <a class="slider-control prev" ><</a>
+  <a class="slider-control next">></a>
   <div class="pages">
-    <a class="page" href="#" data-jump-to="1">1</a>
-    <a class="page" href="#" data-jump-to="2">2</a>
-    <a class="page" href="#" data-jump-to="3">3</a>
-    <a class="page" href="#" data-jump-to="4">4</a>
-    <a class="page" href="#" data-jump-to="5">5</a>
-    <a class="page" href="#" data-jump-to="6">6</a>
-    <a class="page" href="#" data-jump-to="7">7</a>
+    <a class="page active">1</a>
+    <a class="page">2</a>
+    <a class="page">3</a>
+    <a class="page">4</a>
+    <a class="page">5</a>
+    <a class="page">6</a>
+    <a class="page">7</a>
   </div>
 </div>
-<br/>
-<br/>
-<script src="{{ site.baseurl }}/js/jquery.event.move.js"></script>
-<script src="{{ site.baseurl }}/js/responsive-slider.min.js"></script>
-<script>
-  $( document ).ready( function() {
-    $('.responsive-slider').responsiveSlider({
-      autoplay: true,
-      interval: 5000,
-      transitionTime: 300
+<script src="{{ site.baseurl }}/js/jquery.iosslider.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.iosSlider').iosSlider({
+      snapToChildren: true,
+      desktopClickDrag: true,
+      keyboardControls: true,
+      navNextSelector: $('.next'),
+      navPrevSelector: $('.prev'),
+      navSlideSelector: $('.pages .page'),
+      onSlideChange: slideChange,
+      infiniteSlider: true
     });
   });
+
+  function slideChange(args) {
+    $('.pages .page').removeClass('active');
+    $('.pages .page:eq(' + (args.currentSlideNumber - 1) + ')').addClass('active');
+  }
 </script>
+<br/>
+<br/>
