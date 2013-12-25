@@ -1,45 +1,41 @@
-
 <!-- Responsive slider - START -->
 <div class="iosSliderContainer home">
   <div class = 'iosSlider'>
     <div class = 'slider'>
-      <div class = 'page'>
-        <img src="{{ site.baseurl }}/images/slide-1.jpg" />
-      </div>
-      <div class = 'page'>
-        <img src="{{ site.baseurl }}/images/slide-2.jpg" />
-      </div>
-      <div class = 'page'>
-        <img src="{{ site.baseurl }}/images/slide-3.jpg" />
-      </div>
-      <div class = 'page'>
-        <img src="{{ site.baseurl }}/images/slide-4.jpg" />
-      </div>
     </div>
 
-    <a class="slider-control prev" href="#" data-jump="prev"><</a>
-    <a class="slider-control next" href="#" data-jump="next">></a>
-    <!--<div class = 'prevContainer'>-->
-      <!--<div class = 'prev'><</div>-->
-    <!--</div>-->
+    <a class="slider-control prev" >&lt;</a>
+    <a class="slider-control next" >&gt;</a>
 
-    <!--<div class = 'nextContainer'>-->
-      <!--<div class = 'next'>></div>-->
-    <!--</div>-->
     <div class="pages">
-      <a class="page active" href="#" data-jump-to="1">1</a>
-      <a class="page" href="#" data-jump-to="2">2</a>
-      <a class="page" href="#" data-jump-to="3">3</a>
-      <a class="page" href="#" data-jump-to="4">4</a>
     </div>
   </div>
 </div>
 
-<style>
-</style>
 <script src="{{ site.baseurl }}/js/jquery.iosslider.min.js"></script>
 <script type="text/javascript">
+  var baseurl = "{{ site.baseurl }}";
   $(document).ready(function() {
+    var doc = $(document);
+    var size = (Math.min(doc.width(), doc.height()) <= 768) ?
+      '-small' : '';
+
+    for (var i = 0; i < 4; i++) {
+      var image = $('<img />', {
+        src: baseurl + '/images/slide-' + (i + 1) + size + '.jpg'
+      });
+      var container = $('<div/>', {
+        'class': 'page'
+      });
+      container.append(image);
+      $('.iosSlider .slider').append(container);
+      $('.iosSlider .pages').append($('<a />', {
+        'class': 'page'
+      }));
+    }
+
+    $('.pages .page').first().addClass('active');
+
     $('.iosSlider').iosSlider({
       snapToChildren: true,
       desktopClickDrag: true,
