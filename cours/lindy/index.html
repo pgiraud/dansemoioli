@@ -9,26 +9,13 @@ layout: default
     <img src="{{ site.baseurl }}/images/lindy.gif" class="img-responsive center-block">
   </div>
   <div class="col-sm-8">
-    <p>
-      La Rolls des danses swing
-    </p>
-    <ul>
-      <li>
-      Pour les danseurs de Rock avertis, créativité et humour garantie.
-      </li>
-      <li>
-      Sur des musiques jazz, des danses folles qui allient souplesse et limpidité.
-      </li>
-      <li>
-      Le Balboa : vous pourrez danser sur des rythmes très rapides.
-      Ne dit-on pas de cette danse :
-      "Des jambes qui tricotent sous un corps au repos" ?
-      </li>
-    </ul>
-    </p>
+    <h4 style="color: #535353;"><strong>
+    &laquo;&nbsp;Pour les passionés du Swing&nbsp;&raquo;
+  </strong></h4>
   </div>
 </div>
 <hr>
+<h3>Cours débutants</h3>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <table class="table table-bordered middle" align="center">
@@ -44,27 +31,20 @@ layout: default
           <th scope="col" class="text-center">A partir du</th>
         </tr>
         <tr>
-          <th scope="row">Lundi</th>
-          <td class="text-center">19h à 20h</td>
-          <td class="text-center">16 septembre</td>
-        </tr>
-        <tr>
           <th scope="row">Mardi</th>
-          <td class="text-center">18h à 19h</td>
+          <td class="text-center">21h à 22h</td>
           <td class="text-center">complet</td>
-        </tr>
-        <tr>
-          <th scope="row">Jeudi</th>
-          <td class="text-center">20h à 21h</td>
-          <td class="text-center">complet</td>
-        </tr>
-        <tr>
-          <th scope="row">Samedi</th>
-          <td class="text-center">10h à 11h</td>
-          <td class="text-center">21 septembre</td>
         </tr>
       </tbody>
     </table>
+  </div>
+</div>
+{% include tarifs.html %}
+<hr>
+<h3>Cours perfectionnement</h3>
+<div class="row">
+  <div class="col-xs-12">
+    {% include perfectionnement.html %}
   </div>
 </div>
 {% include tarifs.html %}

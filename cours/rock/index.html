@@ -9,23 +9,15 @@ layout: default
     <img src="{{ site.baseurl }}/images/rock.gif" class="img-responsive center-block">
   </div>
   <div class="col-sm-8">
-    <p>
-    Les danses que vous avez besoin de connaitre.
-    </p>
-    <p>
-    <ul>
-      Idéales pour :
-      <li>Découvrir le plaisir de danser à deux,</li>
-      <li>Apprivoiser la musique et les rythmes,</li>
-      <li>Inviter une danseuse avec assurance,</li>
-      <li>Accepter une invitation en toute confiance.</li>
-    </ul>
-    </p>
+    <h4 style="color: #535353;"><strong>
+    &laquo;&nbsp;Les danses que vous avez besoin de connaitre&nbsp;&raquo;
+  </strong></h4>
   </div>
 </div>
 <hr>
+<h3>Cours débutants</h3>
 <div class="row">
-  <div class="col-md-6 col-md-offset-3">
+  <div class="col-md-6">
     <table class="table table-bordered middle" align="center">
       <tbody>
         <caption>
@@ -60,6 +52,17 @@ layout: default
         </tr>
       </tbody>
     </table>
+  </div>
+</div>
+{% include tarifs.html %}
+<hr>
+<h3>Cours perfectionnement</h3>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+    <strong>6 niveaux de cours du lundi au vendredi.</strong>
+    </p>
+    {% include perfectionnement.html %}
   </div>
 </div>
 {% include tarifs.html %}
