@@ -445,9 +445,16 @@ table th {
 @table-border-color: grey;
 
 a[data-role=cours] {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
+    display: block;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
 }
 a[data-role=cours]:hover {
     text-decoration: none;
+    background-color: #ccc;
+    border: 1px solid #bbb;
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 5px 15px rgba(0,0,0,.25);
 }
