@@ -44,11 +44,11 @@
           </a>
         </div>
         <div class="col-sm-4 text-center col-sm-offset-2">
-          <a href="{{ site.baseurl }}/cours/lindy">
+          <a href="{{ site.baseurl }}/cours/lindy" data-cours="lindy" data-role="cours">
             <h4>
               Lindy Hop, Balboa
             </h4>
-            <img src="{{ site.baseurl }}/images/lindy.gif" class="logo">
+            <img src="{{ site.baseurl }}/images/lindy.png" class="logo">
           </a>
         </div>
         <div class="col-sm-4 text-center">
@@ -72,3 +72,20 @@
     </div>
   </div>
   {% include footer.html %}
+
+  <script>
+    $('a[data-role=cours]').hover(function() {
+      $(this).css('opacity', 1);
+      var cours = $(this).attr('data-cours');
+      $(this).children('img.logo').each(function() {
+        $(this).attr('src', "{{ site.baseurl}}/images/" + cours + "_hover.png");
+      });
+    });
+    $('a[data-role=cours]').mouseout(function() {
+      $(this).css('opacity', .5);
+      var cours = $(this).attr('data-cours');
+      $(this).children('img.logo').each(function() {
+        $(this).attr('src', "{{ site.baseurl}}/images/" + cours + ".png");
+      });
+    });
+  </script>
