@@ -15,14 +15,30 @@
 <script src="{{ site.baseurl }}/js/jquery.iosslider.min.js"></script>
 <script type="text/javascript">
   var baseurl = "{{ site.baseurl }}";
+  /**
+   * Randomize array element order in-place.
+   * Using Fisher-Yates shuffle algorithm.
+   */
+  function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+    return array;
+  }
+
   $(document).ready(function() {
     var doc = $(document);
     var size = (Math.min(doc.width(), doc.height()) <= 768) ?
       '-small' : '';
 
-    for (var i = 0; i < 4; i++) {
+    var files = shuffleArray([1, 2, 3, 4]);
+    for (var i = 0; i < files.length; i++) {
+      var file = files[i];
       var image = $('<img />', {
-        src: baseurl + '/images/slide-' + (i + 1) + size + '.jpg'
+        src: baseurl + '/images/slide-' + file + size + '.jpg'
       });
       var container = $('<div/>', {
         'class': 'page'
@@ -45,7 +61,8 @@
       navPrevSelector: $('.prev'),
       navSlideSelector: $('.pages .page'),
       onSlideChange: slideChange,
-      infiniteSlider: true
+      infiniteSlider: true,
+      autoSlideTimer: 2500
     });
   });
 
