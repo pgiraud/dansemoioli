@@ -9,6 +9,7 @@
     </a>
   </div>
 </div>
+{% if page.categories contains "home" or page.categories contains "latino" %}
 <div class="row">
   <div class="col-xs-12">
     <a class="alert alert-actu" href="{{ site.baseurl }}/cours/kizomba">
@@ -19,6 +20,8 @@
     </a>
   </div>
 </div>
+{% endif %}
+{% if page.categories contains "home" or page.categories contains "tango" %}
 <div class="row">
   <div  class="col-xs-12">
     <a class="alert alert-actu" href="{{ site.baseurl }}/stage/stage_technique_tango_argentin">
@@ -29,3 +32,4 @@
     </a>
   </div>
 </div>
+{% endif %}
