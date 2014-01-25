@@ -34,16 +34,35 @@
     var size = (Math.min(doc.width(), doc.height()) <= 768) ?
       '-small' : '';
 
-    var files = shuffleArray([1, 2, 3, 4]);
+    var files = shuffleArray([
+      [1, "right", "Deux grandes salles", "à votre disposition"],
+      [2, "left", "Milongas", "Pour les passionnés de tango"],
+      [3, "right", "Exigence et savoir-faire", "Notre philosophie"],
+      [4, "left", "Partage et convivialité", "Pour le plaisir de tous"]
+    ]);
     for (var i = 0; i < files.length; i++) {
-      var file = files[i];
+      var file = files[i][0];
       var image = $('<img />', {
         src: baseurl + '/images/slide-' + file + size + '.jpg'
       });
       var container = $('<div/>', {
-        'class': 'page'
+        'class': 'item'
       });
       container.append(image);
+
+      if (files[i][2]) {
+        container.append($('<div />', {
+            "class": "text1 " + files[i][1],
+            html: files[i][2]
+        }));
+      }
+      if (files[i][3]) {
+        container.append($('<div />', {
+            "class": "text2 " + files[i][1],
+            html: files[i][3]
+        }));
+      }
+
       $('.iosSlider .slider').append(container);
       $('.iosSlider .pages').append($('<a />', {
         'class': 'page'
@@ -62,8 +81,32 @@
       navSlideSelector: $('.pages .page'),
       onSlideChange: slideChange,
       infiniteSlider: true,
-      autoSlideTimer: 2500
+      autoSlideTimer: 2500,
+      onSlideComplete: slideComplete,
+      onSliderLoaded: sliderLoaded,
+      onSlideChange: slideChange
     });
+    function slideChange(args) {
+      $(args.sliderObject).find('.text1, .text2').removeClass('show');
+    }
+    function slideComplete(args) {
+      if(!args.slideChanged) return false;
+      showText(args);
+    }
+    function sliderLoaded(args) {
+      showText(args);
+      slideChange(args);
+    }
+    function showText(args) {
+      $(args.currentSlideObject).find('.text1').delay(10).queue(function(next) {
+        $(this).addClass('show');
+        next();
+      });
+      $(args.currentSlideObject).find('.text2').delay(400).queue(function(next) {
+        $(this).addClass('show');
+        next();
+      });
+    }
   });
 
   function slideChange(args) {
