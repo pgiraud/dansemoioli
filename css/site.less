@@ -452,25 +452,25 @@ h6,
 .iosSlider .slider .item .text2.right {
     right: 0;
 }
-.iosSlider .slider .item .text1.right.show {
+.iosSlider .slider .item .text1.right.display {
     right: 50px;
 }
-.iosSlider .slider .item .text2.right.show {
+.iosSlider .slider .item .text2.right.display {
     right: 20px;
 }
 .iosSlider .slider .item .text1.left,
 .iosSlider .slider .item .text2.left {
     left: 0;
 }
-.iosSlider .slider .item .text1.left.show {
+.iosSlider .slider .item .text1.left.display {
     left: 20px;
 }
-.iosSlider .slider .item .text2.left.show {
+.iosSlider .slider .item .text2.left.display {
     left: 50px;
 }
 
-.iosSlider .slider .item .text1.show,
-.iosSlider .slider .item .text2.show {
+.iosSlider .slider .item .text1.display,
+.iosSlider .slider .item .text2.display {
     opacity: 0.8;
     filter: alpha(opacity=80);
 }
@@ -492,10 +492,28 @@ h6,
 
 @media screen and (max-width: 500px) {
     .iosSlider .slider .item .text1 {
-        display: none;
+        top: 5px;
     }
     .iosSlider .slider .item .text2 {
-        display: none;
+        top: 34px;
+    }
+    .iosSlider .slider .item .text1 {
+        font-size: 125%;
+    }
+    .iosSlider .slider .item .text2 {
+        font-size: 90%;
+    }
+    .iosSlider .slider .item .text1.right.display {
+        right: 25px;
+    }
+    .iosSlider .slider .item .text2.right.display {
+        right: 10px;
+    }
+    .iosSlider .slider .item .text1.left.display {
+        left: 10px;
+    }
+    .iosSlider .slider .item .text2.left.display {
+        left: 25px;
     }
 }
 

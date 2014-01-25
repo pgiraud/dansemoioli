@@ -86,9 +86,6 @@
       onSliderLoaded: sliderLoaded,
       onSlideChange: slideChange
     });
-    function slideChange(args) {
-      $(args.sliderObject).find('.text1, .text2').removeClass('show');
-    }
     function slideComplete(args) {
       if(!args.slideChanged) return false;
       showText(args);
@@ -98,12 +95,13 @@
       slideChange(args);
     }
     function showText(args) {
+      $(args.sliderObject).find('.text1, .text2').removeClass('display');
       $(args.currentSlideObject).find('.text1').delay(10).queue(function(next) {
-        $(this).addClass('show');
+        $(this).addClass('display');
         next();
       });
       $(args.currentSlideObject).find('.text2').delay(400).queue(function(next) {
-        $(this).addClass('show');
+        $(this).addClass('display');
         next();
       });
     }
