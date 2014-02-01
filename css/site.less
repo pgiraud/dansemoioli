@@ -120,8 +120,8 @@ body {
 
 footer {
     margin-top: 20px;
-    background: @color2;
-    color: #535353;
+    /*background: @color3;*/
+    #gradient.vertical(@color2; @color3; 0%; 95%);
     /*font-size: 12px;*/
     padding-top: 20px;
     padding-bottom: 20px;
@@ -131,6 +131,9 @@ footer {
 
     h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
         color: #535353;
+    }
+    a {
+        color: @link-hover-color;
     }
 }
 
