@@ -1,5 +1,6 @@
 <!-- Responsive slider - START -->
-<div class="iosSliderContainer home">
+<div class="fluidHeight">
+<div class="sliderContainer home">
   <div class = 'iosSlider'>
     <div class = 'slider'>
     </div>
@@ -10,6 +11,7 @@
     <div class="pages">
     </div>
   </div>
+</div>
 </div>
 
 <script src="{{ site.baseurl }}/js/jquery.iosslider.min.js"></script>
@@ -45,25 +47,29 @@
       var image = $('<img />', {
         src: baseurl + '/images/slide-' + file + size + '.jpg'
       });
-      var container = $('<div/>', {
+      var item = $('<div/>', {
         'class': 'item'
       });
-      container.append(image);
+      var inner = $('<div/>', {
+        'class': 'inner'
+      });
+      item.append(inner);
+      inner.append(image);
 
       if (files[i][2]) {
-        container.append($('<div />', {
+        item.append($('<div />', {
             "class": "text1 " + files[i][1],
             html: files[i][2]
         }));
       }
       if (files[i][3]) {
-        container.append($('<div />', {
+        item.append($('<div />', {
             "class": "text2 " + files[i][1],
             html: files[i][3]
         }));
       }
 
-      $('.iosSlider .slider').append(container);
+      $('.iosSlider .slider').append(item);
       $('.iosSlider .pages').append($('<a />', {
         'class': 'page'
       }));
@@ -81,10 +87,12 @@
       navSlideSelector: $('.pages .page'),
       onSlideChange: slideChange,
       infiniteSlider: true,
-      autoSlideTimer: 2500,
+      autoSlideTimer: 4000,
       onSlideComplete: slideComplete,
       onSliderLoaded: sliderLoaded,
-      onSlideChange: slideChange
+      onSlideChange: slideChange,
+      snapSlideCenter: true,
+      autoSlideHoverPause: false
     });
     function slideComplete(args) {
       if(!args.slideChanged) return false;
@@ -96,11 +104,11 @@
     }
     function showText(args) {
       $(args.sliderObject).find('.text1, .text2').removeClass('display');
-      $(args.currentSlideObject).find('.text1').delay(10).queue(function(next) {
+      $(args.currentSlideObject).find('.text1').delay(1200).queue(function(next) {
         $(this).addClass('display');
         next();
       });
-      $(args.currentSlideObject).find('.text2').delay(400).queue(function(next) {
+      $(args.currentSlideObject).find('.text2').delay(1800).queue(function(next) {
         $(this).addClass('display');
         next();
       });
