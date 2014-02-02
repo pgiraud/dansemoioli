@@ -110,14 +110,6 @@ body {
     z-index: 2;
 }
 
-@media (min-width: 768px) {
-    .home .navbar {
-        position: absolute;
-        width: 100%;
-        background: rgba(249, 182, 0, 0.9);
-    }
-}
-
 footer {
     margin-top: 20px;
     /*background: @color3;*/
@@ -217,8 +209,8 @@ h1, h2, h3, .h1, .h2, .h3 {
     .navbar {
         margin-bottom: 6px;
     }
-    .home .navbar-header img {
-        width: 85px;
+    .home .navbar {
+        margin-bottom: 0;
     }
     .navbar-header {
         img {
@@ -227,18 +219,15 @@ h1, h2, h3, .h1, .h2, .h3 {
     }
     .navbar-nav > li > a {
         line-height: 70px;
-font-size: 16px;
+        font-size: 16px;
     }
-    .home .navbar-nav > li > a{
-        line-height: 35px;
-    }
+    /*.home .navbar-nav > li > a{*/
+        /*line-height: 35px;*/
+    /*}*/
 }
 @media (min-width: 992px) {
     .navbar {
         margin-bottom: 8px;
-    }
-    .home .navbar-header img {
-        width: 100px;
     }
     .navbar-header {
         img {
@@ -248,9 +237,6 @@ font-size: 16px;
     .navbar-nav > li > a {
         line-height: 100px;
         font-size: 18px;
-    }
-    .home .navbar-nav > li > a{
-        line-height: 50px;
     }
 }
 
