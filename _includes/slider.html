@@ -57,13 +57,13 @@
       inner.append(image);
 
       if (files[i][2]) {
-        item.append($('<div />', {
+        inner.append($('<div />', {
             "class": "text1 " + files[i][1],
             html: files[i][2]
         }));
       }
       if (files[i][3]) {
-        item.append($('<div />', {
+        inner.append($('<div />', {
             "class": "text2 " + files[i][1],
             html: files[i][3]
         }));
@@ -108,7 +108,7 @@
         $(this).addClass('display');
         next();
       });
-      $(args.currentSlideObject).find('.text2').delay(1800).queue(function(next) {
+      $(args.currentSlideObject).find('.text2').delay(1400).queue(function(next) {
         $(this).addClass('display');
         next();
       });
