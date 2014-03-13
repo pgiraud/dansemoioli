@@ -628,14 +628,16 @@ table th {
 
 a[data-role=cours] {
     display: block;
-    border-radius: 4px;
+    border-radius: 20px;
     padding: 4px;
-    background-color: #ddd;
-    border: 1px solid #ccc;
+    /*background-color: #ddd;*/
+    #gradient.vertical(#efefef; #ddd; 0%; 90%);
+    border: 1px solid #aaa;
     margin-top: 10px;
     margin-bottom: 10px;
 
     h1, h2, h3, .h1, .h2, .h3 {
+        color: @link-color;
         border-bottom: 0;
     }
 
