@@ -1,4 +1,5 @@
 <h2>Actualités</h2>
+<!--
 <div class="row">
   <div  class="col-xs-12">
     <a class="alert alert-actu" href="">
@@ -9,6 +10,8 @@
     </a>
   </div>
 </div>
+-->
+<!--
 {% if page.categories contains "home" or page.categories contains "latino" %}
 <div class="row">
   <div class="col-xs-12">
@@ -21,13 +24,51 @@
   </div>
 </div>
 {% endif %}
+-->
 {% if page.categories contains "home" or page.categories contains "tango" %}
 <div class="row">
   <div  class="col-xs-12">
     <a class="alert alert-actu" href="{{ site.baseurl }}/stage/stage_technique_tango_argentin">
       <h5><span class="fa fa-bullhorn"></span> Stage de technique</h5>
       <h4><strong>Tango argentin</strong></h4>
-      <p>La conduite et la réactivité du couple</p>
+      <p>Les tours avec entrées</p>
+      <div class="clearfix"></div>
+    </a>
+  </div>
+</div>
+{% endif %}
+{% if page.categories contains "home" or page.categories contains "rock" %}
+<div class="row">
+  <div  class="col-xs-12">
+    <a class="alert alert-actu" href="{{ site.baseurl }}/stage/stage_quick_step_juin_2014">
+      <h5><span class="fa fa-bullhorn"></span> Stage</h5>
+      <h4><strong>Quick Step débutant</strong></h4>
+      <p>Juin 2014</p>
+      <div class="clearfix"></div>
+    </a>
+  </div>
+</div>
+{% endif %}
+{% if page.categories contains "home" or page.categories contains "rock" or page.categories contains "latino" %}
+<div class="row">
+  <div  class="col-xs-12">
+    <a class="alert alert-actu" href="{{ site.baseurl }}/stage/stage_juin_2014">
+      <h5><span class="fa fa-bullhorn"></span> Stage</h5>
+      <h4><strong>Kizomba - Lindy hop - Bachata</strong></h4>
+      <p>Juin 2014</p>
+      <div class="clearfix"></div>
+    </a>
+  </div>
+</div>
+{% endif %}
+{% if page.categories contains "home" or page.categories contains "rock" or page.categories contains "latino" %}
+<div class="row">
+  <div  class="col-xs-12">
+    <a class="alert alert-actu" href="{{ site.baseurl }}/stage/stage_juillet_2014">
+      <h5><span class="fa fa-bullhorn"></span> Stage</h5>
+      <h4><strong>1er grand stage de juillet</strong></h4>
+      <p>Tango - Rock - Salsa</p>
+      <p>Juillet 2014</p>
       <div class="clearfix"></div>
     </a>
   </div>
