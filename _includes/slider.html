@@ -87,7 +87,7 @@
       navSlideSelector: $('.pages .page'),
       onSlideChange: slideChange,
       infiniteSlider: true,
-      autoSlideTimer: 4000,
+      autoSlideTimer: 5000,
       onSlideComplete: slideComplete,
       onSliderLoaded: sliderLoaded,
       onSlideChange: slideChange,
@@ -104,11 +104,11 @@
     }
     function showText(args) {
       $(args.sliderObject).find('.text1, .text2').removeClass('display');
-      $(args.currentSlideObject).find('.text1').delay(1200).queue(function(next) {
+      $(args.currentSlideObject).find('.text1').delay(1600).queue(function(next) {
         $(this).addClass('display');
         next();
       });
-      $(args.currentSlideObject).find('.text2').delay(1400).queue(function(next) {
+      $(args.currentSlideObject).find('.text2').delay(2800).queue(function(next) {
         $(this).addClass('display');
         next();
       });
