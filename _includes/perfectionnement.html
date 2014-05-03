@@ -1,12 +1,99 @@
+<hr>
+<h3>Cours perfectionnement</h3>
 <div class="row">
-  <div class="col-xs-12">
-    <p>
-    Vous savez déjà danser ?<br>
-    <strong>{{ include.niveaux }} niveaux de cours</strong> perfectionnement vous sont aussi proposés tout au long de la semaine.
-    </p>
-    <p>
-    Remplissez ce <a href="https://docs.google.com/forms/d/16-Rapk5QR5m65fS3ih5t8rS5vMS39R3Cw0-oTDpfxSE/viewform" target="_blank" class="btn btn-default"><span class="fa fa-file-text-o"></span> formulaire</a> pour nous donner plus de renseignements sur vous mêmes.
-    Nous saurons vous orienter vers le cours qu'il vous faut.<br />
-    </p>
+  {% if include.tableau != "kizomba" and include.tableau != "lindy" and include.tableau != "tango" %}
+  Vous savez déjà danser ?<br>
+  <strong>{{ include.niveaux }} niveaux de cours</strong> perfectionnement vous sont aussi proposés tout au long de la semaine.
+  {% endif %}
+</div>
+{% if include.tableau == "tango" %}
+<br>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <table class="table table-bordered middle" align="center">
+      <tbody>
+        <tr>
+          <th scope="col" class="text-center">Niveaux</th>
+          <th scope="col" class="text-center">Jours</th>
+          <th scope="col" class="text-center">Heures</th>
+          <th scope="col" class="text-center">À partir du</th>
+        </tr>
+        <tr>
+          <th scope="row">Niveau 2</th>
+          <td class="text-center">Mercredi</td>
+          <td class="text-center">19h à 20h</td>
+          <td class="text-center">3 sept 2014</td>
+        </tr>
+        <tr>
+          <th scope="row">Niveau 3</th>
+          <td class="text-center">Mardi</td>
+          <td class="text-center">20h à 21h</td>
+          <td class="text-center">2 sept 2014</td>
+        </tr>
+        <tr>
+          <th scope="row">Niveau 4</th>
+          <td class="text-center">Vendredi</td>
+          <td class="text-center">18h à 19h</td>
+          <td class="text-center">5 sept 2014</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+</div>
+{% endif %}
+{% if include.tableau == "lindy" %}
+<br>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <table class="table table-bordered middle" align="center">
+      <tbody>
+        <tr>
+          <th scope="col" class="text-center">Niveaux</th>
+          <th scope="col" class="text-center">Jours</th>
+          <th scope="col" class="text-center">Heures</th>
+          <th scope="col" class="text-center">À partir du</th>
+        </tr>
+        <tr>
+          <th scope="row">Niveau 2</th>
+          <td class="text-center">Mardi</td>
+          <td class="text-center">21h à 22h</td>
+          <td class="text-center">2 sept 2014</td>
+        </tr>
+        <tr>
+          <th scope="row">Niveau 3</th>
+          <td class="text-center">Lundi</td>
+          <td class="text-center">21h à 22h</td>
+          <td class="text-center">1 sept 2014</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endif %}
+{% if include.tableau == "kizomba" %}
+<br>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <table class="table table-bordered middle" align="center">
+      <tbody>
+        <tr>
+          <th scope="col" class="text-center">Niveaux</th>
+          <th scope="col" class="text-center">Jours</th>
+          <th scope="col" class="text-center">Heures</th>
+          <th scope="col" class="text-center">À partir du</th>
+        </tr>
+        <tr>
+          <th scope="row">Niveau 2</th>
+          <td class="text-center">Samedi</td>
+          <td class="text-center">11h à 12h</td>
+          <td class="text-center">6 sept 2014</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endif %}
+<div class="row">
+  Remplissez ce <a href="https://docs.google.com/forms/d/16-Rapk5QR5m65fS3ih5t8rS5vMS39R3Cw0-oTDpfxSE/viewform" target="_blank" class="btn btn-default"><span class="fa fa-file-text-o"></span> formulaire</a> pour nous donner plus de renseignements sur vous mêmes.
+  Nous saurons vous orienter vers le cours qu'il vous faut.<br />
 </div>

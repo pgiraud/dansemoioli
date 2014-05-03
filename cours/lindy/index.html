@@ -31,14 +31,14 @@ layout: default
     <table class="table table-bordered middle" align="center">
       <tbody>
         <caption>
-            Cours débutant / 1er cours <blink><b><font color="#ff0000">OFFERT</font></b></blink>
+            Cours débutant / 1er cours <font color="#ff0000">sans engagement</font>
         </caption>
         <tr>
-          <th scope="col" class="text-center">JOURS</th>
+          <th scope="col" class="text-center">Jours</th>
 
-          <th scope="col" class="text-center">HEURES</th>
+          <th scope="col" class="text-center">Heures</th>
 
-          <th scope="col" class="text-center">A partir du</th>
+          <th scope="col" class="text-center">À partir du</th>
         </tr>
         <tr>
           <th scope="row">Mardi</th>
@@ -50,7 +50,5 @@ layout: default
   </div>
 </div>
 {% include tarifs.html param="debutant" %}
-<hr>
-<h3>Cours perfectionnement</h3>
-{% include perfectionnement.html niveaux="Plusieurs"%}
+{% include perfectionnement.html tableau="lindy" %}
 {% include tarifs.html %}
