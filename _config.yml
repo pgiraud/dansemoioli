@@ -2,7 +2,7 @@ name: "École de danse Moioli"
 description: "L'école de danse Solange et Serge Moioli vous propose d'apprendre les danses  deux (cours de Rock, Salsa, Valse, etc...) dans un cadre agréable et une ambiance amicale près de Chambéry et Savoie."
 keywords: "école de danse, cours de danse, ecole, école, danser, danse, chambéry, chambery, la motte servolex, Savoie, 73, moioli, cours, leçon, solange, serge, rock, salsa, valse, tango, couple, salon, societe, adulte"
 
-baseurl: "http://pgiraud.github.io/dansemoioli"
+baseurl: "http://www.dansemoioli.com"
 
 
 
@@ -12,3 +12,6 @@ paginate: 10
 
 markdown: rdiscount
 permalink: pretty
+
+exclude: ['bootstrap-3.0.2', 'design', 'vimrc']
+include: ['.htaccess']
