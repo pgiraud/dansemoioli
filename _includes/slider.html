@@ -41,7 +41,8 @@
       [2, "left", "Émotion et spontanéité", "Le plaisir avant tout"],
       [3, "left", "Générosité et savoir-faire", "Donner et transmettre notre passion"],
       [4, "left", "Partage et convivialité", "Nos valeurs"],
-      [5, "left", "", ""]
+      [5, "left", "", "", "/actualites/portes_ouvertes"],
+      [5, "left", "", "", "/actualites/portes_ouvertes"]
     ]);
     for (var i = 0; i < files.length; i++) {
       var file = files[i][0];
@@ -56,6 +57,13 @@
       });
       item.append(inner);
       inner.append(image);
+      if (files[i][4]) {
+        image.css('cursor', 'pointer');
+        function onclick(url) {
+          window.location = url;
+        }
+        image.on('click', $.proxy(onclick, null, files[i][4]));
+      }
 
       if (files[i][2]) {
         inner.append($('<div />', {
