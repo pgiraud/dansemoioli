@@ -52,8 +52,20 @@
   </div>
 </div>
 {% endif %}
-{% comment %}
 {% if page.categories contains "home" or page.categories contains "rock" or page.categories contains "latino" %}
+<div class="row text-center">
+  <div  class="col-xs-12">
+    <a class="alert alert-actu contrast" href="{{ site.baseurl }}/stage/stage_novembre_2014"
+      style="background-image: url({{ site.baseurl }}/stage/Stage-Novembre-2014_.png);">
+      <h4><strong>Stage intensif</strong></h4>
+      <h5>Kizomba - Salsa - Bachata - Rock</h5>
+      <p><span class="fa fa-calendar"></span> 29 et 30 novembre 2014</p>
+      <p>&laquo; Plus d'infos... &raquo;</p>
+      <div class="clearfix"></div>
+    </a>
+  </div>
+</div>
+{% comment %}
 <div class="row">
   <div  class="col-xs-12">
     <a class="alert alert-actu" href="{{ site.baseurl }}/stage/stage_juin_2014"
@@ -66,8 +78,8 @@
     </a>
   </div>
 </div>
-{% endif %}
 {% endcomment %}
+{% endif %}
 {% comment %}
 {% if page.categories contains "home" or page.categories contains "rock" %}
 <div class="row">
