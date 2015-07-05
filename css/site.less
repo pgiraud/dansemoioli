@@ -638,7 +638,6 @@ table th {
     background-color: #FFE394;
     font-style: italic;
 }
-
 @table-border-color: grey;
 
 a[data-role=cours] {
@@ -679,4 +678,54 @@ a[data-role=cours]:hover {
     h6 {
         right: 20px;
     }
+}
+
+.table>thead>tr>th,
+.table>tbody>tr>td, .table>tbody>tr>th {
+  text-align: center;
+  vertical-align: middle !important;
+}
+
+.table tr {
+  height: 30px;
+}
+
+
+.table>tbody>tr.salle1>td:empty,
+.table>tbody>tr.salle2>td:empty,
+.table>tbody>tr.salle3>td:empty {
+  background-color: inherit;
+}
+.table>tbody>tr.salle1>td,
+.table>tbody>tr>td.salle1 {
+  background-color: rgba(255, 253, 72, 0.5);
+}
+
+.table>tbody>tr.salle2>td,
+.table>tbody>tr>td.salle2 {
+  background-color: rgba(255, 113, 110, 0.5);
+}
+
+.table>tbody>tr.salle3>td,
+.table>tbody>tr>td.salle3 {
+  background-color: rgba(161, 232, 72, 0.5);
+}
+
+.table>tbody:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.table th {
+   width: 6%;
+ }
+ .table td {
+   width: 18%;
+}
+
+.table.caption {
+  width: 350px;
+}
+
+.deb {
+  font-weight: bold;
 }
