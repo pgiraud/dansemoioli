@@ -13,10 +13,3 @@ Serve with jekyll:
 ```
 jekyll serve --watch --baseurl=
 ```
-
-Compress and compile css:
-
-```
-cd css
-recess --compile ./site.less --compress  > site.css
-```
