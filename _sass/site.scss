@@ -657,6 +657,12 @@ $salle3: rgba(161, 232, 72, 0.5);
 .table.caption > tbody > tr > td {
   border: 0;
   width: auto;
+
+}
+.table.caption > tbody > tr:nth-child(2) {
+  > td {
+    border-top: 1px solid lighten($table-border-color, 25%);
+  }
 }
 .table.caption .salle {
   width: 100px;
