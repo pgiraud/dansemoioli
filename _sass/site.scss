@@ -599,6 +599,10 @@ a[data-role=cours]:hover {
     }
 }
 
+.table > tbody:nth-of-type(odd) {
+  background-color: transparent;
+}
+
 .table>thead>tr>th,
 .table>tbody>tr>td, .table>tbody>tr>th {
   text-align: center;
@@ -609,6 +613,9 @@ a[data-role=cours]:hover {
   height: 30px;
 }
 
+$salle1: rgba(255, 253, 72, 0.5);
+$salle2: rgba(255, 113, 110, 0.5);;
+$salle3: rgba(161, 232, 72, 0.5);
 
 .table>tbody>tr.salle1>td:empty,
 .table>tbody>tr.salle2>td:empty,
@@ -617,21 +624,17 @@ a[data-role=cours]:hover {
 }
 .table>tbody>tr.salle1>td,
 .table>tbody>tr>td.salle1 {
-  background-color: rgba(255, 253, 72, 0.5);
+  background-color: $salle1;
 }
 
 .table>tbody>tr.salle2>td,
 .table>tbody>tr>td.salle2 {
-  background-color: rgba(255, 113, 110, 0.5);
+  background-color: $salle2;
 }
 
 .table>tbody>tr.salle3>td,
 .table>tbody>tr>td.salle3 {
-  background-color: rgba(161, 232, 72, 0.5);
-}
-
-.table>tbody:nth-of-type(odd) {
-  background-color: #f9f9f9;
+  background-color: $salle3;
 }
 
 .table th {
@@ -639,10 +642,37 @@ a[data-role=cours]:hover {
  }
  .table td {
    width: 18%;
+   &.text-right {
+      text-align: right !important;
+   }
+   &.text-left {
+      text-align: left !important;
+   }
 }
 
 .table.caption {
-  width: 350px;
+  width: auto;
+}
+
+.table.caption > tbody > tr > td {
+  border: 0;
+  width: auto;
+}
+.table.caption .salle {
+  width: 100px;
+  border: 1px solid $table-border-color;
+  padding: 5px;
+  margin-left: 5px;
+  display: inline-block;
+}
+.caption .salle1 {
+  background-color: $salle1;
+}
+.caption .salle2 {
+  background-color: $salle2;
+}
+.caption .salle3 {
+  background-color: $salle3;
 }
 
 .deb {
