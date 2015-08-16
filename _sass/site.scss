@@ -571,13 +571,15 @@ table th {
 
 a[data-role=cours] {
     display: block;
-    border-radius: 20px;
     padding: 4px;
     /*background-color: #ddd;*/
+    border-radius: 5px;
     @include gradient-vertical(#efefef, #ddd, 0%, 90%);
-    border: 1px solid #aaa;
+    border: 1px solid #ddd;
     margin-top: 10px;
     margin-bottom: 10px;
+    -webkit-box-shadow: 0 5px 5px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 5px 5px rgba(0,0,0,.25);
 
     h1, h2, h3, .h1, .h2, .h3 {
         color: $link-color;
@@ -598,14 +600,14 @@ a[data-role=cours] {
         border-radius: 2px;
         padding: 4px;
     }
-}
-a[data-role=cours]:hover {
-    text-decoration: none;
-    background-color: #d3d3d3;
-    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.25);
-    -moz-box-shadow: 0 5px 15px rgba(0,0,0,.25);
-    h6 {
-        right: 20px;
+    &:hover {
+        text-decoration: none;
+        background-color: #d3d3d3;
+        -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        -moz-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        h6 {
+            right: 20px;
+        }
     }
 }
 
