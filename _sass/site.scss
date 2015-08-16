@@ -554,6 +554,16 @@ a.alert-actu.contrast:hover {
     margin-right: -10px;
 }
 
+.table-responsive {
+    border: 0 !important;
+}
+
+@media screen and (max-width: 767px) {
+    .table-responsive > .table-bordered {
+        border: 1px solid $table-border-color;
+    }
+}
+
 table th {
     background-color: #FFE394;
     font-style: italic;
