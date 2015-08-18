@@ -1,11 +1,13 @@
 <div class="row">
   <div class="col-xs-12">
     <p class="links text-right">
+      {% comment %}
       {% if include.param == "debutant" %}
       <a href="https://docs.google.com/forms/d/{{ include.form }}/viewform" target="_blank" class="btn btn-sm btn-default" alt="Préinscription">
         <span class="fa fa-arrow-right"></span>
         Pré-inscription
       </a>
+      {% endcomment %}
       {% endif %}
       <a href="{{ site.baseurl }}/tarifs/" class="btn btn-sm btn-default" alt="Les tarifs">
         <span class="fa fa-arrow-right"></span>
