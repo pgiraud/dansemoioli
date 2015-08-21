@@ -5,6 +5,19 @@ description: "L'école de danse Moioli propose un cours de danse pour ceux qui v
 
 categories:
   - latino
+
+lun_19_1: DÉBUTANT
+lun_21_2: Niveau 2
+mar_19_1: Niveau 4
+mar_19_3: Niveau 3
+mar_21_2: DÉBUTANT
+mer_18_2: DÉBUTANT
+mer_19_2: Niveau 2
+mer_21_1: Niveau 6
+mer_21_2: Niveau 3
+jeu_20_2: Niveau 2
+jeu_20_3: DÉBUTANT
+jeu_21_3: Niveau 5
 ---
 
 {% include autres_cours.html param="salsa" %}
@@ -31,118 +44,7 @@ categories:
 <hr>
 <h3>Planning des cours</h3>
 <div class="row">
-  <div class="col-md-12">
-    <div class="table-responsive">
-      <table class="table table-condensed  table-bordered">
-        <thead>
-          <tr>
-            <th></th>
-            <th>lundi</th>
-            <th>mardi</th>
-            <th>mercredi</th>
-            <th>jeudi</th>
-            <th>vendredi</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="salle1">
-            <th rowspan="3">18h</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr class="salle2">
-            <td></td>
-            <td></td>
-            <td class="deb">DÉBUTANT</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr class="salle3">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr class="salle1">
-            <th rowspan="3">19h</th>
-            <td class="deb">DÉBUTANT</td>
-            <td >Niveau 4</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr class="salle2">
-            <td></td>
-            <td></td>
-            <td >Niveau 2</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr class="salle3">
-            <td></td>
-            <td >Niveau 3</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr class="salle1">
-            <th rowspan="3">20h</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr class="salle2">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td >Niveau 2</td>
-            <td></td>
-          </tr>
-          <tr class="salle3">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="deb">DÉBUTANT</td>
-            <td></td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr class="salle1">
-            <th rowspan="3">21h</th>
-            <td></td>
-            <td></td>
-            <td >Niveau 6</td>
-            <td >Niveau 5</td>
-            <td></td>
-          </tr>
-          <tr class="salle2">
-            <td >Niveau 2</td>
-            <td class="deb">DÉBUTANT</td>
-            <td >Niveau 3</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr class="salle3">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
+  {% include planning_cours.html %}
 </div>
 {% include table_salles.html %}
 
