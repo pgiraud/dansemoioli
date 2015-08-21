@@ -565,8 +565,11 @@ a.alert-actu.contrast:hover {
 }
 
 table th {
-    background-color: #FFE394;
+    background-color: #e5e5e5;
     font-style: italic;
+}
+table td {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 a[data-role=cours] {
@@ -706,4 +709,5 @@ tr>td.salle3 {
 
 .deb {
   font-weight: bold;
+  border-color: darken($table-border-color, 50%) !important;
 }

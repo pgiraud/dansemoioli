@@ -1,3 +1,4 @@
+<div class="row">
   <div class="col-md-12">
     <div class="table-responsive">
       <table class="table table-bordered table-condensed">
@@ -9,6 +10,10 @@
             <th>mercredi</th>
             <th>jeudi</th>
             <th>vendredi</th>
+            {% if page.samedi %}
+            <th></th>
+            <th>samedi</th>
+            {% endif %}
           </tr>
         </thead>
         <tbody>
@@ -90,6 +95,24 @@
                 </tbody>
               </table>
             </td>
+            {% if page.samedi %}
+            <th>10h</th>
+            <td>
+              <table>
+                <tbody>
+                  <tr class="salle1">
+                    <td>{{ page.sam_10_1 }}</td>
+                  </tr>
+                  <tr class="salle2">
+                    <td>{{ page.sam_10_2 }}</td>
+                  </tr>
+                  <tr class="salle3">
+                    <td>{{ page.sam_10_3 }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            {% endif %}
           </tr>
           <!-- 19h -->
           <tr>
@@ -332,3 +355,8 @@
       </table>
     </div>
   </div>
+</div>
+{% include table_salles.html %}
+<script>
+  $("table table td:contains('DÉBUTANT')").addClass("deb");
+</script>
