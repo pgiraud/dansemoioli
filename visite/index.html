@@ -70,101 +70,42 @@ categories:
 <h3>L'école</h3>
 
 <div class="row">
-  <div class="col-md-12">
-    <p>
-    Venez découvrir votre futur espace de loisirs.
-    </p>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="col-xs-12 col-sm-6 col-md-4 text-center">
     <img src="{{ site.baseurl }}/images/accueil.jpg" class="img-responsive center-block img-thumbnail" >
     <h4>Un cadre agréable</h4>
-    <p>
-    Solange et Serge vous accueillent dans un cadre exceptionnel, dans lequel vous vous sentirez tout de suite bien.
-    </p>
   </div>
 
-  <div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="col-xs-12 col-sm-6 col-md-4 text-center">
     <img src="{{ site.baseurl }}/images/salle1.jpg" class="img-responsive center-block img-thumbnail" >
-    <h4>2 salles</h4>
-    <p>
-    Vous serez séduits par deux salles à la "déco" chaleureuse, un hall d'accueil fait pour l'avant et l'après cours et des abords verdoyants.
-    </p>
+    <h4>3 salles</h4>
   </div>
 
-  <div class="col-xs-12 col-sm-6 col-md-4">
+  <div class="col-xs-12 col-sm-6 col-md-4 text-center">
     <img src="{{ site.baseurl }}/images/parking.jpg" class="img-responsive center-block img-thumbnail" >
     <h4>Parking gratuit</h4>
+  </div>
+</div>
+
+<br>
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+    <a href="https://www.flickr.com/photos/dansemoioli/albums/72157658097608498" target="_blank">
     <p>
-    Un parking gratuit est aussi à votre disposition.
+      <button class="btn btn-lg btn-primary">
+        <span class="fa fa-arrow-right"></span>
+        Voir + de photos
+      </button>
+    </p>
+    <p>
+      <img src="http://farm1.staticflickr.com/699/21316625506_f653ea691f_s.jpg">
+      <img src="http://farm6.staticflickr.com/5776/20721788843_1c96a9dee0_s.jpg" >
+      <img src="https://farm6.staticflickr.com/5766/21351152481_685aa1af37_s.jpg">
+    </p>
+    <p>
+      <img src="https://farm6.staticflickr.com/5717/21156014179_203c43f8dc_s.jpg">
+      <img src="https://farm6.staticflickr.com/5751/21332161552_962a1287ef_s.jpg">
     </p>
   </div>
 </div>
-
-<h3>Quelques photos</h3>
-
-<!-- Responsive slider - START -->
-<div class="sliderContainer visite">
-  <div class = 'iosSlider'>
-    <div class = 'slider'>
-      <div class = 'item'>
-        <img src="{{ site.baseurl }}/images/visite1.jpg">
-      </div>
-      <div class = 'item'>
-        <img src="{{ site.baseurl }}/images/visite2.jpg">
-      </div>
-      <div class = 'item'>
-        <img src="{{ site.baseurl }}/images/visite3.jpg">
-      </div>
-      <div class = 'item'>
-        <img src="{{ site.baseurl }}/images/visite4.jpg">
-      </div>
-      <div class = 'item'>
-        <img src="{{ site.baseurl }}/images/visite5.jpg">
-      </div>
-      <div class = 'item'>
-        <img src="{{ site.baseurl }}/images/visite6.jpg">
-      </div>
-      <div class = 'item'>
-        <img src="{{ site.baseurl }}/images/visite7.jpg">
-      </div>
-    </div>
-  </div>
-  <a class="slider-control prev" ><</a>
-  <a class="slider-control next">></a>
-  <div class="pages">
-    <a class="page active">1</a>
-    <a class="page">2</a>
-    <a class="page">3</a>
-    <a class="page">4</a>
-    <a class="page">5</a>
-    <a class="page">6</a>
-    <a class="page">7</a>
-  </div>
-</div>
-
-<script src="{{ site.baseurl }}/js/jquery.iosslider.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $('.iosSlider').iosSlider({
-      autoSlide: true,
-      snapToChildren: true,
-      desktopClickDrag: true,
-      keyboardControls: true,
-      navNextSelector: $('.next'),
-      navPrevSelector: $('.prev'),
-      navSlideSelector: $('.pages .page'),
-      onSlideChange: slideChange,
-      infiniteSlider: true
-    });
-  });
-
-  function slideChange(args) {
-    $('.pages .page').removeClass('active');
-    $('.pages .page:eq(' + (args.currentSlideNumber - 1) + ')').addClass('active');
-  }
-</script>
-<br/>
+</a>
 <br/>

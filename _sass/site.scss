@@ -715,3 +715,11 @@ tr>td.salle3 {
   font-weight: bold;
   border-color: darken($table-border-color, 50%) !important;
 }
+
+.jumbotron {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border: 1px dashed deeppink;
+}
