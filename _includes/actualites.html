@@ -52,12 +52,14 @@
 {% endif %}
 -->
 {% if page.categories contains "home" or page.categories contains "tango" %}
+{% comment %}
 <div class="row text-center">
   <div  class="col-xs-12 text-center">
     {% include stage_tango.html %}
   </div>
 </div>
 {% comment %}
+{% endcomment %}
 <div class="row text-center">
   <div  class="col-xs-12 text-center">
     <a class="alert alert-actu contrast" href="{{ site.baseurl }}/soirees"
@@ -194,16 +196,3 @@
 </div>
 {% endif %}
 {% endcomment %}
-{% if page.categories contains "home" or page.categories contains "latino" %}
-<div class="row text-center">
-  <div  class="col-xs-12">
-    <a class="alert alert-actu contrast" href="{{ site.baseurl }}/stage/stage_kizomba_mai_2016"
-      style="background-image: url({{ site.baseurl }}/stage/stage_kizomba_mai_2016_.jpg);">
-      <h3 style="color:#fccc0a">Kizomba</h3>
-      <p><span class="fa fa-calendar"></span> 28 mai 2016</p>
-      <h5>Stage & soirée<br>100% KIZ</h5>
-      <div class="clearfix"></div>
-    </a>
-  </div>
-</div>
-{% endif %}
