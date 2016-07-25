@@ -33,7 +33,6 @@ body {
 }
 
 footer {
-    margin-top: 20px;
     @include gradient-vertical($color3, $color2, 0%, 90%);
     padding-top: 20px;
     padding-bottom: 20px;
@@ -722,4 +721,14 @@ tr>td.salle3 {
   left:50%;
   transform: translate(-50%,-50%);
   border: 1px dashed deeppink;
+}
+
+.fitnessmoioli {
+  background-color: #333;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  a {
+      color: #6cc644;
+  }
 }
