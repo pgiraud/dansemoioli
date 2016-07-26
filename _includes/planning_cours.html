@@ -192,6 +192,24 @@
                 </tbody>
               </table>
             </td>
+            {% if page.samedi %}
+            <th>11h</th>
+            <td>
+              <table>
+                <tbody>
+                  <tr class="salle1">
+                    <td>{{ page.sam_11_1 }}</td>
+                  </tr>
+                  <tr class="salle2">
+                    <td>{{ page.sam_11_2 }}</td>
+                  </tr>
+                  <tr class="salle3">
+                    <td>{{ page.sam_11_3 }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+            {% endif %}
           </tr>
           <!-- 20h -->
           <tr>
