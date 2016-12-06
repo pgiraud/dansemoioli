@@ -10,7 +10,7 @@ paginate: 10
 
 
 
-markdown: rdiscount
+markdown: kramdown
 permalink: pretty
 
 exclude: ['bootstrap-3.0.2', 'design', 'vimrc']
