@@ -3,24 +3,31 @@ title: Les cours - Rock Valse Tango Cha-cha
 layout: default
 description: "Envie d'apprendre les danses de salon ? Dans ce cours, vous apprendrez le rock mais aussi la valse, le tango, le cha-cha et d'autres danses encore."
 
+samedi: true
+
 categories:
   - rock
 
-lun_19_2: Niveau 3
-lun_20_1: Niveau 4
-lun_20_2: Niveau 4
-lun_20_3: Niveau 2
-lun_21_3: Niveau 1
-mar_20_2: Niveau 3
-mer_19_2: Rock Swing Avancé
-mer_20_3: Niveau 1
-jeu_19_2: Niveau 2
-jeu_19_3: Niveau 1
-jeu_20_2: Niveau 5
-jeu_21_1: Niveau 3
-jeu_21_3: DÉBUTANT JANVIER
-ven_20_3: DÉBUTANT JANVIER
-ven_20_2: Rock Swing Moyen
+table1:
+  lun_20_3: Débutant
+  mar_19_3: Débutant
+  jeu_18_3: Débutant
+  ven_19_2: Débutant
+  sam_11_1: Débutant
+
+table2:
+  lun_21_3: ROCK inter 1
+  mer_20_3: ROCK inter 1
+  jeu_19_3: ROCK inter 1
+  lun_19_2: ROCK inter 2
+  jeu_19_2: ROCK inter 2
+  lun_20_1: Inter 3
+  ven_20_1: Inter 3
+  ven_20_2: ROCK avancé 1
+  mer_19_2: ROCK avancé 2
+  mer_21_3: SALON inter 1
+  jeu_20_3: SALON inter 1
+  lun_20_2: SALON inter 2
 ---
 {% include autres_cours.html param="rock" %}
 
@@ -54,8 +61,11 @@ ven_20_2: Rock Swing Moyen
   </div>
 </div>
 <hr>
-<h3>Planning des cours</h3>
-{% include planning_cours.html %}
+<h3>Cours débutants</h3>
+{% include planning_cours.html table=page.table1 %}
+<h3>Cours 2ème année et plus</h3>
+<p>À partir de la 2ème année, <strong>rock</strong> et <strong>danses de salon</strong> font l'objet de deux cours séparés.</p>
+{% include planning_cours.html table=page.table2 %}
 {% comment %}
 {% include perfectionnement.html niveaux="6" %}
 {% endcomment %}
