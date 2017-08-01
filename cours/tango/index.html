@@ -6,11 +6,11 @@ description: "Des cours de tango argentin, danse langoureuse, sensuelle et techn
 categories:
   - tango
 
-lun_19_1: Niveau 1
-mar_20_1: Niveau 2
-mer_19_1: Niveau 2
-mer_20_1: Technique Tango
-ven_18_2: Niveau 3
+table:
+  lun_19_1: Débutant
+  mar_19_1: Inter 1 <small><small><em>(19h30)</em></small></small>
+  mer_19_1: Inter 2
+  ven_18_1: Avancé <small><small><em>(18h15)</em></small></small>
 ---
 
 {% include autres_cours.html param="tango" %}
@@ -40,7 +40,10 @@ ven_18_2: Niveau 3
   <!--</div>-->
 </div>
 <h3>Planning des cours</h3>
-{% include planning_cours.html %}
+<p class="text-center">
+  <em>Durrée des cours : 1h30</em>
+</p>
+{% include planning_cours.html table=page.table %}
 {% comment %}
 {% include perfectionnement.html tableau="tango" %}
 {% endcomment %}

@@ -6,8 +6,9 @@ description: ""
 categories:
   - westcoastswing
 
-mar_19_2: Niveau 2
-jeu_19_1: Niveau 1
+table:
+  jeu_19_1: Débutant
+  mar_19_2: Inter
 ---
 
 {% include autres_cours.html param="westcoastswing" %}
@@ -35,6 +36,6 @@ jeu_19_1: Niveau 1
 </div>
 <hr>
 <h3>Planning des cours</h3>
-{% include planning_cours.html %}
+{% include planning_cours.html table=page.table %}
 {% comment %}
 {% endcomment %}

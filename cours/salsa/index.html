@@ -8,20 +8,25 @@ categories:
 
 samedi: true
 
-lun_19_3: Niveau 1
-mar_19_1: Niveau 3
-mar_20_3: DÉBUTANT JANVIER
-mar_21_2: Niveau 2
-mar_21_3: Niveau 1
-mer_18_2: Niveau 2
-mer_21_1: Niveau 6
-mer_21_2: Niveau 4
-mer_21_3: DÉBUTANT JANVIER
-jeu_20_1: Niveau 3
-jeu_20_3: Niveau 1
-jeu_21_2: Niveau 5
-ven_19_3: Niveau 1
-sam_11_3: Niveau 1
+table1:
+  lun_19_3: Débutant
+  mar_21_3: Débutant
+  mer_19_3: Débutant
+  jeu_18_2: Débutant
+  ven_20_3: Débutant
+
+table2:
+  mar_20_3: SALSA inter 1
+  mer_21_1: SALSA inter 1
+  jeu_20_2: SALSA inter 1
+  mar_18_1: SALSA inter 2 <small><small><em>(18h30)</em></small></small>
+  mar_20_2: SALSA inter 2
+  jeu_21_1: SALSA avancé 1
+  jeu_21_2: SALSA avancé 2
+  mer_21_2: Avancé 3
+  jeu_21_3: BACHATA inter 1
+  mar_21_2: BACHATA inter 1
+  jeu_20_1: BACHATA inter 2
 ---
 
 {% include autres_cours.html param="salsa" %}
@@ -53,8 +58,11 @@ sam_11_3: Niveau 1
   </div>
 </div>
 <hr>
-<h3>Planning des cours</h3>
-{% include planning_cours.html %}
+<h3>Cours débutants</h3>
+{% include planning_cours.html table=page.table1 %}
+<h3>Cours 2ème année et plus</h3>
+<p>À partir de la 2ème année, <strong>salsa</strong> et <strong>bachata</strong> font l'objet de deux cours séparés.</p>
+{% include planning_cours.html table=page.table2 %}
 
 {% comment %}
 {% include perfectionnement.html niveaux="6" %}

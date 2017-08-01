@@ -6,9 +6,9 @@ description: "L'école de danse Moioli vous propose des cours de kizomba. Une da
 categories:
   - latino
 
-lun_21_2: Niveau 1
-mer_20_2: Niveau 2
-ven_19_2: Niveau 3
+table:
+  ven_19_3: Débutant
+  mer_20_2: Inter 
 ---
 
 {% include autres_cours.html param="kizomba" %}
@@ -46,7 +46,7 @@ ven_19_2: Niveau 3
 </div>
 <hr>
 <h3>Planning des cours</h3>
-{% include planning_cours.html %}
+{% include planning_cours.html table=page.table %}
 {% comment %}
 {% include perfectionnement.html tableau="kizomba" %}
 {% endcomment %}
