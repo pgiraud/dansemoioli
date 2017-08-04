@@ -646,31 +646,31 @@ $salle3: rgba(161, 232, 72, 0.5);
   border: 1px solid $table-border-color;
 }
 
-tr.salle1>td:empty,
-tr.salle2>td:empty,
-tr.salle3>td:empty {
-  display: none;
-}
-tr.salle1>td,
 tr>td.salle1 {
   background-color: $salle1;
 }
 
-tr.salle2>td,
 tr>td.salle2 {
   background-color: $salle2;
 }
 
-tr.salle3>td,
 tr>td.salle3 {
   background-color: $salle3;
 }
+tr>td.salle1:empty,
+tr>td.salle2:empty,
+tr>td.salle3:empty {
+  background-color: transparent;
+  &:after {
+      content: '\00a0'
+  }
+}
 
 .table th {
-   width: 6%;
+   width: 4%;
  }
  .table td {
-   width: 18%;
+   width: 15%;
    &.text-right {
       text-align: right !important;
    }

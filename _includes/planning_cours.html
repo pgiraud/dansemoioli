@@ -1,3 +1,8 @@
+{% assign salles = '1,2,3' | split: ',' %}
+{% assign horaires = '18,19,20,21' | split: ',' %}
+{% assign jours = 'lun,mar,mer,jeu,ven' | split: ',' %}
+{% for salle in salles %}
+{% endfor %}
 <div class="row">
   <div class="col-md-12">
     <div class="table-responsive">
@@ -18,382 +23,39 @@
         </thead>
         <tbody>
           <!-- 18h -->
-          {% if
-            include.table.lun_18_1 or include.table.lun_18_2 or include.table.lun_18_3 or
-            include.table.mar_18_1 or include.table.mar_18_2 or include.table.mar_18_3 or
-            include.table.mer_18_1 or include.table.mer_18_2 or include.table.mer_18_3 or
-            include.table.jeu_18_1 or include.table.jeu_18_2 or include.table.jeu_18_3 or
-            include.table.ven_18_1 or include.table.ven_18_2 or include.table.ven_18_3 or
-            include.table.sam_10_1 or include.table.sam_10_2 or include.table.sam_10_3
-          %}
-          <tr>
-            <th>18h</th>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.lun_18_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.lun_18_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.lun_18_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.mar_18_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.mar_18_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.mar_18_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.mer_18_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.mer_18_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.mer_18_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.jeu_18_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.jeu_18_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.jeu_18_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.ven_18_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.ven_18_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.ven_18_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            {% if page.samedi %}
-            <th>10h</th>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.sam_10_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.sam_10_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.sam_10_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
+          {% for horaire in horaires %}
+            {% for salle in salles %}
+              <tr>
+                {% if salle=='1' %}
+                  <th rowspan="3">{{horaire}}h</th>
+                {% endif %}
+                {% for jour in jours %}
+                  {% capture jour_salle %}{{jour}}_{{horaire}}_{{salle}}{% endcapture %}
+                  <td class="salle{{salle}}">{{ include.table[jour_salle] }}</td>
+                {% endfor %}
+                {% if page.samedi %}
+                  {% capture horaire_samedi %}{{horaire | minus:8 }}{% endcapture %}
+                  {% if horaire != '20' and horaire != '21' %}
+                    {% if salle=='1' %}
+                      <th rowspan="3">{{horaire_samedi}}h</th>
+                    {% endif %}
+                    {% capture jour_salle %}sam_{{horaire_samedi}}_{{salle}}{% endcapture %}
+                    <td class="salle{{salle}}">{{ include.table[jour_salle] }}</td>
+                  {% endif %}
+                {% endif %}
+              </tr>
+            {% endfor %}
+            {% capture isLast %}{{forloop.last}}{% endcapture %}
+            {% if isLast == 'false' %}
+            <tr>
+              {% if page.samedi and horaire != '20' and horaire != '21' %}
+              <th colspan="8"></th>
+              {% else %}
+              <th colspan="6"></th>
+              {% endif %}
+            <tr>
             {% endif %}
-          </tr>
-          {% endif %}
-          <!-- 19h -->
-          <tr>
-            <th>19h</th>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.lun_19_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.lun_19_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.lun_19_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.mar_19_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.mar_19_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.mar_19_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.mer_19_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.mer_19_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.mer_19_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.jeu_19_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.jeu_19_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.jeu_19_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.ven_19_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.ven_19_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.ven_19_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            {% if page.samedi %}
-            <th>11h</th>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.sam_11_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.sam_11_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.sam_11_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            {% endif %}
-          </tr>
-          <!-- 20h -->
-          {% if
-            include.table.lun_20_1 or include.table.lun_20_2 or include.table.lun_20_3 or
-            include.table.mar_20_1 or include.table.mar_20_2 or include.table.mar_20_3 or
-            include.table.mer_20_1 or include.table.mer_20_2 or include.table.mer_20_3 or
-            include.table.jeu_20_1 or include.table.jeu_20_2 or include.table.jeu_20_3 or
-            include.table.ven_20_1 or include.table.ven_20_2 or include.table.ven_20_3
-          %}
-          <tr>
-            <th>20h</th>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.lun_20_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.lun_20_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.lun_20_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.mar_20_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.mar_20_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.mar_20_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.mer_20_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.mer_20_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.mer_20_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.jeu_20_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.jeu_20_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.jeu_20_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.ven_20_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.ven_20_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.ven_20_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-          </tr>
-          {% endif %}
-          <!-- 21h -->
-          {% if
-            include.table.lun_21_1 or include.table.lun_21_2 or include.table.lun_21_3 or
-            include.table.mar_21_1 or include.table.mar_21_2 or include.table.mar_21_3 or
-            include.table.mer_21_1 or include.table.mer_21_2 or include.table.mer_21_3 or
-            include.table.jeu_21_1 or include.table.jeu_21_2 or include.table.jeu_21_3 or
-            include.table.ven_21_1 or include.table.ven_21_2 or include.table.ven_21_3
-          %}
-          <tr>
-            <th>21h</th>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.lun_21_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.lun_21_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.lun_21_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.mar_21_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.mar_21_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.mar_21_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.mer_21_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.mer_21_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.mer_21_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.jeu_21_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.jeu_21_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.jeu_21_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-            <td>
-              <table>
-                <tbody>
-                  <tr class="salle1">
-                    <td>{{ include.table.ven_21_1 }}</td>
-                  </tr>
-                  <tr class="salle2">
-                    <td>{{ include.table.ven_21_2 }}</td>
-                  </tr>
-                  <tr class="salle3">
-                    <td>{{ include.table.ven_21_3 }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-          </tr>
-          {% endif %}
+          {% endfor %}
         </tbody>
       </table>
     </div>
