@@ -11,19 +11,9 @@ sitemap:
 ---
 <h2>Actualités</h2>
 <div class="row">
-{% comment %}
   <div  class="col-xs-12 col-md-4">
-    <a class="alert alert-actu" href="https://docs.google.com/forms/d/1lC09gbreL7dsIAeBXxFPMjnp0X_DdakanUIvkt8N9sw/viewform"
-      target="_blank"
-      style="background-image: url({{ site.baseurl }}/images/striped_lens.png);">
-      <h4><strong>Ré-inscription</strong></h4>
-      <h5>Saison 2015 - 2016</h5>
-      <span class="fa fa-arrow-right"></span>
-      Confirmez votre proposition de cours
-      <div class="clearfix"></div>
-    </a>
+  {% include reinscription.html %}
   </div>
-{% endcomment %}
 {% comment %}
   <div  class="col-xs-12 col-md-4">
     <a class="alert alert-actu" href="{{ site.baseurl }}/actualites/nouveaux_cours_janvier_2015"
