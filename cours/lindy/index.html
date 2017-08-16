@@ -2,12 +2,6 @@
 title: Les cours - Lindy hop Balboa
 layout: default
 description: "A l'école de danse Moioli, on y enseigne aussi le lindy hop et le balboa. Pour les passionés des musiques swing."
-
-table:
-  lun_21_2: Débutant
-  lun_21_1: Avancé
-  mar_21_1: Inter 1
-  mer_18_1: Inter 2
 ---
 
 {% include autres_cours.html param="lindy" %}
@@ -38,8 +32,17 @@ table:
   {% include debutant.html form="1ocvrVyV94yKPSlaK3Vy5LGkbXcixl8JZQgYtv4Sncf0" %}
   </div>
 </div>
-<h3>Planning des cours</h3>
-{% include planning_cours.html table=page.table %}
-{% comment %}
-{% include perfectionnement.html tableau="lindy" %}
-{% endcomment %}
+<hr>
+<h3>Cours débutants</h3>
+<table class="table-bordered table-horaires">
+  <tbody>
+    <tr>
+      <td>Lundi</td>
+      <td>21h</td>
+      <td class="salle2">Salle 2</td>
+    </tr>
+  </tbody>
+</table>
+{% include table_salles.html %}
+<h3>Cours 2ème année et plus</h3>
+{% include text_cours_2eme_annee_plus.html %}

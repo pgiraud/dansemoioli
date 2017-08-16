@@ -557,24 +557,6 @@ a.alert-actu.contrast:hover {
     margin-right: -10px;
 }
 
-.table-responsive {
-    border: 0 !important;
-}
-
-@media screen and (max-width: 767px) {
-    .table-responsive > .table-bordered {
-        border: 1px solid $table-border-color;
-    }
-}
-
-table th {
-    background-color: #e5e5e5;
-    font-style: italic;
-}
-table td {
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
 a[data-role=cours] {
     display: block;
     padding: 4px;
@@ -617,34 +599,9 @@ a[data-role=cours] {
     }
 }
 
-.table > tbody:nth-of-type(odd) {
-  background-color: transparent;
-}
-
-.table>thead>tr>th,
-.table>tbody>tr>td, .table>tbody>tr>th {
-  text-align: center;
-  vertical-align: middle !important;
-}
-
-
 $salle1: rgba(255, 253, 72, 0.5);
 $salle2: rgba(255, 113, 110, 0.5);;
 $salle3: rgba(161, 232, 72, 0.5);
-
-.table table tr>td  {
-  height: 30px;
-  white-space: nowrap;
-}
-
-.table table {
-  border-spacing: 2px;
-  border-collapse: separate;
-}
-
-.table table td {
-  border: 1px solid $table-border-color;
-}
 
 tr>td.salle1 {
   background-color: $salle1;
@@ -656,27 +613,6 @@ tr>td.salle2 {
 
 tr>td.salle3 {
   background-color: $salle3;
-}
-tr>td.salle1:empty,
-tr>td.salle2:empty,
-tr>td.salle3:empty {
-  background-color: transparent;
-  &:after {
-      content: '\00a0'
-  }
-}
-
-.table th {
-   width: 4%;
- }
- .table td {
-   width: 15%;
-   &.text-right {
-      text-align: right !important;
-   }
-   &.text-left {
-      text-align: left !important;
-   }
 }
 
 .table.caption {
@@ -708,6 +644,10 @@ tr>td.salle3:empty {
 }
 .caption .salle3 {
   background-color: $salle3;
+}
+
+.table-horaires td {
+    padding: 2px 10px;
 }
 
 .deb {

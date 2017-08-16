@@ -7,27 +7,6 @@ samedi: true
 
 categories:
   - rock
-
-table1:
-  lun_20_3: Débutant
-  mar_19_3: Débutant
-  jeu_18_3: Débutant
-  ven_19_2: Débutant
-  sam_11_1: Débutant
-
-table2:
-  lun_21_3: ROCK inter 1
-  mer_20_3: ROCK inter 1
-  jeu_19_3: ROCK inter 1
-  lun_19_2: ROCK inter 2
-  jeu_19_2: ROCK inter 2
-  lun_20_1: Inter 3
-  ven_20_1: Inter 3
-  ven_20_2: ROCK avancé 1
-  mer_19_2: ROCK avancé 2
-  mer_21_3: SALON inter 1
-  jeu_20_3: SALON inter 1
-  lun_20_2: SALON inter 2
 ---
 {% include autres_cours.html param="rock" %}
 
@@ -62,10 +41,36 @@ table2:
 </div>
 <hr>
 <h3>Cours débutants</h3>
-{% include planning_cours.html table=page.table1 %}
+<table class="table-bordered table-horaires">
+  <tbody>
+    <tr>
+      <td>Lundi</td>
+      <td>20h</td>
+      <td class="salle3">Salle 3</td>
+    </tr>
+    <tr>
+      <td>Mardi</td>
+      <td>19h</td>
+      <td class="salle3">Salle 3</td>
+    </tr>
+    <tr>
+      <td>Jeudi</td>
+      <td>18h</td>
+      <td class="salle3">Salle 3</td>
+    </tr>
+    <tr>
+      <td>Vendredi</td>
+      <td>19h</td>
+      <td class="salle2">Salle 2</td>
+    </tr>
+    <tr>
+      <td>Samedi</td>
+      <td>11h</td>
+      <td class="salle1">Salle 1</td>
+    </tr>
+  </tbody>
+</table>
+{% include table_salles.html %}
 <h3>Cours 2ème année et plus</h3>
-<p>À partir de la 2ème année, <strong>rock</strong> et <strong>danses de salon</strong> font l'objet de deux cours séparés.</p>
-{% include planning_cours.html table=page.table2 %}
-{% comment %}
-{% include perfectionnement.html niveaux="6" %}
-{% endcomment %}
+<p>À partir de la 2ème année, <strong>rock</strong> et <strong>danses de salon</strong> font l'objet de deux cours séparés. Les cours de rock évolueront au fil des années vers le <strong>rock swing</strong>.</p>
+{% include text_cours_2eme_annee_plus.html %}

@@ -5,10 +5,6 @@ description: "L'école de danse Moioli vous propose des cours de kizomba. Une da
 
 categories:
   - latino
-
-table:
-  ven_19_3: Débutant
-  mer_20_2: Inter 
 ---
 
 {% include autres_cours.html param="kizomba" %}
@@ -45,8 +41,24 @@ table:
   </div>
 </div>
 <hr>
-<h3>Planning des cours</h3>
-{% include planning_cours.html table=page.table %}
-{% comment %}
-{% include perfectionnement.html tableau="kizomba" %}
-{% endcomment %}
+<h3>Cours débutants</h3>
+<table class="table-bordered table-horaires">
+  <tbody>
+    <tr>
+      <td>Vendredi</td>
+      <td>19h</td>
+      <td class="salle3">Salle 3</td>
+    </tr>
+  </tbody>
+</table>
+<h3>Cours 2ème année et plus</h3>
+<table class="table-bordered table-horaires">
+  <tbody>
+    <tr>
+      <td>Mercredi</td>
+      <td>20h</td>
+      <td class="salle2">Salle 2</td>
+    </tr>
+  </tbody>
+</table>
+{% include table_salles.html %}
