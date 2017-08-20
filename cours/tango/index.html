@@ -26,24 +26,36 @@ categories:
       </div>
     </div>
   </div>
-  <div class="col-sm-4">
+</div>
+<h3>Cours débutants</h3>
+<div class="row">
+  <div class="col-sm-7">
+    <table class="table-bordered table-horaires text-center">
+      <tbody>
+        <tr>
+          <td>Lundi</td>
+          <td>19h</td>
+          <td class="salle1">Salle 1</td>
+        </tr>
+      </tbody>
+    </table>
+    {% include table_salles.html %}
+  </div>
+  <div class="col-sm-5">
   {% include debutant.html form="1-ryn5wvfRValrHvzUiOTRA1lj5k6PDIGddVvmzbQ7H8" %}
   </div>
 </div>
-<h3>Cours débutants</h3>
-<table class="table-bordered table-horaires">
-  <tbody>
-    <tr>
-      <td>Lundi</td>
-      <td>19h</td>
-      <td class="salle1">Salle 1</td>
-    </tr>
-  </tbody>
-</table>
-{% include table_salles.html %}
 <h3>Cours 2ème année et plus</h3>
-<p>À partir de la 2ème année, les cours de <strong>tango</strong> durent 1h30.</p>
-{% include text_cours_2eme_annee_plus.html %}
+<div class="row">
+  <div class="col-sm-7">
+    <p>À partir de la 2ème année, les cours de <strong>tango</strong> durent 1h30.</p>
+    {% include text_cours_2eme_annee_plus.html %}
+  </div>
+  <div class="col-sm-5">
+    {% include reinscription.html %}
+  </div>
+</div>
+
 <h3>Tarifs</h3>
 {% include tarifs_tango.html %}
 {% include infos_tarifs.html %}

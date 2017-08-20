@@ -33,29 +33,40 @@ categories:
       </div>
     </div>
   </div>
-  <div class="col-sm-4">
-  {% include debutant.html form="1LO3UlRaWAeLcS7vpjabqDTPCkVqVBQTQOASmruFKCJ0" %}
-  </div>
 </div>
 <hr>
 <h3>Cours débutants</h3>
-<table class="table-bordered table-horaires">
-  <tbody>
-    <tr>
-      <td>Vendredi</td>
-      <td>19h</td>
-      <td class="salle3">Salle 3</td>
-    </tr>
-  </tbody>
-</table>
+<div class="row">
+  <div class="col-sm-7">
+    <table class="table-bordered table-horaires text-center">
+      <tbody>
+        <tr>
+          <td>Vendredi</td>
+          <td>19h</td>
+          <td class="salle3">Salle 3</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-sm-5">
+  {% include debutant.html form="1LO3UlRaWAeLcS7vpjabqDTPCkVqVBQTQOASmruFKCJ0" %}
+  </div>
+</div>
 <h3>Cours 2ème année et plus</h3>
-<table class="table-bordered table-horaires">
-  <tbody>
-    <tr>
-      <td>Mercredi</td>
-      <td>20h</td>
-      <td class="salle2">Salle 2</td>
-    </tr>
-  </tbody>
-</table>
+<div class="row">
+  <div class="col-sm-7">
+    <table class="table-bordered table-horaires text-center">
+      <tbody>
+        <tr>
+          <td>Mercredi</td>
+          <td>20h</td>
+          <td class="salle2">Salle 2</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-sm-5">
+    {% include reinscription.html %}
+  </div>
+</div>
 {% include table_salles.html %}

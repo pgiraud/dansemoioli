@@ -25,21 +25,32 @@ description: "A l'école de danse Moioli, on y enseigne aussi le lindy hop et le
       </div>
     </div>
   </div>
-  <div class="col-sm-4">
-  {% include debutant.html form="1ocvrVyV94yKPSlaK3Vy5LGkbXcixl8JZQgYtv4Sncf0" %}
-  </div>
 </div>
 <hr>
 <h3>Cours débutants</h3>
-<table class="table-bordered table-horaires">
-  <tbody>
-    <tr>
-      <td>Lundi</td>
-      <td>21h</td>
-      <td class="salle2">Salle 2</td>
-    </tr>
-  </tbody>
-</table>
-{% include table_salles.html %}
+<div class="row">
+  <div class="col-sm-7">
+    <table class="table-bordered table-horaires text-center">
+      <tbody>
+        <tr>
+          <td>Lundi</td>
+          <td>21h</td>
+          <td class="salle2">Salle 2</td>
+        </tr>
+      </tbody>
+    </table>
+    {% include table_salles.html %}
+  </div>
+  <div class="col-sm-5">
+    {% include debutant.html form="1ocvrVyV94yKPSlaK3Vy5LGkbXcixl8JZQgYtv4Sncf0" %}
+  </div>
+</div>
 <h3>Cours 2ème année et plus</h3>
-{% include text_cours_2eme_annee_plus.html %}
+<div class="row">
+  <div class="col-sm-7">
+    {% include text_cours_2eme_annee_plus.html %}
+  </div>
+  <div class="col-sm-5">
+    {% include reinscription.html %}
+  </div>
+</div>
