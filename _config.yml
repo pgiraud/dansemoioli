@@ -14,4 +14,16 @@ markdown: kramdown
 permalink: pretty
 
 exclude: ['bootstrap-3.0.2', 'design', 'vimrc']
+exclude:
+  - bootstrap-3.0.2
+  - design
+  - vimrc
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - docker-compose.yml
 include: ['.htaccess']
