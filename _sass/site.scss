@@ -602,6 +602,7 @@ a[data-role=cours] {
 $salle1: rgba(255, 253, 72, 0.5);
 $salle2: rgba(255, 113, 110, 0.5);;
 $salle3: rgba(161, 232, 72, 0.5);
+$salle4: rgba(171, 217, 233, 0.5);
 
 tr>td.salle1 {
   background-color: $salle1;
@@ -613,6 +614,10 @@ tr>td.salle2 {
 
 tr>td.salle3 {
   background-color: $salle3;
+}
+
+tr>td.salle4 {
+  background-color: $salle4;
 }
 
 .table.caption {
@@ -644,6 +649,9 @@ tr>td.salle3 {
 }
 .caption .salle3 {
   background-color: $salle3;
+}
+.caption .salle4 {
+  background-color: $salle4;
 }
 
 .table-horaires td {
