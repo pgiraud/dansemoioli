@@ -14,6 +14,10 @@
 </div>
 </div>
 
+<script>
+  var stages = {{ site.data.stages | jsonify }};
+</script>
+
 <script src="{{ site.baseurl }}/js/jquery.iosslider.min.js"></script>
 <script type="text/javascript">
   var baseurl = "{{ site.baseurl }}";
@@ -38,32 +42,24 @@
 
     var files = [
       //[18, "left", "", "", "/actualites/portes_ouvertes"],
-      //[9, "left", "L'Annexe", ""],
-      //[4, "left", "Partage et convivialité", "Nos valeurs"],
-      //[8, "left", "", ""],
-      //[3, "left", "Générosité et savoir-faire", "Donner et transmettre notre passion"],
-      //[1, "left", "Un cadre chaleureux", "Trois salles"],
-      //[2, "left", "Émotion et spontanéité", "Le plaisir avant tout"]
-      //[13, "left", "", "", "/stage/stage_decembre_2016"]
-      /*[14, "left", "", "", "/actualites/nouveaux_cours_janvier_2017"]*/
-      //[15, "left", "", "", "/stage/stage_shim_sham_mars2017"],
-      //[16, "left", "", "", "/stage/stage_avril_2017"]
-      //[17, "left", "", "", "/stage/stage_juin_2017"]
-      /*[19, "left", "", "", "/cours/salsa/"],*/
-      /*[20, "left", "", "", "/cours/rock/"],*/
-      /*[21, "left", "", "", "/cours/lindy/"],*/
-      /*[22, "left", "", "", "/cours/tango"],*/
-      /*[23, "left", "", "", "/cours/westcoastswing/"],*/
-      /*[24, "left", "", "", "/stage/stage_decembre_2017/"]*/
-      /*[25, "left", "", "", "/actualites/nouveaux_cours_janvier_2018"]*/
-      /*[26, "left", "", "", "/stage/stage_mars_2018"]*/
-      [27, "left", "", "", "/stage/stage_juin_2018"]
+      [9, "left", "L'Annexe", "", '/images/slide-9'],
+      [4, "left", "Partage et convivialité", "Nos valeurs", 'images/slide-4'],
+      [8, "left", "", "", 'images/slide-8'],
+      [3, "left", "Générosité et savoir-faire", "Donner et transmettre notre passion", 'images/slide-3'],
+      [1, "left", "Un cadre chaleureux", "Trois salles", 'images/slide-1'],
+      [2, "left", "Émotion et spontanéité", "Le plaisir avant tout", 'images/slide-2']
     ];
+
+    if (stages) {
+      files = stages.map(function(stage, index) {
+        return [index, 'left', "", "", 'stage/' + stage.assets + '_slider', 'stage/' + stage.title];
+      });
+    }
     // files = shuffleArray(files);
     for (var i = 0; i < files.length; i++) {
       var file = files[i][0];
       var image = $('<img />', {
-        src: baseurl + '/images/slide-' + file + size + '.jpg'
+        src: baseurl + files[i][4] + size + '.jpg'
       });
       var item = $('<div/>', {
         'class': 'item'
@@ -73,12 +69,12 @@
       });
       item.append(inner);
       inner.append(image);
-      if (files[i][4]) {
+      if (files[i][5]) {
         image.css('cursor', 'pointer');
         function onclick(url) {
           window.location = url;
         }
-        image.on('click', $.proxy(onclick, null, files[i][4]));
+        image.on('click', $.proxy(onclick, null, files[i][5]));
       }
 
       if (files[i][2]) {
