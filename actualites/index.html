@@ -11,6 +11,18 @@ sitemap:
 ---
 <h2>Actualités</h2>
 <div class="row">
+
+{% for stage in site.data.stages %}
+  <div  class="col-xs-12 col-md-4">
+    <a class="alert alert-actu" href="{{ site.baseurl }}/stage/{{ stage.title }}">
+      <h4><strong>{{ stage.title }}</strong></h4>
+      <h5>{{ stage.dances }}</h5>
+      <p><span class="fa fa-calendar"></span> {{ stage.dates }}</p>
+      <div class="clearfix"></div>
+    </a>
+  </div>
+
+{% endfor %}
 {% comment %}
   <div  class="col-xs-12 col-md-4">
   {% include reinscription.html %}
@@ -164,13 +176,4 @@ sitemap:
     </a>
   </div>
 {% endcomment %}
-  <div  class="col-xs-12 col-md-4">
-    <a class="alert alert-actu contrast" href="{{ site.baseurl }}/stage/stage_juin_2018"
-      style="background-image: url({{ site.baseurl }}/stage/Stage-Juillet-2015_.png);">
-      <h4><strong>Swing Break 2018</strong></h4>
-      <h5>Rock'n Roll, Lindy Hop, Balboa, WCS, Tranky Doo</h5>
-      <p><span class="fa fa-calendar"></span> samedi 2 et dimanche 3 juin 2018</p>
-      <div class="clearfix"></div>
-    </a>
-  </div>
 </div>
