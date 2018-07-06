@@ -557,47 +557,6 @@ a.alert-actu.contrast:hover {
     margin-right: -10px;
 }
 
-a[data-role=cours] {
-    display: block;
-    padding: 4px;
-    /*background-color: #ddd;*/
-    border-radius: 5px;
-    @include gradient-vertical(#efefef, #ddd, 0%, 90%);
-    border: 1px solid #ddd;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    -webkit-box-shadow: 0 5px 5px rgba(0,0,0,.25);
-    -moz-box-shadow: 0 5px 5px rgba(0,0,0,.25);
-
-    h1, h2, h3, .h1, .h2, .h3 {
-        color: $link-color;
-        border-bottom: 0;
-    }
-
-    h2 {
-        margin-top: 10px;
-        margin-bottom: 4px;
-    }
-
-    h6 {
-        position: absolute;
-        right: 10px;
-        bottom: 10px;
-        color: white;
-        background-color: $color3;
-        border-radius: 2px;
-        padding: 4px;
-    }
-    &:hover {
-        text-decoration: none;
-        background-color: #d3d3d3;
-        -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-        -moz-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-        h6 {
-            right: 20px;
-        }
-    }
-}
 
 $salle1: rgba(255, 253, 72, 0.5);
 $salle2: rgba(255, 113, 110, 0.5);;
