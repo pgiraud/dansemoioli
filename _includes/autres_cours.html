@@ -1,11 +1,16 @@
 <div class="row">
   <div class="col-xs-12">
     <p class="links text-right text-muted">
-      Voir aussi :
       {% if include.param != "salsa" %}
       <a href="{{ site.baseurl }}/cours/salsa" class="btn btn-sm btn-default"
          alt="Cours de salsa">
         Salsa
+      </a>
+      {% endif %}
+      {% if include.param != "bachata" %}
+      <a href="{{ site.baseurl }}/cours/bachata" class="btn btn-sm btn-default"
+         alt="Cours de bachata">
+        Bachata
       </a>
       {% endif %}
       {% if include.param != "kizomba" %}
@@ -20,6 +25,12 @@
         Rock
       </a>
       {% endif %}
+      {% if include.param != "salon" %}
+      <a href="{{ site.baseurl }}/cours/salon" class="btn btn-sm btn-default"
+         alt="Cours de danses de salon">
+        Danses de salon
+      </a>
+      {% endif %}
       {% if include.param != "tango" %}
       <a href="{{ site.baseurl }}/cours/tango" class="btn btn-sm btn-default"
          alt="Cours de tango">
@@ -29,13 +40,13 @@
       {% if include.param != "lindy" %}
       <a href="{{ site.baseurl }}/cours/lindy" class="btn btn-sm btn-default"
          alt="Cours de lindy">
-        Lindy
+        Lindy-hop
       </a>
       {% endif %}
       {% if include.param != "westcoastswing" %}
       <a href="{{ site.baseurl }}/cours/westcoastswing" class="btn btn-sm btn-default"
          alt="Cours de west coast swing">
-        West Coast
+        West Coast Swing
       </a>
       {% endif %}
     </p>
