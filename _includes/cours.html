@@ -1,4 +1,13 @@
-<div class="container container-light">
+<div class="row">
+  {% for i in (1..8) %}
+  <div class="col-md-3 text-center">
+    <a href="{{ site.baseurl }}/cours/lindy" data-cours="lindy" data-role="cours">
+      <img src="{{ site.baseurl }}/images/lindy.png" class="logo img-responsive">
+    </a>
+  </div>
+  {% endfor %}
+</div>
+<!--
   <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4 col-lg-3 text-center">
         <a href="{{ site.baseurl }}/cours/rock" data-cours="rock" data-role="cours">
@@ -55,4 +64,4 @@
         </a>
       </div>
   </div>
-</div>
+-->
