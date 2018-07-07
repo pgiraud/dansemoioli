@@ -53,14 +53,9 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cours <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="{{ site.baseurl }}/cours/salsa">Salsa</a></li>
-              <li><a href="{{ site.baseurl }}/cours/bachata">Bachata</a></li>
-              <li><a href="{{ site.baseurl }}/cours/kizomba">Kizomba</a></li>
-              <li><a href="{{ site.baseurl }}/cours/rock">Rock</a></li>
-              <li><a href="{{ site.baseurl }}/cours/salon">Danses de salon</a></li>
-              <li><a href="{{ site.baseurl }}/cours/tango">Tango argentin</a></li>
-              <li><a href="{{ site.baseurl }}/cours/lindy">Lindy - Balboa</a></li>
-              <li><a href="{{ site.baseurl }}/cours/westcoastswing">West Coast Swing</a></li>
+              {% for danse in site.danses %}
+              <li><a href="{{ site.baseurl }}/cours/{{ danse.name }}">{{ danse.title }}</a></li>
+              {% endfor %}
             </ul>
           </li>
           <li><a href="{{ site.baseurl }}/tarifs/">Tarifs</a></li>

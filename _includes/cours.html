@@ -1,8 +1,8 @@
 <div class="row">
-  {% for i in site.danses %}
+  {% for danse in site.danses %}
   <div class="col-md-3 text-center">
-    <a href="{{ site.baseurl }}/cours/{{ i }}" data-cours="{{ i }}" data-role="cours">
-      <img src="{{ site.baseurl }}/images/{{ i }}.png" class="logo img-responsive">
+    <a href="{{ site.baseurl }}/cours/{{ danse.name }}" data-cours="{{ danse.name }}" data-role="cours" title="Cours de {{ danse.title}}">
+      <img src="{{ site.baseurl }}/images/{{ danse.name }}.png" class="logo img-responsive">
     </a>
   </div>
   {% endfor %}
