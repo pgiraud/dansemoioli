@@ -61,46 +61,9 @@ categories:
     A l'école de danse Moioli, on vous propose les enseignements suivants :
 
     <ul>
-      <li>
-        <a href="{{ site.baseurl }}/cours/rock">
-          Rock
-        </a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/cours/salon">
-          Danses de salon 
-        </a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/cours/salsa">
-          Salsa
-        </a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/cours/bachata">
-          Bachata
-        </a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/cours/tango">
-          Tango argentin
-        </a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/cours/lindy">
-          Lindy - Balboa
-        </a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/cours/kizomba">
-          Kizomba
-        </a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/cours/westcoastswing">
-          West Coast Swing
-        </a>
-      </li>
+      {% for danse in site.danses %}
+      <li><a href="{{ site.baseurl }}/cours/{{ danse.name }}">{{ danse.title }}</a></li>
+      {% endfor %}
     </ul>
     </p>
   </div>
