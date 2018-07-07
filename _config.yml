@@ -27,3 +27,5 @@ exclude:
   - README.md
   - docker-compose.yml
 include: ['.htaccess']
+
+danses: ['rock', 'lindy', 'westcoast', 'salon', 'salsa', 'bachata', 'kizomba', 'tango']
