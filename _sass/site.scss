@@ -557,6 +557,10 @@ a.alert-actu.contrast:hover {
     margin-right: -10px;
 }
 
+.cours {
+    padding-top: 2 * $padding-large-vertical;
+}
+
 a[data-role=cours] {
     display: block;
     padding: 20px;
