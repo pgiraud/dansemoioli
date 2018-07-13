@@ -51,28 +51,18 @@ categories:
         </tr>
       </tbody>
     </table>
+    {% include table_salles.html %}
   </div>
-  {% comment %}
   <div class="col-sm-5">
   {% include debutant.html form="1LO3UlRaWAeLcS7vpjabqDTPCkVqVBQTQOASmruFKCJ0" %}
   </div>
-  {% endcomment %}
 </div>
 <h3>Cours 2ème année et plus</h3>
 <div class="row">
   <div class="col-sm-7">
-    <table class="table-bordered table-horaires text-center">
-      <tbody>
-        <tr>
-          <td>Mercredi</td>
-          <td>20h</td>
-          <td class="salle2">Salle 2</td>
-        </tr>
-      </tbody>
-    </table>
+    {% include text_cours_2eme_annee_plus.html %}
   </div>
   <div class="col-sm-5">
     {% include reinscription.html %}
   </div>
 </div>
-{% include table_salles.html %}
