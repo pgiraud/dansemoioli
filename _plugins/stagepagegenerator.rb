@@ -18,8 +18,10 @@ module Jekyll
 
         def generate(site)
             dir = 'stage'
-            site.data['stages'].each_entry do |stage|
-                site.pages << StagePage.new(site, site.source, dir, stage)
+            if site.data['stage']
+                site.data['stages'].each_entry do |stage|
+                    site.pages << StagePage.new(site, site.source, dir, stage)
+                end
             end
         end
     end
