@@ -33,6 +33,7 @@
 
     <body class="{{ page.categories }}">
       <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -52,20 +53,22 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cours <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="{{ site.baseurl }}/cours/salsa">Salsa</a></li>
-              <li><a href="{{ site.baseurl }}/cours/kizomba">Kizomba</a></li>
-              <li><a href="{{ site.baseurl }}/cours/rock">Rock</a></li>
-              <li><a href="{{ site.baseurl }}/cours/tango">Tango</a></li>
-              <li><a href="{{ site.baseurl }}/cours/lindy">Lindy</a></li>
-              <li><a href="{{ site.baseurl }}/cours/westcoastswing">West Coast</a></li>
+              {% for danse in site.danses %}
+              <li><a href="{{ site.baseurl }}/cours/{{ danse.name }}">{{ danse.title }}</a></li>
+              {% endfor %}
             </ul>
           </li>
-          <li><a href="{{ site.baseurl }}/actualites/">Actualités</a></li>
           <li><a href="{{ site.baseurl }}/tarifs/">Tarifs</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Infos pratiques <span class="caret"></span></a>
+          <li><a href="{{ site.baseurl }}/soirees/">Soirées</a></li>
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Stages <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="{{ site.baseurl }}/soirees/">Soirées</a></li>
+              <li><a href="{{ site.baseurl }}/stage/stage_juin_2018">Swing break</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Infos <span class="caret"></span></a>
+            <ul class="dropdown-menu">
               <li><a href="{{ site.baseurl }}/plan_acces">Plan d'accès</a></li>
               <li><a href="{{ site.baseurl }}/pdf/Reglement interieur janvier 2018 .pdf" target="_blank">Réglement intérieur</a></li>
               <li><a href="{{ site.baseurl }}/pdf/Agenda des cours saison 2017 2018.pdf" target="_blank">Dates des vacances</a></li>
@@ -74,5 +77,6 @@
             </ul>
           </li>
         </ul>
+      </div>
       </div><!-- /.navbar-collapse -->
       </nav>

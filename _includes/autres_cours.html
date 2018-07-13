@@ -1,43 +1,13 @@
 <div class="row">
   <div class="col-xs-12">
     <p class="links text-right text-muted">
-      Voir aussi :
-      {% if include.param != "salsa" %}
-      <a href="{{ site.baseurl }}/cours/salsa" class="btn btn-sm btn-default"
-         alt="Cours de salsa">
-        Salsa
+      {% for danse in site.danses %}
+      <a href="{{ site.baseurl }}/cours/{{ danse.name }}"
+         class="btn btn-sm btn-default {% if include.param == danse.name %}active{% endif %}"
+         alt="Cours de {{ danse.title }}">
+        {{ danse.title }} 
       </a>
-      {% endif %}
-      {% if include.param != "kizomba" %}
-      <a href="{{ site.baseurl }}/cours/kizomba" class="btn btn-sm btn-default"
-         alt="Cours de kizomba">
-        Kizomba
-      </a>
-      {% endif %}
-      {% if include.param != "rock" %}
-      <a href="{{ site.baseurl }}/cours/rock" class="btn btn-sm btn-default"
-         alt="Cours de rock">
-        Rock
-      </a>
-      {% endif %}
-      {% if include.param != "tango" %}
-      <a href="{{ site.baseurl }}/cours/tango" class="btn btn-sm btn-default"
-         alt="Cours de tango">
-        Tango
-      </a>
-      {% endif %}
-      {% if include.param != "lindy" %}
-      <a href="{{ site.baseurl }}/cours/lindy" class="btn btn-sm btn-default"
-         alt="Cours de lindy">
-        Lindy
-      </a>
-      {% endif %}
-      {% if include.param != "westcoastswing" %}
-      <a href="{{ site.baseurl }}/cours/westcoastswing" class="btn btn-sm btn-default"
-         alt="Cours de west coast swing">
-        West Coast
-      </a>
-      {% endif %}
+      {% endfor %}
     </p>
   </div>
 </div>
