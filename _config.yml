@@ -33,23 +33,23 @@ danses:
     title: Rock'n roll
     name: rock
   - 
+    title: Salsa cubaine
+    name: salsa
+  - 
     title: Lindy Hop
     name: lindy
   - 
-    title: West Coast Swing
-    name: westcoastswing
+    title: Tango Argentin
+    name: tango
   - 
     title: Danses de salon
     name: salon
   - 
-    title: Salsa cubaine
-    name: salsa
-  - 
     title: Bachata
     name: bachata
   - 
+    title: West Coast Swing
+    name: westcoastswing
+  - 
     title: Kizomba
     name: kizomba
-  - 
-    title: Tango Argentin
-    name: tango
