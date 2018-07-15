@@ -26,6 +26,13 @@
   {% include footer.html %}
 
   <script>
+    // preload images
+    $('a[data-role=cours]').each(function() {
+      var cours = $(this).attr('data-cours');
+      $(this).children('img.logo').each(function() {
+        (new Image()).src = "{{ site.baseurl}}/images/" + cours + "_hover.png";
+      });
+    });
     $('a[data-role=cours]').hover(function() {
       var cours = $(this).attr('data-cours');
       $(this).children('img.logo').each(function() {
