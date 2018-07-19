@@ -36,7 +36,14 @@ body {
     }
 
     body {
-        padding-top: 200px;
+        padding-top: 169px;
+
+        &.scroll {
+            padding-top: 50px;
+            .navbar {
+                top: -120px;
+            }
+        }
     }
 }
 
@@ -45,6 +52,11 @@ body {
     -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.25);
     -moz-box-shadow: 0 5px 15px rgba(0,0,0,.25);
     z-index: 2;
+
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 footer {
