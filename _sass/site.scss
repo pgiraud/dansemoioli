@@ -566,11 +566,20 @@ a.alert-actu.contrast:hover {
 
 .cours {
     padding-top: 2 * $padding-large-vertical;
+
+    .img-responsive {
+        display: inline-block;
+    }
 }
 
 a[data-role=cours] {
     display: block;
     padding: 20px;
+}
+@media (max-width: 768px) {
+    a[data-role=cours] {
+        padding: 10px;
+    }
 }
 
 $salle1: rgba(255, 253, 72, 0.5);
