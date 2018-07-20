@@ -41,13 +41,13 @@
           <span class="caret"></span>
         </button>
         <a class="navbar-brand" href="{{ site.baseurl }}/">
-          <img src="{{ site.baseurl }}/images/logo.png" />
+          <img src="{{ site.baseurl }}/images/logo_white.png" />
         </a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav">
           <li><a href="{{ site.baseurl }}/">Accueil</a></li>
           <li><a href="{{ site.baseurl }}/visite/">Visite</a></li>
           <li class="dropdown">
@@ -80,3 +80,12 @@
       </div>
       </div><!-- /.navbar-collapse -->
       </nav>
+<script>
+$(window).scroll(function(){
+  if ($(this).scrollTop() > 0) {
+    $(document.body).addClass('scroll');
+  } else {
+    $(document.body).removeClass('scroll');
+  }
+});
+</script>

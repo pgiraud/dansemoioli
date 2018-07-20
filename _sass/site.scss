@@ -23,6 +23,28 @@ body {
     #footer {
         height: 250px;
     }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        border-radius: 0;
+    }
+    .navbar-header {
+        width: 100%;
+    }
+
+    body {
+        padding-top: 169px;
+
+        &.scroll {
+            padding-top: 50px;
+            .navbar {
+                top: -120px;
+            }
+        }
+    }
 }
 
 .navbar {
@@ -30,6 +52,11 @@ body {
     -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.25);
     -moz-box-shadow: 0 5px 15px rgba(0,0,0,.25);
     z-index: 2;
+
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 footer {
@@ -104,8 +131,39 @@ h1, h2, h3, .h1, .h2, .h3 {
     }
 }
 
-@media (min-width: 481px) {
+@media (min-width: 768px) {
+    .navbar-header {
+        text-align: center;
+
+        img {
+            width: 185px;
+        }
+    }
+
+    .navbar-brand {
+        float: none;
+        display: initial;
+
+        & > img {
+            display: inline;
+            padding: 10px;
+        }
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-nav {
+        float: none;
+        & > li {
+            float: none;
+            display: inline-block;
+        }
+    }
 }
+
+
 
 @media (max-width: 767px) {
     .navbar-header {
@@ -122,41 +180,6 @@ h1, h2, h3, .h1, .h2, .h3 {
     }
     .navbar-nav > li > a{
         line-height: 25px;
-    }
-}
-
-@media (min-width: 768px) {
-    .navbar {
-        margin-bottom: 6px;
-    }
-    .home .navbar {
-        margin-bottom: 0;
-    }
-    .navbar-header {
-        img {
-            width: 130px;
-        }
-    }
-    .navbar-nav > li > a {
-        line-height: 70px;
-        font-size: 16px;
-    }
-    /*.home .navbar-nav > li > a{*/
-        /*line-height: 35px;*/
-    /*}*/
-}
-@media (min-width: 992px) {
-    .navbar {
-        margin-bottom: 8px;
-    }
-    .navbar-header {
-        img {
-            width: 100%;
-        }
-    }
-    .navbar-nav > li > a {
-        line-height: 100px;
-        font-size: 18px;
     }
 }
 
@@ -559,11 +582,20 @@ a.alert-actu.contrast:hover {
 
 .cours {
     padding-top: 2 * $padding-large-vertical;
+
+    .img-responsive {
+        display: inline-block;
+    }
 }
 
 a[data-role=cours] {
     display: block;
     padding: 20px;
+}
+@media (max-width: 768px) {
+    a[data-role=cours] {
+        padding: 10px;
+    }
 }
 
 $salle1: rgba(255, 253, 72, 0.5);
