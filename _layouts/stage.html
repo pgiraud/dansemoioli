@@ -9,6 +9,7 @@ layout: default
     <p>{{ page.stage.dates }}</p>
     <blockquote>&laquo; {{ page.stage.dances }} &raquo;</blockquote>
 
+    {% if page.stage.form %}
     <p>
       <a class="btn btn-default" href="{{ site.baseurl }}/stage/{{ page.stage.assets }}.pdf" target="_blank">
         Programme et horaires
@@ -21,5 +22,8 @@ layout: default
         <img src="{{ site.baseurl }}/stage/{{ page.stage.assets }}.jpg"/>
       </a>
     </p>
+    {% else %}
+    Programme et inscription à venir.
+    {% endif %}
   </div>
 </div>

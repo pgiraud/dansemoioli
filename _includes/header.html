@@ -63,7 +63,11 @@
           <li>
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Stages <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="{{ site.baseurl }}/stage/stage_juin_2018">Swing break</a></li>
+              {% for stage in site.data.stages %}
+              <li>
+                <a href="{{ site.baseurl }}/stage/{{ stage.title }}">{{ stage.title }}</a>
+              </li>
+              {% endfor %}
             </ul>
           </li>
           <li class="dropdown">

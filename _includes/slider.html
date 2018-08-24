@@ -40,7 +40,17 @@
     var size = (Math.min(doc.width(), doc.height()) <= 768) ?
       '-small' : '';
 
-    var files = [
+    if (stages) {
+      files = stages
+        .filter(function(stage) {
+          return stage.form
+        })
+        .map(function(stage, index) {
+          return [index, 'left', "", "", 'stage/' + stage.assets + '_slider', 'stage/' + stage.title + '/'];
+        });
+    }
+
+    var files = files.length ? files : [
       [27, "left", "", "", '/images/slide-27', "/actualites/portes_ouvertes"]
       // [9, "left", "L'Annexe", "", '/images/slide-9'],
       // [4, "left", "Partage et convivialité", "Nos valeurs", 'images/slide-4'],
@@ -50,11 +60,6 @@
       // [2, "left", "Émotion et spontanéité", "Le plaisir avant tout", 'images/slide-2']
     ];
 
-    if (stages) {
-      files = stages.map(function(stage, index) {
-        return [index, 'left', "", "", 'stage/' + stage.assets + '_slider', 'stage/' + stage.title + '/'];
-      });
-    }
     // files = shuffleArray(files);
     for (var i = 0; i < files.length; i++) {
       var file = files[i][0];
