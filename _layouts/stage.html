@@ -2,24 +2,28 @@
 layout: default
 ---
 
-<h2>{{ page.stage.title }}</h2>
+{% for page in site.pages %}
+{{ page.category }}
+{% endfor %}
+
+<h2>{{ page.title }}</h2>
 
 <div class="row">
   <div class="col-xs-12">
-    <p>{{ page.stage.dates }}</p>
-    <blockquote>&laquo; {{ page.stage.dances }} &raquo;</blockquote>
+    <p>{{ page.dates }}</p>
+    <blockquote>&laquo; {{ page.dances }} &raquo;</blockquote>
 
-    {% if page.stage.form %}
+    {% if page.form %}
     <p>
-      <a class="btn btn-default" href="{{ site.baseurl }}/stage/{{ page.stage.assets }}.pdf" target="_blank">
+      <a class="btn btn-default" href="{{ site.baseurl }}/stage/{{ page.assets }}.pdf" target="_blank">
         Programme et horaires
       </a>
-      {% include formulaire.html form_url=page.stage.form %}
+      {% include formulaire.html form_url=page.form %}
     </p>
 
     <p class="text-center">
-      <a href="{{ site.baseurl }}/stage/{{ page.stage.assets }}.pdf" target="_blank">
-        <img src="{{ site.baseurl }}/stage/{{ page.stage.assets }}.jpg"/>
+      <a href="{{ site.baseurl }}/stage/{{ page.assets }}.pdf" target="_blank">
+        <img src="{{ site.baseurl }}/stage/{{ page.assets }}.jpg"/>
       </a>
     </p>
     {% else %}

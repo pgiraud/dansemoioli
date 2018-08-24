@@ -14,8 +14,22 @@
 </div>
 </div>
 
+{% assign titles = site.pages | map: 'title' %}
+{% assign forms = site.pages | map: 'form' %}
+{% assign layouts = site.pages | map: 'layout' %}
 <script>
-  var stages = {{ site.data.stages | jsonify }};
+  var titles = {{ titles | jsonify }};
+  var forms = {{ forms | jsonify }};
+  var layouts = {{ layouts | jsonify }};
+  var stages = titles.map(function(title, index) {
+    return {
+      title: title,
+      layout: layouts[index],
+      form: forms[index]
+    }
+  }).filter(function(stage) {
+    return stage.layout == 'stage';
+  });
 </script>
 
 <script src="{{ site.baseurl }}/js/jquery.iosslider.min.js"></script>
