@@ -63,10 +63,28 @@
           <li>
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Stages <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              {% for page in site.pages %}
+              {% assign sorted_stages = (site.pages | sort: 'date') %}
+              {% for page in sorted_stages %}
               {% if page.layout == 'stage' %}
+              {% capture mois %}
+              {% assign m = page.date | date: "%-m" %}
+              {% case m %}
+              {% when '1' %}Janvier
+              {% when '2' %}Février
+              {% when '3' %}Mars
+              {% when '4' %}Avril
+              {% when '5' %}Mai
+              {% when '6' %}Juin
+              {% when '7' %}Juillet
+              {% when '8' %}Août
+              {% when '9' %}Septembre
+              {% when '10' %}Octobre
+              {% when '11' %}Novembre
+              {% when '12' %}Décembre
+              {% endcase %}
+              {% endcapture %}
               <li>
-                <a href="{{ page.url }}">{{ page.title }}</a>
+                <a href="{{ page.url }}">{{ page.title }} - {{ mois }} {{ page.date | date: "%-Y" }}</a>
               </li>
               {% endif %}
               {% endfor %}
