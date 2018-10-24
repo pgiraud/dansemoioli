@@ -14,22 +14,9 @@
 </div>
 </div>
 
-{% assign titles = site.pages | map: 'title' %}
-{% assign forms = site.pages | map: 'form' %}
-{% assign layouts = site.pages | map: 'layout' %}
+{% assign stages = site.pages | where: 'layout','stage' %}
 <script>
-  var titles = {{ titles | jsonify }};
-  var forms = {{ forms | jsonify }};
-  var layouts = {{ layouts | jsonify }};
-  var stages = titles.map(function(title, index) {
-    return {
-      title: title,
-      layout: layouts[index],
-      form: forms[index]
-    }
-  }).filter(function(stage) {
-    return stage.layout == 'stage';
-  });
+  var stages = {{ stages | jsonify }};
 </script>
 
 <script src="{{ site.baseurl }}/js/jquery.iosslider.min.js"></script>
@@ -51,8 +38,6 @@
 
   $(document).ready(function() {
     var doc = $(document);
-    var size = (Math.min(doc.width(), doc.height()) <= 768) ?
-      '-small' : '';
 
     if (stages) {
       files = stages
@@ -60,7 +45,7 @@
           return stage.form
         })
         .map(function(stage, index) {
-          return [index, 'left', "", "", 'stage/' + stage.assets + '_slider', 'stage/' + stage.title + '/'];
+          return [index, 'left', "", "", 'stage/' + stage.assets + '_slider', stage.url];
         });
     }
 
@@ -83,7 +68,7 @@
     for (var i = 0; i < files.length; i++) {
       var file = files[i][0];
       var image = $('<img />', {
-        src: baseurl + files[i][4] + size + '.jpg'
+        src: baseurl + files[i][4] + '.jpg'
       });
       var item = $('<div/>', {
         'class': 'item'

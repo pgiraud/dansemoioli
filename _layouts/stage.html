@@ -21,11 +21,11 @@ layout: default
       {% include formulaire.html form_url=page.form %}
     </p>
 
-    <p class="text-center">
+    <div>
       <a href="{{ site.baseurl }}/stage/{{ page.assets }}.pdf" target="_blank">
-        <img src="{{ site.baseurl }}/stage/{{ page.assets }}.jpg"/>
+        <img src="{{ site.baseurl }}/stage/{{ page.assets }}.jpg" class="img-responsive center-block"/>
       </a>
-    </p>
+    </div>
     {% else %}
     Programme et inscription à venir.
     {% endif %}
