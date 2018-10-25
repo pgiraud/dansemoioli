@@ -55,9 +55,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (~> 3.6.2)
   jekyll-livereload
-  tzinfo-data
 
 BUNDLED WITH
-   1.16.0
+   1.17.0
