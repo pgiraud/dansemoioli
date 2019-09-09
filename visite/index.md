@@ -60,25 +60,29 @@ categories:
     </div>
   </div>
   <div class="col-xs-12">
-    <p>
-    Après 4 ans de formation au métier de professeur de danse classique, <b>Solange</b> enseigne à Rodez où elle découvre et approfondit les danses de société. Elle confirme sa formation en danse sportive et, devenue "Maître de danse", elle peut à son tour former <b>Serge</b>, son mari.
-    </p>
-    <p>
-    Ils quittent l'Aveyron pour la Savoie et Solange ouvre son école à Cognin en 1988. La qualité de son enseignement et son enthousiasme donnent rapidement de la notoriété à l'école. L'activité va s'installer dans une salle plus spacieuse à la Motte Servolex en 1991 ou Solange et Serge enseignent depuis tous les deux. Ils mettent 25 années d'expérience et de passion à votre service.
-    </p>
-    <p>
-    Leur fils <b>Sylvain</b>, baignant dans la danse depuis l'enfance, les rejoint tout naturellement en 2014.
-    Fort de l'expérience transmise par ses parents, il apporte également patience et bonne humeur, et contribue à renforcer la structure familiale de l'école.
-    </p>
-    <p>
-    Et pour finaliser la "squadra Moioli", <b>Raphaël</b> qui a également été bercé par la musique et la danse vient tout naturellement compléter l'équipe.
-    </p>
-    <p>
-    Tous les quatres mettent tout leur savoir faire à votre service, pour que danser reste un plaisir sans cesse renouvelé.
-    </p>
-    <p>
-    La squadra vous attend...
-    </p>
+  <h4>
+  HISTOIRE d’une École et d’une famille !…
+  </h4>
+
+<div markdown="1">
+
+
+**Solange** n’a jamais quitté les parquets de danse. Dès son plus jeune âge elle pratique la danse classique et concrétise son rêve par une formation de professeur de danse classique durant quatre ans à Paris.
+Elle va ensuite enseigner à Rodez, se former et approfondir les danses de société. Elle confirme sa formation en danse sportive et, devenue « Maître de danse », elle peut à son tour former **Serge**, son mari, grand passionné de musique.
+Ensemble ils quittent l’Aveyron pour la Savoie et **Solange** ouvre son École à Cognin en 1988. La qualité de son enseignement, son enthousiasme, sa douceur donnent rapidement de la notoriété à l’ École. L’activité se poursuit dans une salle plus spacieuse à la Motte Servolex en 1991, au 201 rue Charles Cabaud, où **Solange et Serge** enseignent depuis tous les deux.
+
+**Sylvain**, leur fils aîné, immergé dans la danse depuis l’enfance, les rejoint tout naturellement en 2014. Fort de l’expérience transmise par ses parents, il est le premier des enfants à décider de se former à cet enseignement après ses études d’ingénieur. Ses compétences polyvalentes, sa pédagogie et sa proximité avec les élèves vont renforcer la structure familiale.
+Il s’ensuit l’agrandissement de l’École en 2015 et l’ouverture de l’Annexe au 401 Rue des Champagnes, à deux pas du site d’origine. Deux salles supplémentaires permettent de proposer un panel encore plus large de cours tout en restant à échelle humaine, aspect que les parents ont toujours voulu préserver.
+
+**Raphaël**, leur fils cadet, arrive lui aussi en 2015, il ne pouvait en être autrement. Bercé comme son frère par la musique et la danse depuis tout petit, il expérimente une voie parallèle par une formation en sport et fitness, avant de venir compléter la « Squadra MOIOLI ». Se réappropriant les compétences et les expériences familiales, il se spécialise dans la danse en couple. Son ardeur, sa ferveur à enseigner et sa précision apportent un plus au profil de l’équipe.
+
+**Sara**, la compagne de **Sylvain**, arrive pour le bonheur de tous. Elle fait ses débuts en danse dans son pays d’origine, l’Italie, puis continue sa formation au sein même de l’École. Elle en diversifie les caractéristiques, les approches et les styles. Les élèves sont conquis par sa spontanéité, son rayonnement naturel, son dynamisme et son bel accent italien. Elle complète admirablement bien « la Famiglia ».
+
+Toute cette belle équipe enseignante assoiffée de savoir et de nouveautés, soucieuse de toujours donner plus à ses élèves, participe régulièrement à des stages de formation en France et à l’étranger.
+
+**La Squadra MOIOLI**, forte de ses cinq membres, est en marche.
+**C’est une réelle famille de professeurs** qui accueille les élèves avec chaleur dans de nombreux cours riches en apprentissage et en progression, mais toujours dans la bonne humeur et la détente.
+</div>
   </div>
 </div>
 
