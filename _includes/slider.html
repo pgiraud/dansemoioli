@@ -39,6 +39,7 @@
   $(document).ready(function() {
     var doc = $(document);
 
+    var files = [];
     if (stages) {
       files = stages
         .filter(function(stage) {
@@ -49,7 +50,7 @@
         });
     }
 
-    var files = files.length ? files : [
+    files = files.concat([
       [1, "left", "", "", '/images/rentree_janvier_2020', "/actualites/nouveaux_cours_janvier_2020"],
       // [1, "left", "", "", '/images/latino', "/cours/salsa"],
       // [4, "left", "", "", '/images/rock', "/cours/rock"],
@@ -68,7 +69,7 @@
       // [18, "left", "", "", '/images/slide-18', "/actualites/portes_ouvertes"],
       // [1, "left", "", "", '/images/rentree_janvier_2019', "/actualites/nouveaux_cours_janvier_2019"],
       // [2, "left", "Émotion et spontanéité", "Le plaisir avant tout", 'images/slide-2']
-    ];
+    ]);
 
     // files = shuffleArray(files);
     for (var i = 0; i < files.length; i++) {
