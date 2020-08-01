@@ -24,42 +24,40 @@ categories:
 
 <h3>Les professeurs</h3>
 
-<div class="row">
-  <div class="col-xs-12">
-    <div class="row">
-      <div class="col-xs-12 col-sm-4 col-md-2 col-md-offset-1">
-        <p class="text-center">
-        <img src="{{ site.baseurl }}/images/solange.jpg" class="img-responsive center-block"
-        alt="Solange MOIOLI - professeur de ROCK, SALSA, LINDY, TANGO Argentin, enseigne les danses en couple de salon, de société ou sociales">
-        </p>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-2">
-        <p class="text-center">
-        <img src="{{ site.baseurl }}/images/serge.jpg" class="img-responsive center-block"
-        alt="Serge MOIOLI - professeur de ROCK, SALSA, LINDY, TANGO Argentin, enseigne les danses en couple de salon, de société ou sociales">
-        </p>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-2">
-        <p class="text-center">
-        <img src="{{ site.baseurl }}/images/sylvain.jpg" class="img-responsive center-block"
-        alt="Sylvain MOIOLI - professeur de ROCK, SALSA, LINDY, TANGO Argentin, enseigne les danses en couple de salon, de société ou sociales">
-        </p>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-2">
-        <p class="text-center">
-        <img src="{{ site.baseurl }}/images/raphael.jpg" class="img-responsive center-block"
-        alt="Raphaël MOIOLI - professeur de ROCK, SALSA, LINDY, TANGO Argentin, enseigne les danses en couple de salon, de société ou sociales">
-        </p>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-2">
-        <p class="text-center">
-        <img src="{{ site.baseurl }}/images/sara.jpg" class="img-responsive center-block"
-        alt="Sara">
-        </p>
-      </div>
-    </div>
+<div class="row justify-content-around">
+  <div class="col-6 col-sm-4 col-md-2">
+    <p class="text-center">
+    <img src="{{ site.baseurl }}/images/solange.jpg" class="img-fluid center-block"
+    alt="Solange MOIOLI - professeur de ROCK, SALSA, LINDY, TANGO Argentin, enseigne les danses en couple de salon, de société ou sociales">
+    </p>
   </div>
-  <div class="col-xs-12">
+  <div class="col-6 col-sm-4 col-md-2">
+    <p class="text-center">
+    <img src="{{ site.baseurl }}/images/serge.jpg" class="img-fluid center-block"
+    alt="Serge MOIOLI - professeur de ROCK, SALSA, LINDY, TANGO Argentin, enseigne les danses en couple de salon, de société ou sociales">
+    </p>
+  </div>
+  <div class="col-6 col-sm-4 col-md-2">
+    <p class="text-center">
+    <img src="{{ site.baseurl }}/images/sylvain.jpg" class="img-fluid center-block"
+    alt="Sylvain MOIOLI - professeur de ROCK, SALSA, LINDY, TANGO Argentin, enseigne les danses en couple de salon, de société ou sociales">
+    </p>
+  </div>
+  <div class="col-6 col-sm-4 col-md-2">
+    <p class="text-center">
+    <img src="{{ site.baseurl }}/images/raphael.jpg" class="img-fluid center-block"
+    alt="Raphaël MOIOLI - professeur de ROCK, SALSA, LINDY, TANGO Argentin, enseigne les danses en couple de salon, de société ou sociales">
+    </p>
+  </div>
+  <div class="col-6 col-sm-4 col-md-2">
+    <p class="text-center">
+    <img src="{{ site.baseurl }}/images/sara.jpg" class="img-fluid center-block"
+    alt="Sara">
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
   <h4>
   HISTOIRE d’une École et d’une famille !…
   </h4>
@@ -88,56 +86,50 @@ Toute cette belle équipe enseignante assoiffée de savoir et de nouveautés, so
 
 <h3>L'école</h3>
 
-<div class="row">
-  <div class="col-xs-10 col-sm-offset-1 text-center">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="7"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="https://live.staticflickr.com/65535/48665668118_106fe73006_b.jpg">
-        </div>
-        <div class="item">
-          <img src="https://live.staticflickr.com/65535/48665667948_2a1b159f55_b.jpg">
-        </div>
-        <div class="item">
-          <img src="https://live.staticflickr.com/65535/48666168767_803ccbc009_b.jpg">
-        </div>
-        <div class="item">
-          <img src="https://live.staticflickr.com/65535/48666168477_5ac99859e5_b.jpg">
-        </div>
-        <div class="item">
-          <img src="https://live.staticflickr.com/65535/48666009716_d5ec2105a2_b.jpg">
-        </div>
-        <div class="item">
-          <img src="https://live.staticflickr.com/699/21316625506_f653ea691f_b.jpg">
-        </div>
-        <div class="item">
-          <img src="https://live.staticflickr.com/5776/20721788843_1c96a9dee0_b.jpg">
-        </div>
-        <div class="item">
-          <img src="https://live.staticflickr.com/5751/21332161552_962a1287ef_b.jpg">
-        </div>
-      </div>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://live.staticflickr.com/65535/48665668118_106fe73006_b.jpg">
     </div>
-    <br>
-    <p>
-      <a href="https://www.flickr.com/photos/dansemoioli/albums/72157658097608498" target="_blank"
-         class="btn btn-lg btn-primary">
-        <span class="fa fa-arrow-right"></span>
-        Voir + de photos
-      </a>
-    </p>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://live.staticflickr.com/65535/48665667948_2a1b159f55_b.jpg">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://live.staticflickr.com/65535/48665667948_2a1b159f55_b.jpg">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://live.staticflickr.com/65535/48666168767_803ccbc009_b.jpg">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://live.staticflickr.com/65535/48666168477_5ac99859e5_b.jpg">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://live.staticflickr.com/65535/48666009716_d5ec2105a2_b.jpg">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://live.staticflickr.com/699/21316625506_f653ea691f_b.jpg">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://live.staticflickr.com/5776/20721788843_1c96a9dee0_b.jpg">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://live.staticflickr.com/5751/21332161552_962a1287ef_b.jpg">
+    </div>
   </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
+<br>
+<p class="text-center">
+  <a href="https://www.flickr.com/photos/dansemoioli/albums/72157658097608498" target="_blank"
+     class="btn btn-lg btn-primary">
+    <span class="fa fa-arrow-right"></span>
+    Voir + de photos
+  </a>
+</p>

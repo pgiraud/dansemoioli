@@ -5,58 +5,82 @@ body {
 html,
 body {
   height: 100%;
-    /* The html and body elements cannot have any padding or margin. */
 }
 
+
 @media (min-width: 768px) {
-    /* Wrapper for page content to push down footer */
+    // Wrapper for page content to push down footer
     #wrap {
       min-height: 100%;
-        height: auto;
-      /* Negative indent footer by its height */
-        margin: 0 auto -250px;
-      /* Pad bottom by footer height */
-        padding: 0 0 250px;
+      height: auto;
+      // Negative indent footer by its height
+      margin: 0 auto -250px;
+      // Pad bottom by footer height
+      padding: 0 0 250px;
     }
 
-    /* Set the fixed height of the footer here */
+    // Set the fixed height of the footer here
     #footer {
         height: 250px;
     }
 
-    .navbar {
+    header {
         position: fixed;
         top: 0;
         right: 0;
         left: 0;
         border-radius: 0;
     }
-    .navbar-header {
-        width: 100%;
-    }
 
     body {
-        padding-top: 169px;
+        padding-top: 185px;
 
         &.scroll {
             padding-top: 50px;
-            .navbar {
-                top: -120px;
+            header {
+                top: -110px;
             }
         }
     }
 }
 
-.navbar {
-    @include gradient-vertical($color2, $color3, 0%, 90%);
+header {
+    z-index: 2;
     -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.25);
     -moz-box-shadow: 0 5px 15px rgba(0,0,0,.25);
-    z-index: 2;
-
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
+}
+
+@media (max-width: 767px) {
+    header.container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .navbar-brand img {
+        width: 85px;
+    }
+}
+
+.navbar-default {
+    .navbar-toggler,
+    .navbar-nav li > a {
+        color: #333;
+        font-weight: bold;
+    }
+    .navbar-toggler:hover,
+    .navbar-nav li > a:hover {
+        color: $link-hover-color;
+        text-shadow: 1px 1px 0 #FFCC00;
+    }
+    .navbar-toggler:hover {
+        color: $link-hover-color;
+    }
+    .caret {
+        border-top-color: #333;
+    }
 }
 
 footer {
@@ -92,91 +116,6 @@ footer {
 
 h1, h2, h3, .h1, .h2, .h3 {
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
-}
-.navbar-brand {
-    padding: 8px 8px;
-}
-
-.navbar-brand span {
-    display: none;
-}
-
-.navbar-default {
-    min-height: 25px;
-    margin-bottom: 0;
-    border: 0;
-    .navbar-toggle,
-    .navbar-nav li > a {
-        color: $link-hover-color;
-        text-shadow: 1px 1px 0 #FFCC00;
-        font-weight: bold;
-    }
-    .navbar-toggle:hover,
-    .navbar-nav li > a:hover {
-        color: $link-color;
-    }
-    .navbar-toggle:hover {
-        color: $link-color;
-    }
-    .caret {
-        border-top-color: $link-hover-color;
-    }
-}
-@media (min-width: 768px) {
-    .home {
-        .navbar-toggle {
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-    }
-}
-
-@media (min-width: 768px) {
-    .navbar-header {
-        text-align: center;
-    }
-
-    .navbar-brand {
-        float: none;
-        display: initial;
-
-        & > img {
-            display: inline;
-            padding: 10px;
-        }
-    }
-
-    .navbar-collapse {
-        text-align: center;
-    }
-
-    .navbar-nav {
-        float: none;
-        & > li {
-            float: none;
-            display: inline-block;
-        }
-    }
-}
-
-
-
-@media (max-width: 767px) {
-    .navbar-header {
-        img {
-            width: 85px;
-        }
-    }
-    .navbar-brand {
-        padding: 2px;
-    }
-    .navbar-nav > li > a {
-        line-height: 70px;
-        font-size: 16px;
-    }
-    .navbar-nav > li > a{
-        line-height: 25px;
-    }
 }
 
 /* home page */
@@ -577,9 +516,9 @@ a.alert-actu.contrast:hover {
 }
 
 .cours {
-    padding-top: 2 * $padding-large-vertical;
+    padding-top: 2 * $spacer;
 
-    .img-responsive {
+    .img-fluid {
         display: inline-block;
     }
 }

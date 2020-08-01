@@ -1,5 +1,4 @@
 $font-family-sans-serif: 'Open Sans', sans-serif;
-$font-size-base: 16px;
 
 $link-color: #DA5102;
 $link-hover-color: #9A3800;
@@ -7,18 +6,6 @@ $color2: #FFCC00;
 $color3: #FC9303;
 
 $body-bg: #f5f5f5;
-
-/*$navbar-default-bg: #E04B00;*/
-/*$navbar-default-bg: #FC9303;*/
-$navbar-border-radius: 0;
-$navbar-default-color: $link-color;
-$navbar-default-link-color: $link-color;
-$navbar-default-link-hover-color: $link-hover-color;
-$navbar-default-toggle-hover-bg: transparent;
-$navbar-default-toggle-border-color: transparent;
-$navbar-default-bg: $color2;
-$navbar-default-link-active-bg: $color2;
-
 
 $gray-dark: #535353;
 
@@ -28,3 +15,11 @@ $headings-font-weight: bold;
 $thumbnail-border: $color2;
 
 $table-border-color: #999;
+
+@mixin gradient-vertical($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+    background-image: -webkit-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);  // Safari 5.1-6, Chrome 10+
+    background-image: -o-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);  // Opera 12
+    background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0); // IE9 and down
+}
