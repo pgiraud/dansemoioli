@@ -54,8 +54,18 @@ header {
     transition: all 0.2s ease-out;
 }
 
+@media (max-width: 767px) {
+    header.container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .navbar-brand img {
+        width: 85px;
+    }
+}
+
 .navbar-default {
-    .navbar-toggle,
+    .navbar-toggler,
     .navbar-nav li > a {
         color: $link-hover-color;
         text-shadow: 1px 1px 0 #FFCC00;

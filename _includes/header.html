@@ -25,15 +25,15 @@
 
     <body class="{{ page.categories }}">
       <header class="container-fluid container-dark">
-        <div class="container">
-          <nav class="navbar navbar-default navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-default navbar-expand-lg">
+          <div class="container flex-lg-column">
+            <a class="navbar-brand" href="{{ site.baseurl }}/">
+              <img src="{{ site.baseurl }}/images/logo.png" />
+            </a>
+            <button class="navbar-toggler dropdown-toggle" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              Menu
             </button>
-            <div class="collapse navbar-collapse flex-column" id="navbarTogglerDemo01">
-              <a class="navbar-brand" href="{{ site.baseurl }}/">
-                <img src="{{ site.baseurl }}/images/logo.png" />
-              </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
               <ul class="navbar-nav mt-2 mt-lg-0">
                 <li class="nav-item">
                   <a class="nav-link" href="{{ site.baseurl }}/">Accueil</a>
@@ -42,7 +42,7 @@
                   <a class="nav-link" href="{{ site.baseurl }}/visite/">Visite</a>
                 </li>
                 <li class="dropdown nav-item">
-                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cours <span class="caret"></span></a>
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cours </a>
                   <div class="dropdown-menu">
                     {% for danse in site.danses %}
                     <a class="dropdown-item" href="{{ site.baseurl }}/cours/{{ danse.name }}">{{ danse.title }}</a>
@@ -56,7 +56,7 @@
                   <a class="nav-link" href="{{ site.baseurl }}/soirees/">Soirées</a>
                 </li>
                 <li class="dropdown nav-item">
-                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Stages <span class="caret"></span></a>
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Stages </a>
                   <div class="dropdown-menu">
                     {% assign sorted_stages = (site.pages | sort: 'date') %}
                     {% for page in sorted_stages %}
@@ -84,7 +84,7 @@
                   </div>
                 </li>
                 <li class="dropdown nav-item">
-                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Infos <span class="caret"></span></a>
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Infos </a>
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="{{ site.baseurl }}/plan_acces">Plan d'accès</a>
                     <a class="dropdown-item" href="{{ site.baseurl }}/pdf/Reglement interieur septembre 2019.pdf" target="_blank">Réglement intérieur</a>
@@ -95,8 +95,8 @@
                 </li>
               </ul>
             </div>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </header>
 <script>
 $(window).scroll(function(){
