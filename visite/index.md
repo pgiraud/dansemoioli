@@ -29,31 +29,31 @@ categories:
     <div class="row">
       <div class="col-xs-12 col-sm-4 col-md-2 col-md-offset-1">
         <p class="text-center">
-        <img src="{{ site.baseurl }}/images/solange.jpg" class="img-responsive center-block"
+        <img src="{{ site.baseurl }}/images/solange.jpg" class="img-fluid center-block"
         alt="Solange MOIOLI - professeur de ROCK, SALSA, LINDY, TANGO Argentin, enseigne les danses en couple de salon, de société ou sociales">
         </p>
       </div>
       <div class="col-xs-12 col-sm-4 col-md-2">
         <p class="text-center">
-        <img src="{{ site.baseurl }}/images/serge.jpg" class="img-responsive center-block"
+        <img src="{{ site.baseurl }}/images/serge.jpg" class="img-fluid center-block"
         alt="Serge MOIOLI - professeur de ROCK, SALSA, LINDY, TANGO Argentin, enseigne les danses en couple de salon, de société ou sociales">
         </p>
       </div>
       <div class="col-xs-12 col-sm-4 col-md-2">
         <p class="text-center">
-        <img src="{{ site.baseurl }}/images/sylvain.jpg" class="img-responsive center-block"
+        <img src="{{ site.baseurl }}/images/sylvain.jpg" class="img-fluid center-block"
         alt="Sylvain MOIOLI - professeur de ROCK, SALSA, LINDY, TANGO Argentin, enseigne les danses en couple de salon, de société ou sociales">
         </p>
       </div>
       <div class="col-xs-12 col-sm-4 col-md-2">
         <p class="text-center">
-        <img src="{{ site.baseurl }}/images/raphael.jpg" class="img-responsive center-block"
+        <img src="{{ site.baseurl }}/images/raphael.jpg" class="img-fluid center-block"
         alt="Raphaël MOIOLI - professeur de ROCK, SALSA, LINDY, TANGO Argentin, enseigne les danses en couple de salon, de société ou sociales">
         </p>
       </div>
       <div class="col-xs-12 col-sm-4 col-md-2">
         <p class="text-center">
-        <img src="{{ site.baseurl }}/images/sara.jpg" class="img-responsive center-block"
+        <img src="{{ site.baseurl }}/images/sara.jpg" class="img-fluid center-block"
         alt="Sara">
         </p>
       </div>
