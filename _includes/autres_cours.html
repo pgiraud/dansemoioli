@@ -1,10 +1,9 @@
-<br>
-<div class="row">
-  <div class="col-xs-12">
+<div class="row mt-4">
+  <div class="col">
     <p class="links text-right text-muted">
       {% for danse in site.danses %}
       <a href="{{ site.baseurl }}/cours/{{ danse.name }}"
-         class="btn btn-sm btn-default {% if include.param == danse.name %}active{% endif %}"
+         class="btn btn-sm border border-secondary {% if include.param == danse.name %}btn-secondary{% endif %}"
          alt="Cours de {{ danse.title }}">
         {{ danse.title }} 
       </a>
