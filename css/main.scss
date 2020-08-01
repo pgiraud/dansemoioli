@@ -6,6 +6,6 @@
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "variables",
-        "bootstrap",
-        "site"
+        "../bootstrap-4.5.0/scss/bootstrap"
+        //"site"
 ;
