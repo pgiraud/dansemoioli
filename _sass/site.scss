@@ -48,7 +48,7 @@ body {
 }
 
 .navbar {
-    //@include gradient-vertical($color2, $color3, 0%, 90%);
+    @include gradient-vertical($color2, $color3, 0%, 90%);
     -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.25);
     -moz-box-shadow: 0 5px 15px rgba(0,0,0,.25);
     z-index: 2;
@@ -60,7 +60,7 @@ body {
 }
 
 footer {
-    //@include gradient-vertical($color3, $color2, 0%, 90%);
+    @include gradient-vertical($color3, $color2, 0%, 90%);
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -181,7 +181,7 @@ h1, h2, h3, .h1, .h2, .h3 {
 
 /* home page */
 .container-dark {
-    //@include gradient-vertical($color2, $color3, 0%, 90%);
+    @include gradient-vertical($color2, $color3, 0%, 90%);
     width: 100%;
     h1, h2, h3, h4 {
         color: white;
@@ -191,7 +191,7 @@ h1, h2, h3, .h1, .h2, .h3 {
     }
 }
 .container-light .well {
-    //@include gradient-vertical(#ddd, #efefef, 0%, 90%);
+    @include gradient-vertical(#ddd, #efefef, 0%, 90%);
     /*padding: 10px;*/
 }
 .container-light h3 {
@@ -577,7 +577,7 @@ a.alert-actu.contrast:hover {
 }
 
 .cours {
-    padding-top: 2 * $padding-large-vertical;
+    padding-top: 2 * $spacer;
 
     .img-responsive {
         display: inline-block;
