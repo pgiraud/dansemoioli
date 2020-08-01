@@ -67,19 +67,19 @@ header {
 .navbar-default {
     .navbar-toggler,
     .navbar-nav li > a {
-        color: $link-hover-color;
-        text-shadow: 1px 1px 0 #FFCC00;
+        color: #333;
         font-weight: bold;
     }
     .navbar-toggler:hover,
     .navbar-nav li > a:hover {
-        color: $link-color;
+        color: $link-hover-color;
+        text-shadow: 1px 1px 0 #FFCC00;
     }
     .navbar-toggler:hover {
-        color: $link-color;
+        color: $link-hover-color;
     }
     .caret {
-        border-top-color: $link-hover-color;
+        border-top-color: #333;
     }
 }
 
