@@ -20,20 +20,19 @@ categories:
 <h3>Cours collectifs</h3>
 <div class="row justify-content-center">
   <div class="col-md-8">
-    <table class="table table-bordered">
-      <caption>SAISON 2019 / 2020</caption>
-      <tbody>
+    <table class="table bg-white">
+      <caption>SAISON 2020 / 2021</caption>
+      <thead class="thead-dark">
         <tr>
-          <th rowspan="1" class="text-center text-muted">
+          <th rowspan="1" class="text-center">
             Durée du cours<br>
             1 heure
           </th>
           <th rowspan="1" scope="col" class="text-center">Forfait<br>Saison</th>
           <th rowspan="1" scope="col" class="text-center">Forfait<br>Trimestre</th>
         </tr>
-        <tr class="spacer">
-          <td rowspan="1" colspan="3"></td>
-        </tr>
+      </thead>
+      <tbody>
         <tr>
           <th colspan="1" class="text-center">1 cours / semaine</th>
           <td colspan="1" align="center">
@@ -51,9 +50,6 @@ categories:
           <th colspan="1" class="text-center"><small><em>Étudiant</em></small></th>
           <td colspan="1" align="center"><small><em>240 €</em></small></td>
           <td colspan="1" align="center"><small><em>90 €</em></small></td>
-        </tr>
-        <tr class="spacer">
-          <td rowspan="1" colspan="3"></td>
         </tr>
         <tr>
           <th colspan="1" class="text-center">2 <sup>ème</sup> cours dans la semaine</th>
@@ -129,48 +125,4 @@ categories:
 <h3>Infos</h3>
 {% include infos_tarifs.html %}
 
-<h3>Cours particuliers</h3>
-<p>
-  Vous souhaitez vous perfectionner plus particulièrement dans une danse, réviser certaines figures déjà apprises, apprendre à danser la valse ou la salsa pour votre mariage ou vos soirées ...
-</p>
-<p>
-  <strong>Les cours particuliers sont la solution !</strong>
-</p>
-<ul>
-  <li>Vous devez prendre rendez-vous à l'avance. Les cours ont lieu dans la journée.</li>
-  <li>Les dates et les horaires sont à déterminer avec le professeur.</li>
-  <li>Vous choisissez la ou les danses que vous souhaitez apprendre.</li>
-</ul>
-<div class="row justify-content-center">
-  <div class="col-md-8">
-    <table class="table table-bordered middle">
-      <tbody>
-        <tr>
-          <th rowspan="1" class="text-center">Cours particuliers</th>
-          <th rowspan="1" class="text-center">1 heure<br> de cours</th>
-          <th rowspan="1" class="text-center">Forfait 6h<br> de cours</th>
-          <th rowspan="1" class="text-center">Forfait 12h<br> de cours</th>
-        </tr>
-        <tr>
-          <td class="text-center">1 - 2 personnes</td>
-          <td class="text-center">40 €</td>
-          <td class="text-center">210 €</td>
-          <td class="text-center">360 €</td>
-        </tr>
-      </tbody>
-    </table>
-    <caption colspan="4">Au delà de la 2ème personne : 10 €/heure en plus par personne.</caption>
-  </div>
-</div>
-<br>
-<div class="row">
-  <div class="col-md-12">
-    <p>
-    Pour les cours particuliers, contactez directement
-    <b>Sylvain Moioli</b> au <i class="fa fa-phone"></i> 06 75 81 89 37
-    ou
-    <b>Sara Manfredi</b> au <i class="fa fa-phone"></i> 06 34 45 21 97
-    .
-    </p>
-  </div>
-</div>
+{% include cours_particuliers.html %}
