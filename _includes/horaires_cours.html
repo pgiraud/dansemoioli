@@ -1,0 +1,32 @@
+<table class="table bg-white">
+  <thead class="thead-dark">
+    <tr>
+      <th>Jour / Heure</th>
+      <th class="">Salle</th>
+      <th class=""><em>à partir du</em></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for danse in site.danses %}
+      {% if include.danse == danse.name %}
+        {% for cours in danse.cours %}
+        <tr>
+          <td>
+            {{ cours[0] }} {{ cours[1] }}
+          </td>
+          <td class="">
+            <span class="border border-secondary rounded px-3 text-nowrap">
+              {{ cours[2] }}
+            </span>
+          </td>
+          <td class="">
+            <em>
+              {{ cours[3] }}
+            </em>
+          </td>
+        </tr>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
