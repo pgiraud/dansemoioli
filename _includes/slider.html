@@ -61,7 +61,6 @@
       // [9, "left", "L'Annexe", "", '/images/slide-9'],
       // [4, "left", "Partage et convivialité", "Nos valeurs", 'images/slide-4'],
       // [8, "left", "", "", 'images/slide-8'],
-      [18, "left", "", "", '/images/slide-18', "/actualites/portes_ouvertes"],
       // [3, "left", "Générosité et savoir-faire", "Donner et transmettre notre passion", 'images/slide-3'],
       // [18, "left", "", "", '/images/slide-18', "/actualites/portes_ouvertes"],
       // [1, "left", "", "", '/images/rentree_janvier_2019', "/actualites/nouveaux_cours_janvier_2019"],
@@ -76,7 +75,13 @@
       [1, "left", "", "", 'images/BS WCS', '/cours/wcs'],
     ]);
 
-    // files = shuffleArray(files);
+    files = shuffleArray(files);
+
+    // Ajout de slides en premier
+    files = [
+      [18, "left", "", "", '/images/slide-18', "/actualites/portes_ouvertes"],
+    ].concat(files);
+
     for (var i = 0; i < files.length; i++) {
       var file = files[i][0];
       var image = $('<img />', {
