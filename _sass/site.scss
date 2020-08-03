@@ -146,16 +146,6 @@ h1, h2, h3, .h1, .h2, .h3 {
     /*border-color: $color3;*/
     /*background-color: $color2;*/
 }
-a.btn .glyphicon,
-a.btn .fa {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-}
-a.btn:hover .glyphicon,
-a.btn:hover .fa {
-    opacity: 1;
-    filter: alpha(opacity=100);
-}
 
 a,
 .btn,
