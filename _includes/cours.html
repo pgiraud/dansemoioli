@@ -1,6 +1,6 @@
-<div class="row cours">
+<div class="row cours justify-content-center">
   {% for danse in site.danses %}
-  <div class="col-md-3 col-sm-4 col-xs-6 align-items-center">
+  <div class="col-md-3 col-sm-4 col-xs-6">
     <a href="{{ site.baseurl }}/cours/{{ danse.name }}" data-cours="{{ danse.name }}" data-role="cours" title="Cours de {{ danse.title}}">
       <img src="{{ site.baseurl }}/images/{{ danse.name }}.png" class="logo img-fluid">
     </a>
