@@ -31,15 +31,26 @@ danses:
   - 
     title: Rock'n roll
     name: rock
+    cours:
+      - [Lundi, 21h, Salle Compay, 21 septembre 2020]
+      - [Mercredi, 19h, Salle Elvis, 23 septembre 2020]
   - 
     title: Salsa cubaine
     name: salsa
+    cours:
+      - [Lundi, 19h, Salle Elvis, 21 septembre 2020]
+      - [Mardi, 21h, Salle Elvis, 22 septembre 2020]
+      - [Vendredi, 19h, Salle Pugliese, 25 septembre 2020]
   - 
     title: Lindy Hop
     name: lindy
+    cours:
+      - [Mardi, 19h, Salle Compay, 22 septembre 2020]
   - 
     title: Tango Argentin
     name: tango
+    cours:
+      - [Vendredi, 19h, Salle Elvis, 25 septembre 2020]
   - 
     title: Danses de salon
     name: salon
@@ -49,6 +60,20 @@ danses:
   - 
     title: West Coast Swing
     name: westcoastswing
+    cours:
+      - [Lundi, 20h, Salle Elvis, 21 septembre 2020]
   - 
     title: Kizomba
     name: kizomba
+    cours:
+      - [Jeudi, 21h, Salle Elvis, 24 septembre 2020]
+  - 
+    title: Solo Swing
+    name: soloswing
+    cours:
+      - [Mardi, 19h, Salle Elvis, 1er septembre 2020]
+  - 
+    title: Solo Latino
+    name: sololatino
+    cours:
+      - [Mercredi, 20h, Salle Elvis, 02 septembre 2020]
