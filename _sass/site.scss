@@ -608,9 +608,13 @@ tr>td.salle4 {
     color: #993b22;
 }
 
-.bg-mariage {
-  background: url("../images/mariage_main.jpg") no-repeat fixed;
+.bg-main {
+  background: no-repeat fixed;
   background-size: contain;
+}
+
+.bg-mariage {
+  background-image: url("../images/mariage/main.jpg");
 }
 
 .bg-semi-transparent {
