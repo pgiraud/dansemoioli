@@ -95,9 +95,6 @@ Toute cette belle équipe enseignante assoiffée de savoir et de nouveautés, so
       <img class="d-block w-100" src="https://live.staticflickr.com/65535/48665667948_2a1b159f55_b.jpg">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="https://live.staticflickr.com/65535/48665667948_2a1b159f55_b.jpg">
-    </div>
-    <div class="carousel-item">
       <img class="d-block w-100" src="https://live.staticflickr.com/65535/48666168767_803ccbc009_b.jpg">
     </div>
     <div class="carousel-item">
