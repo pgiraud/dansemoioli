@@ -32,14 +32,13 @@ danses:
     title: Rock'n roll
     name: rock
     cours:
-      - [Lundi, 21h, Salle Elvis, 20 septembre 2021]
-      - [Mercredi, 20h, Salle Pugliese, 22 septembre 2021]
+      - [Jeudi, 19h, Salle Elvis, 20 janvier 2022]
+
   -
     title: Salsa cubaine
     name: salsa
     cours:
-      - [Lundi, 20h, Salle Elvis, 20 septembre 2021]
-      - [Mercredi, 21h, Salle Pugliese, 22 septembre 2021]
+      - [Mercredi, 19h, Salle Elvis, 19 janvier 2022]
 
   -
     title: Lindy Hop
