@@ -39,6 +39,8 @@
   $(document).ready(function() {
     var doc = $(document);
 
+    // tableau contenant les infos pour le slider
+    // [index, position, titre1, titre2, préfixe des images, cible du lien, format d'image (jpeg, gif)]
     var files = [];
 
     files = files.concat([
@@ -80,7 +82,11 @@
           return stage.form
         })
         .map(function(stage, index) {
-          return [index, 'left', "", "", 'stage/' + stage.assets + '_slider', stage.url];
+          var file = [index, 'left', "", "", 'stage/' + stage.assets + '_slider', stage.url];
+          if (stage.format_slider) {
+            file.push(stage.format_slider);
+          }
+          return file;
         })
         .concat(files);
     }
@@ -97,8 +103,10 @@
 
     for (var i = 0; i < files.length; i++) {
       var file = files[i][0];
+      var imageSrc = baseurl + files[i][4]
+      imageSrc += files[i][6] || '.jpg';
       var image = $('<img />', {
-        src: baseurl + files[i][4] + '.jpg'
+        src: imageSrc
       });
       var item = $('<div/>', {
         'class': 'item'
