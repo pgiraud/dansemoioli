@@ -78,6 +78,9 @@
 
     if (stages) {
       files = stages
+        .sort(function(a, b) {
+           return a.date < b.date ? -1 : 1;
+         })
         .filter(function(stage) {
           return stage.form
         })
