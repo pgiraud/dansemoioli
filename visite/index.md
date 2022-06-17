@@ -12,7 +12,7 @@ categories:
   <div class="col-md-7">
     <h3>À propos de l'école</h3>
 
-    <p>Pour vous, qui habitez Chambéry, la Motte Servolex et ses environs, des professeurs compétents sont à votre service pour vous enseigner le <a href="{{ site.baseurl }}/cours/rock">Rock et les autres danses de bal</a> qu'il faut absolument connaître (Valse, Paso, Tango, Cha-cha), mais aussi la <a href="{{ site.baseurl }}/cours/salsa/">Salsa</a>, la <a href="{{ site.baseurl }}/cours/salsa/">Bachata</a>, la <a href="{{ site.baseurl }}/cours/kizomba">Kizomba</a>, le <a href="{{ site.baseurl }}/cours/tango">Tango argentin</a>, le <a href="{{ site.baseurl }}/cours/lindy">Lindy hop</a>, le <a href="{{ site.baseurl }}/cours/westcoastswing">West Coast Swing</a> ou encore le <a href="{{ site.baseurl }}/cours/soloswing">Solo Swing</a> et le <a href="{{ site.baseurl }}/cours/sololatino">Solo Latino</a>.</p>
+    <p>Pour vous, qui habitez Chambéry, la Motte Servolex et ses environs, des professeurs compétents sont à votre service pour vous enseigner le <a href="{{ site.baseurl }}/cours/rock">Rock et les autres danses de bal</a> qu'il faut absolument connaître (Valse, Paso, Tango, Cha-cha), mais aussi la <a href="{{ site.baseurl }}/cours/salsa/">Salsa</a>, la <a href="{{ site.baseurl }}/cours/salsa/">Bachata</a>, la <a href="{{ site.baseurl }}/cours/kizomba">Kizomba</a>, le <a href="{{ site.baseurl }}/cours/tango">Tango argentin</a>, le <a href="{{ site.baseurl }}/cours/lindy">Lindy hop</a>, le <a href="{{ site.baseurl }}/cours/westcoastswing">West Coast Swing</a> ou encore le <a href="{{ site.baseurl }}/cours/soloswing">Solo Swing</a>.</p>
   </div>
   <div class="col-md-5 text-center">
     <a href="{{ site.baseurl }}/plan_acces/">
