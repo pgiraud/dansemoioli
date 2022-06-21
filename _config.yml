@@ -35,32 +35,49 @@ danses:
       - [Débutant, Lundi 19h, Salle Elvis]
       - [Débutant, Mercredi 19h, Salle Elvis]
       - [Débutant, Jeudi 20h, Salle Elvis]
-      - [Intermédiaire, Lundi 19h, Salle Elvis]
-      - [Intermédiaire, Lundi 21h, Salle Elvis]
-      - [Intermédiaire, Mardi 19h, Salle Elvis]
-      - [Intermédiaire, Mercredi 20h, Salle Elvis]
-      - [Avancé, Mercredi 19h, Salle Elvis]
-      - [Avancé, Jeudi 19h, Salle Elvis]
+      - [Intermédiaire, Lundi 19h, Salle Pugliese]
+      - [Intermédiaire, Lundi 21h, Salle Compay]
+      - [Intermédiaire, Mardi 19h, Salle Compay]
+      - [Intermédiaire, Mercredi 20h, Salle Pugliese]
+      - [Avancé, Mardi 21h, Salle Compay]
+      - [Avancé, Mercredi 19h, Salle Compay]
+      - [Avancé, Jeudi 19h, Salle Pugliese]
 
   -
     title: Salsa cubaine
     name: salsa
     cours:
-      - [Mercredi, 19h, Salle Elvis, 19 janvier 2022]
+      - [Débutant, Lundi 20h, Salle Elvis]
+      - [Débutant, Mardi 21h, Salle Compay]
+      - [Débutant, Jeudi 19h, Salle Elvis]
+      - [Intermédiaire, Lundi 21h, Salle Compay]
+      - [Intermédiaire, Mercredi 21h, Salle Pugliese]
+      - [Intermédiaire, Jeudi 20h, Salle Compay]
+      - [Avancée, Mardi 20h, Salle Compay]
+      - [Avancé, Mercredi 21h, Salle Compay]
 
   -
     title: Lindy Hop
     name: lindy
     cours:
-      - [Mardi, 20h, Salle Elvis, 18 Janvier 2022]
+        - [Débutant, Lundi 19h, Salle Elvis]
+        - [Intermédiaire, Mardi 20h, Salle Compay]
+        - [Intermédiaire, Jeudi 21h, Salle Compay]
+        - [Avancé, Mercredi 20h, Salle Compay]
   -
     title: Tango Argentin
     name: tango
     cours:
-      - [Mardi, 19h, Salle Compay, 21 septembre 2021]
+        - [Débutant, Mercredi 20h, Salle Elvis]
+        - [Intermédiaire, Mardi 18h30, Salle Pugliese]
+        - [Intermédiaire, Vendredi 18h30, Salle Elvis]
+        - [Avancé, Mercredi 18h30, Salle Pugliese]
+        - [Avancé, Jeudi 20h, Salle Pugliese]
   -
     title: Danses de salon
     name: salon
+    cours:
+        - [Inter/Avancé, Lundi 18h, Salle Pugliese]
   -
     title: Bachata
     name: bachata
@@ -68,19 +85,20 @@ danses:
     title: West Coast Swing
     name: westcoastswing
     cours:
-      - [Jeudi, 20h, Salle Elvis, 23 septembre 2021]
+      - [Débutant, Mardi 19h, Salle Elvis]
+      - [Intermédiaire, Lundi 20h, Salle Pugliese]
+      - [Avancé, Jeudi 19h, Salle Compay]
   -
     title: Kizomba
     name: kizomba
     cours:
-      - [Mardi, 20h, Salle Elvis, 21 septembre 2021]
+      - [Débutant, Mardi 21h, Salle Elvis]
+      - [Inter/Avancé, Vendredi 20h, Salle Compay]
   -
     title: Solo Swing
     name: soloswing
     cours:
-      - [Mardi, 19h, Salle Elvis, 7 septembre 2021]
+      - [Mercredi, 19h, Salle Compay]
   -
     title: Solo Latino
     name: sololatino
-    cours:
-      - [Mercredi, 20h, Salle Elvis, 8 septembre 2021]
