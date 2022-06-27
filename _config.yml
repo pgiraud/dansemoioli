@@ -79,9 +79,6 @@ danses:
     cours:
         - [Inter/Avancé, Lundi 18h, Salle Pugliese]
   -
-    title: Bachata
-    name: bachata
-  -
     title: West Coast Swing
     name: westcoastswing
     cours:
@@ -100,3 +97,5 @@ danses:
     cours:
       - [Tous niveaux, Mercredi 19h, Salle Compay]
   -
+    title: Ateliers
+    name: ateliers
