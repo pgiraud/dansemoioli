@@ -29,7 +29,7 @@ include: ['.htaccess']
 
 danses:
   -
-    title: Rock'n roll
+    title: Rock'n'roll
     name: rock
     cours:
       - [Débutant, Lundi 19h, Salle Elvis]
@@ -44,7 +44,7 @@ danses:
       - [Avancé, Jeudi 19h, Salle Pugliese]
 
   -
-    title: Salsa cubaine
+    title: Salsa / Bachata
     name: salsa
     cours:
       - [Débutant, Lundi 20h, Salle Elvis]
@@ -57,7 +57,7 @@ danses:
       - [Avancé, Mercredi 21h, Salle Compay]
 
   -
-    title: Lindy Hop
+    title: Lindy-Hop / Balboa
     name: lindy
     cours:
         - [Débutant, Lundi 19h, Salle Elvis]
@@ -100,5 +100,3 @@ danses:
     cours:
       - [Tous niveaux, Mercredi 19h, Salle Compay]
   -
-    title: Solo Latino
-    name: sololatino
