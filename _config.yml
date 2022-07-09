@@ -63,7 +63,7 @@ danses:
         - [Débutant, Lundi 19h, Salle Elvis]
         - [Intermédiaire, Mardi 20h, Salle Compay]
         - [Intermédiaire, Jeudi 21h, Salle Compay]
-        - [Avancé, Mercredi 20h, Salle Compay]
+        - [Avancé, Mercredi 19h30 (1h30), Salle Compay]
   -
     title: Tango Argentin
     name: tango
@@ -95,7 +95,7 @@ danses:
     title: Solo Swing
     name: soloswing
     cours:
-      - [Tous niveaux, Mercredi 19h, Salle Compay]
+      - [Tous niveaux, Mercredi 18h30, Salle Compay]
   -
     title: Ateliers
     name: ateliers
