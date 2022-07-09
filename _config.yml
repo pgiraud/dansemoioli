@@ -53,7 +53,7 @@ danses:
       - [Intermédiaire, Lundi 21h, Salle Compay]
       - [Intermédiaire, Mercredi 21h, Salle Pugliese]
       - [Intermédiaire, Jeudi 20h, Salle Compay]
-      - [Avancée, Mardi 20h, Salle Compay]
+      - [Avancé, Mardi 20h, Salle Compay]
       - [Avancé, Mercredi 21h, Salle Compay]
 
   -
@@ -69,10 +69,10 @@ danses:
     name: tango
     cours:
         - [Débutant, Mercredi 20h, Salle Elvis]
-        - [Intermédiaire, Mardi 18h30, Salle Pugliese]
-        - [Intermédiaire, Vendredi 18h30, Salle Elvis]
-        - [Avancé, Mercredi 18h30, Salle Pugliese]
-        - [Avancé, Jeudi 20h, Salle Pugliese]
+        - [Intermédiaire, Mardi 18h30 (1h30), Salle Pugliese]
+        - [Intermédiaire, Vendredi 18h30 (1h30), Salle Elvis]
+        - [Avancé, Mercredi 18h30 (1h30), Salle Pugliese]
+        - [Avancé, Jeudi 20h (1h30), Salle Pugliese]
   -
     title: Danses de salon
     name: salon
