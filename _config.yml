@@ -32,70 +32,71 @@ danses:
     title: Rock'n'roll
     name: rock
     cours:
-      - [Débutant, Lundi 19h, Salle Elvis]
-      - [Débutant, Mercredi 19h, Salle Elvis]
-      - [Débutant, Jeudi 20h, Salle Elvis]
-      - [Intermédiaire, Lundi 19h, Salle Pugliese]
-      - [Intermédiaire, Lundi 21h, Salle Compay]
-      - [Intermédiaire, Mardi 19h, Salle Compay]
-      - [Intermédiaire, Mercredi 20h, Salle Pugliese]
-      - [Avancé, Mardi 21h, Salle Compay]
-      - [Avancé, Mercredi 19h, Salle Compay]
-      - [Avancé, Jeudi 19h, Salle Pugliese]
+      - [Débutant, Lundi 19h (1h), Salle Elvis]
+      - [Débutant, Mercredi 19h (1h), Salle Elvis]
+      - [Débutant, Jeudi 20h (1h), Salle Elvis]
+      - [Intermédiaire 1, Mercredi 20h (1h), Salle Pugliese]
+      - [Intermédiaire 1, Lundi 21h (1h), Salle Compay]
+      - [Intermédiaire 2, Lundi 19h (1h), Salle Pugliese]
+      - [Intermédiaire 2, Mardi 19h (1h), Salle Compay]
+      - [Avancé 1, Mardi 21h (1h), Salle Compay]
+      - [Avancé 2, Jeudi 19h (1h), Salle Pugliese]
 
   -
     title: Salsa / Bachata
     name: salsa
     cours:
-      - [Débutant, Lundi 20h, Salle Elvis]
-      - [Débutant, Mardi 21h, Salle Compay]
-      - [Débutant, Jeudi 19h, Salle Elvis]
-      - [Intermédiaire, Lundi 21h, Salle Compay]
-      - [Intermédiaire, Mercredi 21h, Salle Pugliese]
-      - [Intermédiaire, Jeudi 20h, Salle Compay]
-      - [Avancé, Mardi 20h, Salle Compay]
-      - [Avancé, Mercredi 21h, Salle Compay]
+      - [Débutant, Lundi 20h (1h), Salle Elvis]
+      - [Débutant, Mardi 21h (1h), Salle Compay]
+      - [Débutant, Jeudi 19h (1h), Salle Elvis]
+      - [Intermédiaire 1, Mercredi 21h (1h), Salle Pugliese]
+      - [Intermédiaire 2, Lundi 21h (1h), Salle Compay]
+      - [Intermédiaire 3, Jeudi 20h (1h), Salle Compay]
+      - [Avancé 1, Mercredi 21h (1h), Salle Compay]
+      - [Avancé 2, Mardi 20h (1h), Salle Compay]
+
 
   -
     title: Lindy-Hop / Balboa
     name: lindy
     cours:
-        - [Débutant, Lundi 19h, Salle Elvis]
-        - [Intermédiaire, Mardi 20h, Salle Compay]
-        - [Intermédiaire, Jeudi 21h, Salle Compay]
+        - [Débutant, Lundi 19h (1h), Salle Elvis]
+        - [Intermédiaire 1, Mardi 20h (1h), Salle Compay]
+        - [Intermédiaire 2, Jeudi 21h (1h), Salle Compay]
         - [Avancé, Mercredi 19h30 (1h30), Salle Compay]
   -
     title: Tango Argentin
     name: tango
     cours:
-        - [Débutant, Mercredi 20h, Salle Elvis]
-        - [Intermédiaire, Mardi 18h30 (1h30), Salle Pugliese]
-        - [Intermédiaire, Vendredi 18h30 (1h30), Salle Elvis]
-        - [Avancé, Mercredi 18h30 (1h30), Salle Pugliese]
-        - [Avancé, Jeudi 20h (1h30), Salle Pugliese]
+        - [Débutant, Mercredi 20h (1h), Salle Elvis]
+        - [Intermédiaire 1, Mardi 18h30 (1h30), Salle Pugliese]
+        - [Intermédiaire 2, Vendredi 18h30 (1h30), Salle Elvis]
+        - [Avancé 1, Jeudi 20h (1h30), Salle Pugliese]
+        - [Avancé 2, Mercredi 18h30 (1h30), Salle Pugliese]
+
   -
     title: Danses de salon
     name: salon
     cours:
-        - [Inter/Avancé, Lundi 18h, Salle Pugliese]
+        - [Inter/Avancé, Lundi 18h (1h), Salle Pugliese]
   -
     title: West Coast Swing
     name: westcoastswing
     cours:
-      - [Débutant, Mardi 19h, Salle Elvis]
-      - [Intermédiaire, Lundi 20h, Salle Pugliese]
-      - [Avancé, Jeudi 19h, Salle Compay]
+      - [Débutant, Mardi 19h (1h), Salle Elvis]
+      - [Intermédiaire, Lundi 20h (1h), Salle Pugliese]
+      - [Avancé, Jeudi 19h (1h), Salle Compay]
   -
     title: Kizomba
     name: kizomba
     cours:
-      - [Débutant, Mardi 21h, Salle Elvis]
-      - [Inter/Avancé, Vendredi 20h, Salle Compay]
+      - [Débutant, Mardi 21h (1h), Salle Elvis]
+      - [Inter/Avancé, Vendredi 20h (1h), Salle Compay]
   -
     title: Solo Swing
     name: soloswing
     cours:
-      - [Tous niveaux, Mercredi 18h30, Salle Compay]
+      - [Tous niveaux, Mercredi 18h30 (1h), Salle Compay]
   -
     title: Ateliers
     name: ateliers
