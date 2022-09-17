@@ -32,7 +32,6 @@ danses:
     title: Rock'n'roll
     name: rock
     cours:
-      - [Débutant, Lundi 19h (1h), Salle Elvis]
       - [Débutant, Mercredi 19h (1h), Salle Elvis]
       - [Débutant, Jeudi 20h (1h), Salle Elvis]
       - [Intermédiaire 1, Mercredi 20h (1h), Salle Pugliese]
@@ -46,6 +45,7 @@ danses:
     title: Salsa / Bachata
     name: salsa
     cours:
+      - [Débutant, Lundi 19h (1h), Salle Elvis]
       - [Débutant, Lundi 20h (1h), Salle Elvis]
       - [Débutant, Mardi 21h (1h), Salle Compay]
       - [Débutant, Jeudi 19h (1h), Salle Elvis]
