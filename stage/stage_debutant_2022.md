@@ -2,7 +2,7 @@
 layout: stage
 
 title: Stage Spécial débutants et 2ème année
-dances: Rock - Salsa - Bachata - Lindy hop - Balboa - West coast swing - Tango Argentin
+dances: Rock - Salsa - Bachata - Lindy hop - West coast swing - Tango Argentin
 dates: Samedi 26 et Dimanche 27 novembre
 date: 2022-11-26
 assets: DEBUTANT 2022
