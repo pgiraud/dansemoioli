@@ -54,17 +54,8 @@
                     <a class="dropdown-item" href="{{ site.baseurl }}/cours_prives/mariage">Mariage</a>
                     <a class="dropdown-item" href="{{ site.baseurl }}/cours_prives/enterrementviejfg">Enterrement de vie JF/G</a>
                     <a class="dropdown-item" href="{{ site.baseurl }}/cours_prives/seminaire_entreprise">Séminaire entreprise</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{{ site.baseurl }}/tarifs/">Tarifs</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{{ site.baseurl }}/soirees/">Soirées</a>
-                </li>
-                <li class="dropdown nav-item">
-                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Stages </a>
-                  <div class="dropdown-menu">
+                    <div class="dropdown-divider"></div>
+                    <h5 class="dropdown-header">Stages</h5>
                     {% assign sorted_stages = (site.pages | sort: 'date') %}
                     {% for page in sorted_stages %}
                     {% if page.layout == 'stage' %}
@@ -89,6 +80,12 @@
                     {% endif %}
                     {% endfor %}
                   </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ site.baseurl }}/tarifs/">Tarifs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ site.baseurl }}/soirees/">Soirées</a>
                 </li>
                 <li class="dropdown nav-item">
                   <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Infos </a>
