@@ -42,16 +42,14 @@
                   <a class="nav-link" href="{{ site.baseurl }}/visite/">Visite</a>
                 </li>
                 <li class="dropdown nav-item">
-                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cours collectifs</a>
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cours</a>
                   <div class="dropdown-menu">
+                    <h5 class="dropdown-header">Cours collectifs</h5>
                     {% for danse in site.danses %}
                     <a class="dropdown-item" href="{{ site.baseurl }}/cours/{{ danse.name }}">{{ danse.title }}</a>
                     {% endfor %}
-                  </div>
-                </li>
-                <li class="dropdown nav-item">
-                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cours privés</a>
-                  <div class="dropdown-menu">
+                    <div class="dropdown-divider"></div>
+                    <h5 class="dropdown-header">Cours privés</h5>
                     <a class="dropdown-item" href="{{ site.baseurl }}/cours_prives/cours_particuliers">Cours particuliers</a>
                     <a class="dropdown-item" href="{{ site.baseurl }}/cours_prives/mariage">Mariage</a>
                     <a class="dropdown-item" href="{{ site.baseurl }}/cours_prives/enterrementviejfg">Enterrement de vie JF/G</a>
