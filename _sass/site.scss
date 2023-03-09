@@ -69,25 +69,6 @@ header {
     }
 }
 
-.navbar-default {
-    .navbar-toggler,
-    .navbar-nav li > a {
-        color: #333;
-        font-weight: bold;
-    }
-    .navbar-toggler:hover,
-    .navbar-nav li > a:hover {
-        color: $link-hover-color;
-        text-shadow: 1px 1px 0 #FFCC00;
-    }
-    .navbar-toggler:hover {
-        color: $link-hover-color;
-    }
-    .caret {
-        border-top-color: #333;
-    }
-}
-
 footer {
     @include gradient-vertical($color3, $color2, 0%, 90%);
     padding-top: 20px;
