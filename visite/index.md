@@ -52,7 +52,7 @@ categories:
   <div class="col-6 col-sm-4 col-md-2">
     <p class="text-center">
     <img src="{{ site.baseurl }}/images/sara.jpg" class="img-fluid center-block"
-    alt="Sara">
+    alt="Sara MANFREDI - professeur de ROCK, SALSA, LINDY, TANGO Argentin, enseigne les danses en couple de salon, de société ou sociales">
     </p>
   </div>
 </div>
