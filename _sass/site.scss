@@ -59,6 +59,11 @@ header {
     }
 }
 
+.dropdown-header {
+    background-color: $primary;
+    color: white;
+}
+
 @media (max-width: 767px) {
     header.container-fluid {
         padding-right: 0;
