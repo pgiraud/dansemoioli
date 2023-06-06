@@ -35,7 +35,7 @@ body {
         &.scroll {
             header {
                 .navbar-brand img {
-                    width: 85px;
+                    height: 50px;
                 }
             }
         }
@@ -55,7 +55,7 @@ header {
         -moz-transition: all 0.2s ease-out;
         -o-transition: all 0.2s ease-out;
         transition: all 0.2s ease-out;
-        width: 169px;
+        height: 99px;
     }
 }
 
@@ -70,7 +70,7 @@ header {
         padding-left: 0;
     }
     .navbar-brand img {
-        width: 85px !important;
+        height: 50px !important;
     }
 }
 
