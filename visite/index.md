@@ -2,10 +2,6 @@
 title: Le centre
 layout: default
 description: "Visite de l'école : les professeurs, les salles, quelques photos"
-
-categories:
-  - visite
-  - home
 ---
 
 <div class="row">
