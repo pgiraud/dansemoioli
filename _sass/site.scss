@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 html,
 body {
@@ -120,6 +121,10 @@ footer {
 
 h1, h2, h3, .h1, .h2, .h3 {
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+h1, .h1 {
+    font-family: 'Righteous', cursive;
 }
 
 /* home page */
