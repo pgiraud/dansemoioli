@@ -4,8 +4,6 @@
 @charset "utf-8";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "variables",
-        "../bootstrap-4.5.0/scss/bootstrap",
-        "site"
-;
+@import "variables";
+@import "../bootstrap/scss/bootstrap";
+@import "site";
