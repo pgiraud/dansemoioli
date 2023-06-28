@@ -1,9 +1,11 @@
 $font-family-sans-serif: helvetica,'Open Sans', sans-serif;
 
-$link-color: #095256;
-$link-hover-color: #629168;
 $primary: #FFCC00;
 $secondary: #095256;
+$dark: #095256;
+
+$link-color: $dark;
+$link-hover-color: #629168;
 
 $body-bg: #FFFFFF;
 
@@ -11,9 +13,8 @@ $h2-font-size: 38px;
 $h3-font-size: 24px;
 
 $gray-dark: #535353;
-$table-dark-bg: #095256;
 
-$headings-color: #095256;
+$headings-color: $dark;
 $headings-font-weight: bold;
 
 $thumbnail-border: $secondary;
