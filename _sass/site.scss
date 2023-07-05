@@ -600,8 +600,8 @@ tr>td.salle4 {
   border: 1px dashed deeppink;
 }
 
-.bg-gradient {
-  @include gradient-horizontal($primary, $secondary, 70%, 110%);
+.bg-gradient-title {
+  background-image: linear-gradient(-45deg, $primary 70%, $secondary 110%);
 }
 
 .bg-main {
