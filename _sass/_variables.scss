@@ -30,14 +30,3 @@ $navbar-nav-link-padding-x: 1rem;
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0); // IE9 and down
 }
-
-@mixin gradient-horizontal($start-color: #2989BD, $end-color: #88BD42, $start-percent: 0%, $end-percent: 100%) {
-  background-image: -webkit-gradient(linear, left top, right top, from($start-color), to($end-color));
-  background-image: -webkit-linear-gradient(to left, $start-color $start-percent, $end-color $end-percent);
-  background-image: -moz-linear-gradient(to left, $start-color $start-percent, $end-color $end-percent);
-  background-image: -ms-linear-gradient(to left, $start-color $start-percent, $end-color $end-percent);
-  background-image: -o-linear-gradient(to left, $start-color $start-percent, $end-color $end-percent);
-  background-image: linear-gradient(to left, $start-color $start-percent, $end-color $end-percent);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='$start-color', endColorStr='$end-color', gradientType='1');
-  background-color: transparent !important;
-}
