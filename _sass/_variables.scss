@@ -22,6 +22,8 @@ $thumbnail-border: $secondary;
 $table-border-color: #999;
 
 $navbar-nav-link-padding-x: 1rem;
+$navbar-light-color:       $link-color;
+$navbar-light-hover-color: $link-hover-color;
 
 @mixin gradient-vertical($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
     background-image: -webkit-linear-gradient(top, $start-color $start-percent, $end-color $end-percent);  // Safari 5.1-6, Chrome 10+
