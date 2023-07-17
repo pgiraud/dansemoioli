@@ -55,7 +55,7 @@ danses:
       - [Intermédiaire 1, Jeudi 18h30 (1h), Salle Elvis]
       - [Intermédiaire 2, Lundi 19h (1h), Salle Compay]
       - [Intermédiaire 2, Mercredi 21h (1h), Salle Compay]
-      - [Intermédiaire 3, Jeudi 20h30 (1h), Salle Pugliese]
+      - [Intermédiaire 3, Jeudi 20h30 (1h), Salle Elvis]
       - [Intermédiaire 3, Lundi 21h (1h), Salle Compay]
       - [Avancé 1, Mercredi 21h (1h), Salle Compay]
       - [Avancé 2, Mardi 20h (1h), Salle Compay]
@@ -65,7 +65,7 @@ danses:
     title: Lindy-Hop / Balboa
     name: lindy
     cours:
-        - [Débutant, Jeudi 20h30 (1h), Salle Elvis]
+        - [Débutant, Jeudi 20h30 (1h), Salle Pugliese]
         - [Intermédiaire 1, Lundi 20h (1h30), Salle Pugliese]
         - [Intermédiaire 2, Mardi 20h (1h30), Salle Pugliese]
         - [Avancé, Mercredi 19h30 (1h30), Salle Compay]
