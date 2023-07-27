@@ -475,7 +475,7 @@ h6,
 a.alert-actu {
     display: block;
     p, h1, h2, h3, h4, h5 {
-        color: #555;
+        color: #095256;
     }
 }
 a.alert-actu.contrast {
@@ -484,9 +484,8 @@ a.alert-actu.contrast {
     }
 }
 a.alert-actu:hover {
-    text-decoration: none;
     p, h1, h2, h3, h4, h5 {
-        color: #333;
+        color: #629168;
     }
 }
 a.alert-actu.contrast:hover {
