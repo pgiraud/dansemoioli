@@ -74,8 +74,8 @@ danses:
     name: tango
     cours:
         - [Débutant, Mardi 19h (1h), Salle Elvis]
-        - [Intermédiaire 1, Lundi 18h30 (1h30), Salle Pugliese]
-        - [Intermédiaire 2, Jeudi 20h30 (1h30), Salle Compay]
+        - [Intermédiaire, Lundi 18h30 (1h30), Salle Pugliese]
+        - [Avancé, Jeudi 20h30 (1h30), Salle Compay]
         - [Avancé, Mercredi 18h30 (1h30), Salle Pugliese]
 
   -
