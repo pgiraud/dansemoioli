@@ -98,9 +98,6 @@ footer {
     h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
         color: #535353;
     }
-    a {
-        color: $link-color;
-    }
 }
 
 .content {
@@ -473,7 +470,6 @@ h6,
 }
 
 a.alert-actu {
-  text-decoration: none;
     display: block;
     p, h1, h2, h3, h4, h5 {
         color: #095256;
@@ -485,7 +481,6 @@ a.alert-actu.contrast {
     }
 }
 a.alert-actu:hover {
-  text-decoration: none;
     p, h1, h2, h3, h4, h5 {
         color: #629168;
     }
