@@ -1,11 +1,11 @@
 ---
 layout: stage
 
-title: Stage DECOUVERTE
-dances: Rock - Salsa / Bachata - Lindy hop / Balboa - West coast swing - Tango Argentin - Kizomba
-dates: Du lundi 27 juin au vendredi 1 juillet
-date: 2022-06-27
-assets: DECOUVERTE 2022
+title: Stage INTENSIF
+dances: Salsa - Bachata - Kizomba - Rock - Lindy hop - West coast swing
+dates: samedi 2 et dimanche 3 décembre 2023
+date: 2023-02-12
+assets: debutant_2023
 format_slider: .gif
-form: https://docs.google.com/forms/d/e/1FAIpQLSci65_SrT3JA7yBh8FV6sopJKCCuSRtv46qtXjBmfBFspP82Q/viewform?usp=sf_link
+form: https://forms.gle/pkXjK2LsP54HzAio8
 ---
