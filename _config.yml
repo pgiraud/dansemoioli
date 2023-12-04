@@ -32,6 +32,7 @@ danses:
     title: Rock'n'roll
     name: rock
     cours:
+      - [Débutant janvier, Mardi 20h (1h), Salle Elvis]
       - [Débutant, Mardi 21h (1h), Salle Elvis]
       - [Débutant, Mercredi 19h30 (1h), Salle Elvis]
       - [Débutant, Jeudi 18h30 (1h), Salle Compay]
@@ -46,6 +47,7 @@ danses:
     title: Salsa / Bachata
     name: salsa
     cours:
+      - [Débutant janvier, Lundi 19h (1h), Salle Elvis]
       - [Débutant, Lundi 21h (1h), Salle Elvis]
       - [Débutant, Mardi 20h (1h), Salle Elvis]
       - [Débutant, Jeudi 19h30 (1h), Salle Pugliese]
@@ -86,6 +88,7 @@ danses:
     title: West Coast Swing
     name: westcoastswing
     cours:
+      - [Débutant janvier, Vendredi 19h (1h), Salle Compay]
       - [Débutant, Mercredi 18h30 (1h), Salle Compay]
       - [Débutant, Vendredi 20h (1h), Salle Pugliese]
       - [Intermédiaire 1, Mardi 19h (1h), Salle Pugliese]
