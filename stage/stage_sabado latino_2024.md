@@ -1,11 +1,11 @@
 ---
 layout: stage
 
-title: Stage TEMPO LATINO
-dances: Salsa - Bachata - Kizomba - Son cubano - Chacha cubano
-dates: samedi 25 et dimanche 26 mai 2024
+title: Stage SABADO LATINO
+dances: Salsa - Bachata - Kizomba
+dates: samedi 25 mai 2024
 date: 2024-05-25
-assets: TEMPO LATINO 2024
+assets: SL2024
 format_slider: .gif
-form:
+form: https://forms.gle/enrD5onGEpqr1C9w7
 ---
