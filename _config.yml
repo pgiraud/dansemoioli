@@ -39,7 +39,7 @@ danses:
       - [Intermédiaire 1, Vendredi 19h (1h), Salle Elvis]
       - [Intermédiaire 2, Lundi 19h (1h), Salle Elvis]
       - [Intermédiaire 2, Mercredi 20h30 (1h), Salle Elvis]
-      - [Avancé 1, Mercredi 20h (1h), Salle Compay]
+      - [Avancé 1, Mercredi 20h (1h), Salle Pugliese]
       - [Avancé 2, Mardi 19h (1h), Salle Compay]
       - [Avancé 2, Jeudi 18h30 (1h), Salle Pugliese]
 
@@ -52,7 +52,7 @@ danses:
       - [Débutant, Vendredi 20h (1h), Salle Compay]
       - [Intermédiaire 1, Lundi 19h (1h), Salle Compay]
       - [Intermédiaire 1, Lundi 21h (1h), Salle Elvis]
-      - [Intermédiaire 1, Jeudi 19h30 (1h), Salle Compay]
+      - [Intermédiaire 1, Jeudi 19h30 (1h), Salle Pugliese]
       - [Intermédiaire 1, Vendredi 19h (1h), Salle Pugliese]
       - [Intermédiaire 2, Lundi 20h (1h), Salle Elvis]
       - [Intermédiaire 2, Mardi 21h (1h), Salle Compay]
@@ -82,7 +82,7 @@ danses:
     title: West Coast Swing
     name: westcoastswing
     cours:
-      - [Débutant, Mardi 19h30 (1h), Salle Compay]
+      - [Débutant, Mardi 19h30 (1h), Salle Pugliese]
       - [Débutant, Jeudi 20h30 (1h), Salle Pugliese]
       - [Intermédiaire, Mercredi 18h30 (1h), Salle Compay]
       - [Intermédiaire, Vendredi 20h (1h), Salle Pugliese]
