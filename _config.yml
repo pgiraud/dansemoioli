@@ -104,5 +104,7 @@ danses:
       - [Inter / Avancé, Mercredi 18h30 (1h), Salle Elvis]
 
   -
-    title: Ateliers
-    name: ateliers
+    title: Blues
+    name: blues
+    cours:
+      - [Débutant, Mardi 18h30 (1h), Salle Pugliese]
