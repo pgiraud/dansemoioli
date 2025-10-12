@@ -2,10 +2,10 @@
 layout: stage
 
 title: Stage Intensif
-dances: Infos à venir
+dances: ROCK - SALSA - BACHATA - WEST COAST SWING - BLUES (Spécial débutants, mais pas que...)
 dates: Samedi 29 novembre
 date: 2025-11-29
-assets: DEB25
+assets: SI2025
 format_slider: .gif
-form:
+form: https://docs.google.com/forms/d/e/1FAIpQLSfaMvCflLtg2SOJrG5TfJLnVvfIFZE2aEE-HwlwMj1lGpeFUw/viewform?usp=dialog
 ---
