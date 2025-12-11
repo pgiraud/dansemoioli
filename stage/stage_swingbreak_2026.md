@@ -2,7 +2,7 @@
 layout: stage
 
 title: Stage SWING BREAK
-dances: Rock 'n' roll - Lindy hop - Balboa - Blues
+dances: Rock 'n' roll - Lindy hop - Balboa - ST Louis shag - Jazz root
 dates: samedi 31 janvier
 date: 2026-01-31
 assets: SB2026
