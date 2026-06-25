@@ -32,7 +32,7 @@ danses:
     title: Rock'n'roll
     name: rock
     cours:
-      - [Débutant, Mercredi 18h (1h), Salle Pugliese]
+      - [Débutant, Mercredi 19h30 (1h), Salle Elvis]
       - [Débutant, Jeudi 19h30 (1h), Salle Pugliese]
       - [Intermédiaire 1, Mercredi 18h30 (1h), Salle Compay]
       - [Intermédiaire 1, Mercredi 20h30 (1h), Salle Elvis]
@@ -48,7 +48,7 @@ danses:
     name: salsa
     cours:
       - [Débutant, Lundi 20h30 (1h), Salle Pugliese]
-      - [Débutant, Mercredi 20h30 (1h), Salle Elvis]
+      - [Débutant, Mercredi 20h30 (1h), Salle Pugliese]
       - [Intermédiaire 1, Lundi 21h (1h), Salle Compay]
       - [Intermédiaire 1, Jeudi 18h30 (1h), Salle Compay]
       - [Intermédiaire 2, Lundi 19h (1h), Salle Elvis]
@@ -85,8 +85,8 @@ danses:
       - [Intermédiaire 1, Jeudi 18h30 (1h), Salle Compay]
       - [Intermédiaire 2, Mardi 19h30 (1h), Salle Pugliese]
       - [Intermédiaire 2, Jeudi 21h (1h), Salle Pugliese]
+      - [Intermédiaire 3, Vendredi 20h (1h), Salle Compay]
       - [Avancé 1, Lundi 20h (1h), Salle Compay]
-      - [Avancé 1, Vendredi 20h (1h), Salle Compay]
       - [Avancé 2, Jeudi 19h30 (1h), Salle Elvis]
 
   -
