@@ -50,7 +50,7 @@ danses:
       - [Débutant, Lundi 20h30 (1h), Salle Pugliese]
       - [Débutant, Mercredi 20h30 (1h), Salle Pugliese]
       - [Intermédiaire 1, Lundi 21h (1h), Salle Compay]
-      - [Intermédiaire 1, Jeudi 18h30 (1h), Salle Compay]
+      - [Intermédiaire 1, Jeudi 18h30 (1h), Salle Pugliese]
       - [Intermédiaire 2, Lundi 19h (1h), Salle Elvis]
       - [Intermédiaire 2, Mardi 20h (1h), Salle Compay]
       - [Intermédiaire 2, Vendredi 19h (1h), Salle Pugliese]
@@ -70,7 +70,7 @@ danses:
     title: Tango Argentin
     name: tango
     cours:
-      - [Débutant / fondamentaux, Mercredi 20h30 (1h30), Salle Elvis]
+      - [Débutant / fondamentaux, Jeudi 20h30 (1h30), Salle Elvis]
       - [Intermédiaire, Lundi 18h30 (1h30), Salle Compay]
       - [Avancé, Mercredi 18h (1h30), Salle Pugliese]
 
