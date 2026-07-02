@@ -7,5 +7,5 @@ dates: Du lundi 22 au vendredi 26 juin 2026
 date: 2026-06-22
 assets: SD26
 format_slider: .gif
-form: https://forms.gle/qnm23BNJZserSj7K6
+form:
 ---
