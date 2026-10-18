@@ -1,7 +1,7 @@
 ---
 layout: stage
 
-title: Stage Intensif
+title: Stage INTENSIF
 dances: ROCK - SALSA - BACHATA - WEST COAST SWING - LINDY HOP (Spécial débutants, mais pas que...)
 dates: Samedi 28 novembre 2026
 date: 2026-11-28
