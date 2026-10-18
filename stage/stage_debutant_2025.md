@@ -7,5 +7,5 @@ dates: Samedi 28 novembre 2026
 date: 2026-11-28
 assets: SI2026
 format_slider: .gif
-form:
+form: https://forms.gle/GtEcpv1HSKi4hJhc9
 ---
