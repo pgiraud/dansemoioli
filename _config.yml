@@ -25,6 +25,7 @@ exclude:
   - vendor/ruby/
   - README.md
   - docker-compose.yml
+  - actualites/portes_ouvertes.html
 include: ['.htaccess']
 
 danses:
